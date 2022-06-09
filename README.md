@@ -38,7 +38,7 @@ This is a fork of Hashlip's art engine. It is currently a *Work in Progress* as 
 
 ### Notes
 
-- [Incompatibilities with original Hashlips](#incompatibilities)
+- Work in Progress
 
 
 # Use named weights instead of numbers in filename
