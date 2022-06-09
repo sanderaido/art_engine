@@ -11,7 +11,7 @@ const scaleSize = (num) => {
 };
 
 // Set this to true if you want to use named rarity instead of numbers. 
-const namedWeight = false;
+const namedWeight = true;
 
 const network = NETWORK.eth;
 
