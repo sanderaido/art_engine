@@ -106,3 +106,14 @@ This utility generates a dnaList for import from a previous generation's metadat
 You must place your previously generated _metadata.json file in the build_old folder. 
 
 🛠️🛠️ Note again that the engine and *especially* documentation are a work in progress. Both will be improved upon further. 
+
+# More features in progress / on the way
+
+## Incompatible layers system
+Mark layers incompatible with others to prevent generation
+## Layer variation system
+Mark layers for variation, allowing things like ensuring all traits are the same color
+## Add option to include rarity in metadata
+## Bring items to the front
+Mark specific items to be moved the first n of the collection for sequential minting.
+## Add option to mint exact number of specific traits. 
