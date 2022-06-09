@@ -53,6 +53,7 @@ You can switch back to using numbered weights by setting `namedWeight` to false 
 // Set this to true if you want to use named rarity instead of numbers. 
 const namedWeight = true;
 ```
+![namedWeight](https://user-images.githubusercontent.com/92766571/172919080-802baa6a-132c-4bc2-a2e0-08ee50b8ec35.png)
 
 # Generate NFT in stages
 This fork gives the ability to start generation at any number. This can sometimes be useful, but in 99% of cases generation should be done all at once. These options simply provide tools for the other 1%. Utilizing a previous generations dna will help to prevent duplicates from being generated. Please be sure to utilize the oldDna [Util](#generateolddna).
