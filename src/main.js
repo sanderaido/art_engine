@@ -445,19 +445,17 @@ const createVariation = (_variations) => {
   let setVariant = [];
   _variations.forEach((variant) => {
     var totalWeight = 0;
-    variant.elements.forEach((element) => {
-      totalWeight += element.weight;
+    variant.Weight.forEach((Weight) => {
+      totalWeight += Weight;
     });
     // number between 0 - totalWeight
     let random = Math.floor(Math.random() * totalWeight);
-    for (var i = 0; i < variant.elements.length; i++) {
+    for (var i = 0; i < variant.Weight.length; i++) {
       // subtract the current weight from the random weight until we reach a sub zero value.
-      random -= variant.elements[i].weight;
+      random -= variant.Weight[i];
       if (random < 0) {
         return setVariant.push(
-          `${variant.elements[i].id}:${layer.elements[i].filename}${
-            variant.bypassDNA ? "?bypassDNA=true" : ""
-          }`
+          `${variant.name}:${variant.variations[i]}`
         );
       }
     }
