@@ -38,7 +38,7 @@ const scaleSize = (num) => {
 };
 
 // Set this to true if you want to use named rarity instead of numbers. 
-const namedWeight = true;
+const namedWeight = false;
 
 const network = NETWORK.eth;
 
@@ -66,7 +66,7 @@ const layerConfigurations = [
     layersOrder: [
       { name: "SkeletalBody" },
       { name: "Head"}, // options: {layerVariations: 'Color'} },
-      { name: "Back" },
+      { name: "Back"},
       { name: "Legs" },
       { name: "Arms" },
       { name: "Mouth" },

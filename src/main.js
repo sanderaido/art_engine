@@ -27,6 +27,7 @@ const {
   collectionSize,
   namedWeight,
   importOldDna,
+  layerVariations,
 } = require(`${basePath}/src/config.js`);
 const canvas = createCanvas(format.width, format.height);
 const ctx = canvas.getContext("2d");
@@ -294,8 +295,8 @@ const constructLayerToDna = (_dna = "", _layers = []) => {
       blend: layer.blend,
       opacity: layer.opacity,
       selectedElement: selectedElement,
-      // layerVariations: layer.layerVariations,
-      // variant: _dna[index].split('#').pop() != undefined ? _dna[index].split('#').pop() : '',
+      layerVariations: layer.layerVariations,
+      variant: _dna[index].split('#').pop() != undefined ? _dna[index].split('#').pop() : '',
     };
   });
   return mappedDnaToLayers;
@@ -440,7 +441,46 @@ const createDnaNames = (_layers) => {
   return randNum.join(DNA_DELIMITER);
 };
 
-const createDna = (_layers) => {
+const createDna = (_layers, _variant) => {
+  let randNum = [];
+  // console.log(_layers);
+  _layers.forEach((layer) => {
+    var totalWeight = 0;
+    // Can't use elements with layerVariations
+    layer.elements.forEach((element) => {
+      totalWeight += element.weight;
+    });
+    // number between 0 - totalWeight
+    let random = Math.floor(Math.random() * totalWeight);
+    for (var i = 0; i < layer.elements.length; i++) {
+      // subtract the current weight from the random weight until we reach a sub zero value.
+      random -= layer.elements[i].weight;
+      if (random < 0) {
+        if (_variant === null ) {
+          return randNum.push(
+            `${layer.elements[i].variations}`
+          );
+        } else if (_layer.layerVariations != undefined) {
+          return randNum.push(
+            `${layer.elements[i].id}:${layer.elements[i].filename} ${_variant}
+            ${
+              layer.bypassDNA ? "?bypassDNA=true" : ""
+            }`
+          );          
+        } else {
+          return randNum.push(
+            `${layer.elements[i].id}:${layer.elements[i].filename}${
+              layer.bypassDNA ? "?bypassDNA=true" : ""
+            }`
+          );          
+        }
+      }
+    }
+  });
+  return randNum.join(DNA_DELIMITER);
+};
+
+const createDnaOG = (_layers) => {
   let randNum = [];
   _layers.forEach((layer) => {
     var totalWeight = 0;
@@ -520,8 +560,12 @@ const startCreating = async () => {
     while (
       editionCount <= layerConfigurations[layerConfigIndex].growEditionSizeTo
     ) {
+      // console.log(layers);
+      console.log(layerVariations);
+      let newVariant = (namedWeight) ? createDnaNames(layers) : createDna(layerVariations, null);
+      console.log(newVariant);
       let newDna = (namedWeight) ? createDnaNames(layers) : createDna(layers);
-      // console.log(newDna);
+      
       if (isDnaUnique(dnaList, newDna)) {
         let results = constructLayerToDna(newDna, layers);
         let loadedElements = [];
