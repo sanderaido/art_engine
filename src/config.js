@@ -169,6 +169,8 @@ const preview_gif = {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 * Rarity distribution can be adjusted
 * Keep range [0 - 10,000]
+* Because weight is up to 10,000, percentages can determined up to 
+* two decimal places. ie: 10.15% would be 1015
 * DO NOT change the rarity names unless you know what you're doing in main.js
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 const rarity_config = {

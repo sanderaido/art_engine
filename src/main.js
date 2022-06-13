@@ -462,39 +462,6 @@ const createVariation = (_variations) => {
   });
   return setVariant.join(DNA_DELIMITER);
 };
-// reference below
-let variant = ' ';
-      let setVariant = [];
-      layerVariations.forEach((layerVariant) => {
-        let totalVariationWeight = 0;
-        layerVariant.Weight.forEach((Weight) => {
-          totalVariationWeight += Weight;
-        });
-        // number between 0 - totalVariationWeight
-        let randomNumber = Math.floor(Math.random() * totalVariationWeight);
-        for (var i = 0; i < layerVariant.Weight.length; i++) {
-          // subtract the current weight from the random weight until we reach a sub zero value.
-          randomNumber -= layerVariant.Weight[i];
-          if (randomNumber < 0) {
-            setVariant.push({
-              name: layerVariant.name,
-              variant: layerVariant.variations[i],
-            });
-            attributesList.push({
-              trait_type: layerVariant.name,
-              value: layerVariant.variations[i],
-            });
-            break;
-          }
-        }
-      });
-
-      layers.forEach((layer) => {
-        var layerVariations = setVariant.find((obj) => {
-          return obj.name === layer.layerVariations;
-        });
-        if (layerVariations != undefined) variant = layerVariations.variant;
-        newDna.push(createDna(layer, variant));
 
 const createDna = (_layers) => {
   let randNum = [];
@@ -578,7 +545,7 @@ const startCreating = async () => {
     ) {
       // console.log(layers);
       console.log(layerVariations);
-      let newVariant = (namedWeight) ? createDnaNames(layers) : createDna(layerVariations, null);
+      let newVariant = createVariation(layerVariations);
       console.log(newVariant);
       let newDna = (namedWeight) ? createDnaNames(layers) : createDna(layers);
       
