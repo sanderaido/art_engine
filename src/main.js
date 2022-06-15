@@ -295,8 +295,8 @@ const constructLayerToDna = (_dna = "", _layers = []) => {
       blend: layer.blend,
       opacity: layer.opacity,
       selectedElement: selectedElement,
-      layerVariations: layer.layerVariations,
-      variant: _dna[index].split('#').pop() != undefined ? _dna[index].split('#').pop() : '',
+      // layerVariations: layer.layerVariations,
+      // variant: _dna[index].split('#').pop() != undefined ? _dna[index].split('#').pop() : '',
     };
   });
   return mappedDnaToLayers;
@@ -463,6 +463,48 @@ const createVariation = (_variations) => {
   return setVariant.join(DNA_DELIMITER);
 };
 
+const traitCount = (_layers) => {
+  let count = new Object();
+  _layers.forEach((layer) => {
+    layer.elements.forEach((element) => {
+      count[element.name] = element.weight;
+    });
+  });
+  // console.log(count);
+  return count;
+};
+
+let allTraitsCount;
+
+const createDnaExact = (_layers) => {
+  let randNum = [];
+  // console.log(allTraitsCount);
+  _layers.forEach((layer) => {
+    var totalWeight = 0;
+    layer.elements.forEach((element) => {
+      totalWeight += element.weight;
+    });
+    // number between 0 - totalWeight
+    // let random = Math.floor(Math.random() * totalWeight);
+    for (var i = 0; i < layer.elements.length; i++) {
+      // subtract the current weight from the random weight until we reach a sub zero value.
+      // random -= layer.elements[i].weight;
+      // console.log(`Trait: ${layer.elements[i].name}`);
+      // console.log(allTraitsCount[layer.elements[i].name]);
+      if (allTraitsCount[layer.elements[i].name] > 0) {
+        allTraitsCount[layer.elements[i].name]--;
+        return randNum.push(
+          `${layer.elements[i].id}:${layer.elements[i].filename}${
+            layer.bypassDNA ? "?bypassDNA=true" : ""
+          }`
+        );
+      }
+    }
+  });
+  // console.log(allTraitsCount);
+  return randNum.join(DNA_DELIMITER);
+};
+
 const createDna = (_layers) => {
   let randNum = [];
   _layers.forEach((layer) => {
@@ -540,15 +582,24 @@ const startCreating = async () => {
     const layers = layersSetup(
       layerConfigurations[layerConfigIndex].layersOrder
     );
+    allTraitsCount = traitCount(layers);
+    // console.log(allTraitsCount);
     while (
       editionCount <= layerConfigurations[layerConfigIndex].growEditionSizeTo
     ) {
-      // console.log(layers);
-      console.log(layerVariations);
-      let newVariant = createVariation(layerVariations);
-      console.log(newVariant);
-      let newDna = (namedWeight) ? createDnaNames(layers) : createDna(layers);
+      // // console.log(layers);
+      // console.log(layerVariations);
+      // let newVariant = createVariation(layerVariations);
+      // console.log(newVariant);
+      let newDna = createDnaExact(layers);
+      // let newDna = (namedWeight) ? createDnaNames(layers) : createDna(layers);
+      // console.log(newDna);
       
+      /* @Ricky
+      * You can't depreciate traitCounts above,
+      * you have to check uniqueness FIRST,
+      * then, if unique, depreciate those traits.
+      */
       if (isDnaUnique(dnaList, newDna)) {
         let results = constructLayerToDna(newDna, layers);
         let loadedElements = [];

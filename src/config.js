@@ -12,6 +12,17 @@ collection so they can team Mint or whatever without resorting to minting with t
 -Should I still add a "make this amount" of particular traits if neccessary?
 */
 
+/* Changed my mind, I want this
+-rework weight system to provide option to have either 
+exact percentages based on weight (ie, weight of #30 would generate 
+that trait 30% of the time), ~~ This is going to take a lot more than originally anticipated to get working due 
+  to layersOrder. If you restricted it to only allow one layersOrder, I suppose it could work, but that concession
+  isn't worth imo. 
+
+  -- Remove the random element all together. Require shuffle to be turned on and just go through traits in order until they reach zero
+  Require totalWeight = collectionSize
+*/
+
 /* DONE
 -work in resumeNum functionality
 -work in toCreateNow functionality
@@ -21,15 +32,9 @@ collection so they can team Mint or whatever without resorting to minting with t
 -option to not display none in metadata -- Solution: use removeAttribute
 */
 
-/* NOGO
--rework weight system to provide option to have either 
-exact percentages based on weight (ie, weight of #30 would generate 
-that trait 30% of the time), ~~ This is going to take a lot more than originally anticipated to get working due 
-  to layersOrder. If you restricted it to only allow one layersOrder, I suppose it could work, but that concession
-  isn't worth imo. 
-*/
 
-const collectionSize = 10000;
+
+const collectionSize = 100;
 const toCreateNow = 100;
 
 const scaleSize = (num) => {
@@ -103,7 +108,7 @@ const layerConfigurations = [
 //   },
 // ];
 
-const shuffleLayerConfigurations = true;
+const shuffleLayerConfigurations = false;
 
 const debugLogs = false;
 
