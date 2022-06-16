@@ -28,7 +28,6 @@ const {
   namedWeight,
   exactWeight,
   importOldDna,
-  layerVariations,
 } = require(`${basePath}/src/config.js`);
 const canvas = createCanvas(format.width, format.height);
 const ctx = canvas.getContext("2d");
@@ -398,28 +397,6 @@ const createDnaNames = (_layers) => {
   return randNum.join(DNA_DELIMITER);
 };
 
-const createVariation = (_variations) => {
-  let setVariant = [];
-  _variations.forEach((variant) => {
-    var totalWeight = 0;
-    variant.Weight.forEach((Weight) => {
-      totalWeight += Weight;
-    });
-    // number between 0 - totalWeight
-    let random = Math.floor(Math.random() * totalWeight);
-    for (var i = 0; i < variant.Weight.length; i++) {
-      // subtract the current weight from the random weight until we reach a sub zero value.
-      random -= variant.Weight[i];
-      if (random < 0) {
-        return setVariant.push(
-          `${variant.name}:${variant.variations[i]}`
-        );
-      }
-    }
-  });
-  return setVariant.join(DNA_DELIMITER);
-};
-
 const createDnaExact = (_layers) => {
   let randNum = [];
   _layers.forEach((layer) => {
@@ -556,9 +533,6 @@ const startCreating = async () => {
     while (
       editionCount <= layerConfigurations[layerConfigIndex].growEditionSizeTo
     ) {
-      // console.log(layerVariations);
-      // let newVariant = createVariation(layerVariations);
-
       // At the moment, we can't have both namedWeight and exactWeight active at once.
       if (exactWeight && namedWeight) {
         throw new Error(`namedWeight and exactWeight can't be used together. Please mark one or both as false in config.js`);

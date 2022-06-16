@@ -20,6 +20,11 @@ This is a fork of Hashlip's art engine. It is currently a *Work in Progress* as 
 - [Use named weights instead of numbers in filename](#use-named-weight-instead-of-filename)
   - [Named weight example](#named-weight-example)
 
+## Exact rarity weight
+
+- [Set trait weight to equal the exact number of times you want that trait in the collection rather than using rng](#use-exact-weight-instead-of-rng)
+  - [Exact weight example](#exact-weight-example)
+
 ## Resume creation
 
 - [Generate NFT in stages](#generate-nft-in-stages)
@@ -54,6 +59,16 @@ You can switch back to using numbered weights by setting `namedWeight` to false 
 const namedWeight = true;
 ```
 ![namedWeight](https://user-images.githubusercontent.com/92766571/172919080-802baa6a-132c-4bc2-a2e0-08ee50b8ec35.png)
+
+# Use exact weight instead of rng
+This fork gives the option to use define exact counts of traits rather than using weight to randomly determine counts of traits. 
+
+## Exact weight example
+To use exact weight system, set exactWeight to true in config.js. PLEASE NOTE: exactWeight and namedWeight can not be used together at this time!
+
+```js
+const exactWeight = true;
+```
 
 # Generate NFT in stages
 This fork gives the ability to start generation at any number. This can sometimes be useful, but in 99% of cases generation should be done all at once. These options simply provide tools for the other 1%. Utilizing a previous generations dna will help to prevent duplicates from being generated. Please be sure to utilize the oldDna [Util](#generateolddna).
