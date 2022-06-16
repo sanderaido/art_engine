@@ -42,8 +42,18 @@ const scaleSize = (num) => {
   return Math.floor((num / collectionSize) * toCreateNow);
 };
 
+// ********* Advanced weight options *********
+// Note: only one of these options can be marked trued at once. 
+
 // Set this to true if you want to use named rarity instead of numbers. 
 const namedWeight = false;
+/* 
+* Set this to true if you want to use EXACT weights. 
+* Note that your weights must add up to the total number
+* you want of that trait.
+*/
+const exactWeight = false;
+
 
 const network = NETWORK.eth;
 
@@ -242,4 +252,5 @@ module.exports = {
   namedWeight,
   importOldDna,
   layerVariations,
+  exactWeight,
 };

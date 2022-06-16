@@ -26,6 +26,7 @@ const {
   toCreateNow,
   collectionSize,
   namedWeight,
+  exactWeight,
   importOldDna,
   layerVariations,
 } = require(`${basePath}/src/config.js`);
@@ -457,7 +458,6 @@ const createDnaExact = (_layers) => {
     layer.elements.forEach((element) => {
       totalWeight += allTraitsCount[element.name];
     });
-    console.log(totalWeight);
     // number between 0 - totalWeight
     // We keep the random function here to ensure we don't generate all the same layers back to back.
     let random = Math.floor(Math.random() * totalWeight);
@@ -559,9 +559,10 @@ const allLayersOrders = () => {
 }
 
 const startCreating = async () => {
-  let allLayers = allLayersOrders();
-  allTraitsCount = traitCount(allLayers);
-  console.log(allTraitsCount);
+  if (exactWeight) {
+    let allLayers = allLayersOrders();
+    allTraitsCount = traitCount(allLayers);
+  }
   let layerConfigIndex = 0;
   let editionCount = 1;
   let failedCount = 0;
@@ -586,28 +587,26 @@ const startCreating = async () => {
     while (
       editionCount <= layerConfigurations[layerConfigIndex].growEditionSizeTo
     ) {
-      // // console.log(layers);
       // console.log(layerVariations);
       // let newVariant = createVariation(layerVariations);
-      // console.log(newVariant);
-      let newDna = createDnaExact(layers);
-      // let newDna = (namedWeight) ? createDnaNames(layers) : createDna(layers);
+
+      // At the moment, we can't have both namedWeight and exactWeight active at once.
+      if (exactWeight && namedWeight) {
+        throw new Error(`namedWeight and exactWeight can't be used together. Please mark one or both as false in config.js`);
+      }
+     
+      let newDna = (exactWeight) ? createDnaExact(layers) : (namedWeight) ? createDnaNames(layers) : createDna(layers);
       // console.log(newDna);
-      
-      /* @Ricky
-      * You can't depreciate traitCounts above,
-      * you have to check uniqueness FIRST,
-      * then, if unique, depreciate those traits.
-      */
+
       if (isDnaUnique(dnaList, newDna)) {
         let results = constructLayerToDna(newDna, layers);
-        // console.log('=================next======================');
-        // console.log(results);
-        results.forEach((layer) => {
-          // console.log(allTraitsCount[layer.selectedElement.name]);
-          allTraitsCount[layer.selectedElement.name]--;
-          // console.log(allTraitsCount[layer.selectedElement.name]);
-        })
+
+        if (exactWeight) {
+          results.forEach((layer) => {
+            allTraitsCount[layer.selectedElement.name]--;
+          })
+        }
+
         let loadedElements = [];
 
         results.forEach((layer) => {
