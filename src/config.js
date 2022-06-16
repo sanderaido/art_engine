@@ -2,37 +2,6 @@ const basePath = process.cwd();
 const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 
-/* TODO
--work in variation functionality
--Create incompatible layers system.
--work in rarity calculations
--option to include rarity in metadata
-- Util to 'bring to front'. This will enable people to move X number of tokens to the first # in the
-collection so they can team Mint or whatever without resorting to minting with tokenId.
--Should I still add a "make this amount" of particular traits if neccessary?
-*/
-
-/* Changed my mind, I want this
--rework weight system to provide option to have either 
-exact percentages based on weight (ie, weight of #30 would generate 
-that trait 30% of the time), ~~ This is going to take a lot more than originally anticipated to get working due 
-  to layersOrder. If you restricted it to only allow one layersOrder, I suppose it could work, but that concession
-  isn't worth imo. 
-
-  -- Remove the random element all together. Require shuffle to be turned on and just go through traits in order until they reach zero
-  Require totalWeight = collectionSize
-*/
-
-/* DONE
--work in resumeNum functionality
--work in toCreateNow functionality
--rework weight system to simply mark the weight as a rarity name (common, rare, etc.) and have rarity automatic
--work in misc utils
-- Continue to build on resumeNum and enable a resumted generation? Maybe pull dna from metadata?
--option to not display none in metadata -- Solution: use removeAttribute
-*/
-
-
 
 const collectionSize = 100;
 const toCreateNow = 100;
@@ -80,8 +49,8 @@ const layerConfigurations = [
     growEditionSizeTo: scaleSize(25),
     layersOrder: [
       { name: "SkeletalBody" },
-      { name: "Head"}, // options: {layerVariations: 'Color'} },
-      { name: "Back"},
+      { name: "Head"},
+      { name: "Back" },
       { name: "Legs" },
       { name: "Arms" },
       { name: "Mouth" },
@@ -102,23 +71,7 @@ const layerConfigurations = [
   },
 ];
 
-// const layerConfigurations = [
-//   {
-//     growEditionSizeTo: 50,
-//     layersOrder: [
-//       { name: "blueBody", options: {displayName: "Body"} },
-//       { name: "blueHands", options: {displayName: "Hands"} },
-//   },
-//   {
-//     growEditionSizeTo: 100,
-//     layersOrder: [
-//       { name: "yellowBody", options: {displayName: "Body"} },
-//       { name: "yellowHands", options: {displayName: "Hands"} },
-//     ],
-//   },
-// ];
-
-const shuffleLayerConfigurations = false;
+const shuffleLayerConfigurations = true;
 
 const debugLogs = false;
 
@@ -197,26 +150,6 @@ const rarity_config = {
   Common: { ranks: [5600, 10000] }, //, fileName: 'Common.png' },
 };
 
-// layer variations:
-const layerVariations = [
-  {
-    variationCount: 1,
-    name: 'Color',
-    variations: [
-      'Blue',
-      'Green',
-      'Purple',
-      'Red',
-    ],
-    Weight: [
-      5950,
-      2950,
-      900,
-      500,
-    ],
-  },
-];
-
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 * Do not use this unless 100% necessary and you understand the risk
 * Generating collection in stages leads to potential duplicates. 
@@ -250,7 +183,6 @@ module.exports = {
   toCreateNow,
   collectionSize,
   namedWeight,
-  importOldDna,
   layerVariations,
   exactWeight,
 };

@@ -28,8 +28,6 @@ data.forEach((item) => {
   return oldDna.push(_dna.join('-'));
 });
 
-console.log(oldDna[0]);
-
 fs.writeFileSync(`${basePath}/build_old/_oldDna.json`, JSON.stringify(oldDna, null, 2));
 
 console.log(`Converted ${data.length} items to dna and saved to ${basePath}/build_old/_oldDna.json`);

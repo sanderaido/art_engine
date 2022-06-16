@@ -131,12 +131,7 @@ const layersSetup = (layersOrder) => {
       layerObj.options?.["bypassDNA"] !== undefined
         ? layerObj.options?.["bypassDNA"]
         : false,
-    layerVariations:
-      layerObj.options?.['layerVariations'] !== undefined
-        ? layerObj.options?.['layerVariations']
-        : "no-variation",
   }));
-  // console.log(layers);
   return layers;
 };
 
@@ -220,30 +215,6 @@ const loadLayerImg = async (_layer) => {
   }
 };
 
-const loadLayerImgVar = (_layer) => {
-  return new Promise((resolve, reject) => {
-    let path = _layer.selectedElement.path;
-    if (_layer.layerVariations != undefined) {
-      console.log(path);
-      path = path.split('#')[0];
-      console.log(path);
-      path = path.concat(_layer.variant.concat('.png'));
-      console.log(path);
-      path = path.replace(_layer.name, _layer.name.concat('/variant'));
-      console.log(path);
-    }
-    console.log('PATH', { path, exists: fs.existsSync(path) });
-    if (debugLogs) console.log('PATH', { path, exists: fs.existsSync(path) });
-    loadImage(`${path}`)
-      .then((image) => {
-        resolve({ layer: _layer, loadedImage: image });
-      })
-      .catch(() => {
-        reject();
-      });
-  });
-};
-
 const addText = (_sig, x, y, size) => {
   ctx.fillStyle = text.color;
   ctx.font = `${text.weight} ${size}pt ${text.family}`;
@@ -283,8 +254,6 @@ const constructLayerToDna = (_dna = "", _layers = []) => {
       blend: layer.blend,
       opacity: layer.opacity,
       selectedElement: selectedElement,
-      // layerVariations: layer.layerVariations,
-      // variant: _dna[index].split('#').pop() != undefined ? _dna[index].split('#').pop() : '',
     };
   });
   return mappedDnaToLayers;
