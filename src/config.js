@@ -2,7 +2,8 @@ const basePath = process.cwd();
 const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 
-const collectionSize = 10000;
+
+const collectionSize = 100;
 const toCreateNow = 100;
 
 const scaleSize = (num) => {
@@ -10,8 +11,18 @@ const scaleSize = (num) => {
   return Math.floor((num / collectionSize) * toCreateNow);
 };
 
+// ********* Advanced weight options *********
+// Note: only one of these options can be marked trued at once. 
+
 // Set this to true if you want to use named rarity instead of numbers. 
-const namedWeight = true;
+const namedWeight = false;
+/* 
+* Set this to true if you want to use EXACT weights. 
+* Note that your weights must add up to the total number
+* you want of that trait.
+*/
+const exactWeight = false;
+
 
 const network = NETWORK.eth;
 
@@ -35,7 +46,7 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: scaleSize(2500),
+    growEditionSizeTo: scaleSize(25),
     layersOrder: [
       { name: "SkeletalBody" },
       { name: "Head"},
@@ -47,7 +58,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: scaleSize(10000),
+    growEditionSizeTo: scaleSize(100),
     layersOrder: [
       { name: "Body" },
       { name: "Head" },
@@ -126,6 +137,8 @@ const preview_gif = {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 * Rarity distribution can be adjusted
 * Keep range [0 - 10,000]
+* Because weight is up to 10,000, percentages can determined up to 
+* two decimal places. ie: 10.15% would be 1015
 * DO NOT change the rarity names unless you know what you're doing in main.js
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 const rarity_config = {
@@ -170,5 +183,6 @@ module.exports = {
   toCreateNow,
   collectionSize,
   namedWeight,
-  importOldDna,
+  layerVariations,
+  exactWeight,
 };
