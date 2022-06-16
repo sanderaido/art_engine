@@ -421,6 +421,11 @@ const createVariation = (_variations) => {
 };
 
 const createDnaExact = (_layers) => {
+  /* @Ricky
+  * Really need to get some validation for totalWeight.
+  * If someone uses a layer folder who's total weight is less
+  * than their layersOrder or collectionSize, generation will fail
+  */
   let randNum = [];
   _layers.forEach((layer) => {
     var totalWeight = 0;

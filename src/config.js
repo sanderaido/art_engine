@@ -2,6 +2,24 @@ const basePath = process.cwd();
 const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 
+/* TODO
+-work in variation functionality
+-Create incompatible layers system.
+-work in rarity calculations
+-option to include rarity in metadata
+- Util to 'bring to front'. This will enable people to move X number of tokens to the first # in the
+collection so they can team Mint or whatever without resorting to minting with tokenId.
+*/
+
+/* DONE
+-work in resumeNum functionality
+-work in toCreateNow functionality
+-rework weight system to simply mark the weight as a rarity name (common, rare, etc.) and have rarity automatic
+-work in misc utils
+- Continue to build on resumeNum and enable a resumted generation? Maybe pull dna from metadata?
+-option to not display none in metadata -- Solution: use removeAttribute
+-rework weight system to allow exact counts to be used as weights. 
+*/
 
 const collectionSize = 100;
 const toCreateNow = 100;
@@ -21,7 +39,7 @@ const namedWeight = false;
 * Note that your weights must add up to the total number
 * you want of that trait.
 */
-const exactWeight = false;
+const exactWeight = true;
 
 
 const network = NETWORK.eth;
@@ -183,6 +201,6 @@ module.exports = {
   toCreateNow,
   collectionSize,
   namedWeight,
-  layerVariations,
+  // layerVariations,
   exactWeight,
 };
