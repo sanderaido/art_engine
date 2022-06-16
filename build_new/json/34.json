@@ -1,36 +1,44 @@
 {
-  "name": "Your Collection #34",
-  "description": "Remember to replace this description",
+  "name": "Funny Bear #34",
+  "description": "Funny Bear Farm is a fun 10,000 NFTs collection on the Solana blockchain. ",
   "image": "ipfs://NewUriToReplace/34.png",
+  "dna": "0647ad90bcd90752cbdd9c954e393e9073a7162f",
+  "edition": 34,
+  "date": 1655348434135,
+  "seller_fee_basis_points": 500,
   "attributes": [
     {
+      "trait_type": "Background",
+      "value": "bg7"
+    },
+    {
       "trait_type": "Body",
-      "value": "SmoothBeta"
+      "value": "White"
     },
     {
-      "trait_type": "Head",
-      "value": "FishHead"
+      "trait_type": "Clothes",
+      "value": "Tuxedo"
     },
     {
-      "trait_type": "Back",
-      "value": "BetaFins"
-    },
-    {
-      "trait_type": "Legs",
-      "value": "LureLegs"
-    },
-    {
-      "trait_type": "Arms",
-      "value": "FinArms"
-    },
-    {
-      "trait_type": "Mouth",
-      "value": "TurtleBeak"
+      "trait_type": "Accessory",
+      "value": "Chain"
     },
     {
       "trait_type": "Eyes",
-      "value": "AnglerEyes"
+      "value": "Evil"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Bubble"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Bandana"
+    },
+    {
+      "trait_type": "Item",
+      "value": "Cube"
     }
   ],
-  "compiler": "HashLips Art Engine"
+  "compiler": "Art compiler"
 }

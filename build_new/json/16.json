@@ -1,37 +1,40 @@
 {
-  "name": "Your Collection #16",
-  "description": "Remember to replace this description",
-  "image": "ipfs://TESTING/16.png",
+  "name": "Funny Bear #16",
+  "description": "Funny Bear Farm is a fun 10,000 NFTs collection on the Solana blockchain. ",
+  "image": "ipfs://NewUriToReplace/16.png",
+  "dna": "1e443cd58d0bb49672c12b767bb4b25f2ce1b2d2",
   "edition": 16,
+  "date": 1655348411274,
+  "seller_fee_basis_points": 500,
   "attributes": [
     {
+      "trait_type": "Background",
+      "value": "bg7"
+    },
+    {
       "trait_type": "Body",
-      "value": "ScalesBeta"
+      "value": "White"
     },
     {
-      "trait_type": "Head",
-      "value": "FishHead"
-    },
-    {
-      "trait_type": "Back",
-      "value": "DorsalFins"
-    },
-    {
-      "trait_type": "Legs",
-      "value": "LobsterLegs"
-    },
-    {
-      "trait_type": "Arms",
-      "value": "BetaArms"
-    },
-    {
-      "trait_type": "Mouth",
-      "value": "AnglerMouth"
+      "trait_type": "Clothes",
+      "value": "T shirt"
     },
     {
       "trait_type": "Eyes",
-      "value": "AnglerEyes"
+      "value": "Springs"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Cry"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Bowler Hat"
+    },
+    {
+      "trait_type": "Item",
+      "value": "Boxing glove"
     }
   ],
-  "compiler": "HashLips Art Engine"
+  "compiler": "Art compiler"
 }

@@ -40,20 +40,7 @@ const HashlipsGiffer = require(`${basePath}/modules/HashlipsGiffer.js`);
 const oldDna = require(`${basePath}/build_old/_oldDna.json`);
 
 let hashlipsGiffer = null;
-
-// const buildSetup = () => {
-//   if (fs.existsSync(buildDir)) {
-//     // fs.rmdirSync(buildDir, { recursive: true });
-//     fs.rm(buildDir, { recursive: true });
-//     // console.log(`${buildDir} deleted`);
-//   }
-//   fs.mkdirSync(buildDir);
-//   fs.mkdirSync(`${buildDir}/json`);
-//   fs.mkdirSync(`${buildDir}/images`);
-//   if (gif.export) {
-//     fs.mkdirSync(`${buildDir}/gifs`);
-//   }
-// };
+let allTraitsCount;
 
 const buildSetup = () => {
   if (!fs.existsSync(buildDir)) {
@@ -463,36 +450,24 @@ const createVariation = (_variations) => {
   return setVariant.join(DNA_DELIMITER);
 };
 
-const traitCount = (_layers) => {
-  let count = new Object();
-  _layers.forEach((layer) => {
-    layer.elements.forEach((element) => {
-      count[element.name] = element.weight;
-    });
-  });
-  // console.log(count);
-  return count;
-};
-
-let allTraitsCount;
-
 const createDnaExact = (_layers) => {
   let randNum = [];
-  // console.log(allTraitsCount);
   _layers.forEach((layer) => {
     var totalWeight = 0;
     layer.elements.forEach((element) => {
-      totalWeight += element.weight;
+      totalWeight += allTraitsCount[element.name];
     });
+    console.log(totalWeight);
     // number between 0 - totalWeight
-    // let random = Math.floor(Math.random() * totalWeight);
+    // We keep the random function here to ensure we don't generate all the same layers back to back.
+    let random = Math.floor(Math.random() * totalWeight);
     for (var i = 0; i < layer.elements.length; i++) {
       // subtract the current weight from the random weight until we reach a sub zero value.
-      // random -= layer.elements[i].weight;
-      // console.log(`Trait: ${layer.elements[i].name}`);
-      // console.log(allTraitsCount[layer.elements[i].name]);
-      if (allTraitsCount[layer.elements[i].name] > 0) {
-        allTraitsCount[layer.elements[i].name]--;
+      let lookup = allTraitsCount[layer.elements[i].name];
+      if (lookup > 0) {
+        random -= allTraitsCount[layer.elements[i].name];
+      }
+      if (random < 0) {
         return randNum.push(
           `${layer.elements[i].id}:${layer.elements[i].filename}${
             layer.bypassDNA ? "?bypassDNA=true" : ""
@@ -501,7 +476,6 @@ const createDnaExact = (_layers) => {
       }
     }
   });
-  // console.log(allTraitsCount);
   return randNum.join(DNA_DELIMITER);
 };
 
@@ -560,7 +534,34 @@ function shuffle(array) {
   return array;
 }
 
+const traitCount = (_layers) => {
+  let count = new Object();
+  _layers.forEach((layer) => {
+    layer.elements.forEach((element) => {
+      count[element.name] = element.weight;
+    });
+  });
+  return count;
+};
+
+const allLayersOrders = () => {
+  let layerList = [];
+  for (let i = 0; i < layerConfigurations.length; i++) {
+    const layers = layersSetup(
+      layerConfigurations[i].layersOrder
+    );
+    
+    layers.forEach((layer) => {
+      return layerList.push(layer);
+    });
+  };
+  return layerList;
+}
+
 const startCreating = async () => {
+  let allLayers = allLayersOrders();
+  allTraitsCount = traitCount(allLayers);
+  console.log(allTraitsCount);
   let layerConfigIndex = 0;
   let editionCount = 1;
   let failedCount = 0;
@@ -582,8 +583,6 @@ const startCreating = async () => {
     const layers = layersSetup(
       layerConfigurations[layerConfigIndex].layersOrder
     );
-    allTraitsCount = traitCount(layers);
-    // console.log(allTraitsCount);
     while (
       editionCount <= layerConfigurations[layerConfigIndex].growEditionSizeTo
     ) {
@@ -602,7 +601,13 @@ const startCreating = async () => {
       */
       if (isDnaUnique(dnaList, newDna)) {
         let results = constructLayerToDna(newDna, layers);
-        console.log(results);
+        // console.log('=================next======================');
+        // console.log(results);
+        results.forEach((layer) => {
+          // console.log(allTraitsCount[layer.selectedElement.name]);
+          allTraitsCount[layer.selectedElement.name]--;
+          // console.log(allTraitsCount[layer.selectedElement.name]);
+        })
         let loadedElements = [];
 
         results.forEach((layer) => {

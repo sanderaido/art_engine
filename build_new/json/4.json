@@ -1,37 +1,44 @@
 {
-  "name": "Your Collection #4",
-  "description": "Remember to replace this description",
-  "image": "ipfs://TESTING/4.png",
+  "name": "Funny Bear #4",
+  "description": "Funny Bear Farm is a fun 10,000 NFTs collection on the Solana blockchain. ",
+  "image": "ipfs://NewUriToReplace/4.png",
+  "dna": "140fe2c9b41de40e77a75e14540bc478d2623357",
   "edition": 4,
+  "date": 1655348395719,
+  "seller_fee_basis_points": 500,
   "attributes": [
     {
-      "trait_type": "SkeletalBody",
-      "value": "SkeletalScalesPointed"
+      "trait_type": "Background",
+      "value": "bg7"
     },
     {
-      "trait_type": "Head",
-      "value": "FishHead"
+      "trait_type": "Body",
+      "value": "Orange"
     },
     {
-      "trait_type": "Back",
-      "value": "DolphinFin"
+      "trait_type": "Clothes",
+      "value": "Leather Jacket"
     },
     {
-      "trait_type": "Legs",
-      "value": "FinLegs"
-    },
-    {
-      "trait_type": "Arms",
-      "value": "FinArms"
-    },
-    {
-      "trait_type": "Mouth",
-      "value": "AnglerMouth"
+      "trait_type": "Accessory",
+      "value": "Earring"
     },
     {
       "trait_type": "Eyes",
-      "value": "SharkEyes"
+      "value": "X"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Sing"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Bandana"
+    },
+    {
+      "trait_type": "Item",
+      "value": "Cube"
     }
   ],
-  "compiler": "HashLips Art Engine"
+  "compiler": "Art compiler"
 }

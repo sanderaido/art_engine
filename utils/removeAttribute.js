@@ -21,8 +21,8 @@ let removeValue = "None" //Enter a value you want to remove here. (ie: "None")
 let removeTraitType = "" //Enter a Trait you want to remove here. (ie: "Head")
 
 data.forEach((item) => {
-  var result=item.attributes.filter(obj=> obj.value !== removeValue); // value removal
-  var result=item.attributes.filter(obj=> obj.trait_type !== removeTraitType); // trait_types removal
+  var resultValue=item.attributes.filter(obj=> obj.value !== removeValue); // value removal
+  var result=resultValue.filter(obj=> obj.trait_type !== removeTraitType); // trait_types removal
   item.attributes = result;
   fs.writeFileSync(`${basePath}/build_new/json/${item.edition}.json`, JSON.stringify(item, null, 2));
 });
