@@ -9,6 +9,7 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 -option to include rarity in metadata
 - Util to 'bring to front'. This will enable people to move X number of tokens to the first # in the
 collection so they can team Mint or whatever without resorting to minting with tokenId.
+- option to add numerical trait/attribute. Like a statblock
 */
 
 /* DONE
@@ -89,7 +90,7 @@ const layerConfigurations = [
   },
 ];
 
-const shuffleLayerConfigurations = true;
+const shuffleLayerConfigurations = false;
 
 const debugLogs = false;
 

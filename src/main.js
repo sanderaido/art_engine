@@ -432,6 +432,7 @@ const createDnaExact = (_layers) => {
     layer.elements.forEach((element) => {
       totalWeight += allTraitsCount[element.name];
     });
+    console.log(totalWeight);
     // number between 0 - totalWeight
     // We keep the random function here to ensure we don't generate all the same layers back to back.
     let random = Math.floor(Math.random() * totalWeight);
@@ -561,9 +562,23 @@ const startCreating = async () => {
     while (
       editionCount <= layerConfigurations[layerConfigIndex].growEditionSizeTo
     ) {
+      // console.log(layerConfigurations[layerConfigIndex].growEditionSizeTo - (editionCount - 1));
       // console.log(layerVariations);
       // let newVariant = createVariation(layerVariations);
+      let currentGrowEditionSizeTo = layerConfigurations[layerConfigIndex].growEditionSizeTo;
+      let currentEditionMod = editionCount - 1;
+      console.log(currentGrowEditionSizeTo - currentEditionMod);
+      /* @Ricky
+      * Need to determine whether we should be bringing in both of these numbers to 
+      * createDnaExact. Think I need to check totalWeight against EITHER number to 
+      * account for layersOrders. That number should equal one or the other. 
 
+      * Thinking in comments. Yes, you need both. You need currentGrowEditionSizeTo - currentEditionMod
+      * to determine layersOrder size, and then you need collectionSize - editionCount for layers
+      * that are present in all/multiple layersOrders. 
+      
+      * Also with using collectionSize, you need to account for scaling, so probably toCreateNow. 
+      */
       // At the moment, we can't have both namedWeight and exactWeight active at once.
       if (exactWeight && namedWeight) {
         throw new Error(`namedWeight and exactWeight can't be used together. Please mark one or both as false in config.js`);
