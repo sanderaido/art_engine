@@ -1,0 +1,39 @@
+{
+  "name": "Your Collection #84",
+  "description": "Remember to replace this description",
+  "image": "ipfs://TESTING/84.png",
+  "dna": "98161a0756690ecc047a70b8e01be68c418a3918",
+  "edition": 84,
+  "date": 1655408515265,
+  "attributes": [
+    {
+      "trait_type": "Body",
+      "value": "ScalesLunate"
+    },
+    {
+      "trait_type": "Head",
+      "value": "FishHead"
+    },
+    {
+      "trait_type": "Back",
+      "value": "DorsalFins"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "FinLegs"
+    },
+    {
+      "trait_type": "Arms",
+      "value": "FinArms"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "AnglerMouth"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "AnglerEyes"
+    }
+  ],
+  "compiler": "HashLips Art Engine - datboi's fork"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Your Collection #46",
+  "description": "Remember to replace this description",
+  "image": "ipfs://TESTING/46.png",
+  "dna": "e04fb7c3f76c9a24e2726a2a8a7919857113be21",
+  "edition": 46,
+  "date": 1655408512587,
+  "attributes": [
+    {
+      "trait_type": "Body",
+      "value": "SmoothRounded"
+    },
+    {
+      "trait_type": "Head",
+      "value": "FishHead"
+    },
+    {
+      "trait_type": "Back",
+      "value": "Blowhole"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "BetaLegs"
+    },
+    {
+      "trait_type": "Arms",
+      "value": "FidlerClaws"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "AnglerMouth"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "AnglerEyes"
+    }
+  ],
+  "compiler": "HashLips Art Engine - datboi's fork"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Your Collection #27",
+  "description": "Remember to replace this description",
+  "image": "ipfs://TESTING/27.png",
+  "dna": "78bc1ed78597dddbfbf4d4445e59944d9c9a5761",
+  "edition": 27,
+  "date": 1655408514672,
+  "attributes": [
+    {
+      "trait_type": "Body",
+      "value": "ScalesRounded"
+    },
+    {
+      "trait_type": "Head",
+      "value": "FishHead"
+    },
+    {
+      "trait_type": "Back",
+      "value": "BetaFins"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "TentacleLegs"
+    },
+    {
+      "trait_type": "Arms",
+      "value": "FidlerClaws"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "BaseMouth"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "SharkEyes"
+    }
+  ],
+  "compiler": "HashLips Art Engine - datboi's fork"
+}

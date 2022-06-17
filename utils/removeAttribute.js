@@ -9,6 +9,8 @@ const fs = require('fs');
 let rawdata = fs.readFileSync(`${basePath}/build/json/_metadata.json`);
 let data = JSON.parse(rawdata);
 
+console.log(typeof(data));
+
 // Create new directory if it doesn't already exist
 const dir = `${basePath}/build_new/json`;
 if (!fs.existsSync(dir)) {
