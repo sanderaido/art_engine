@@ -40,6 +40,7 @@ This is a fork of Hashlip's art engine. It is currently a *Work in Progress* as 
 - [cleanMetadata](#cleanmetadata)
 - [removeAttribute](#removeattribute)
 - [generateOldDna](#generateolddna)
+- [recreateAndSortMetadata](#recreateandsortmetadata)
 
 ### Notes
 
@@ -120,6 +121,15 @@ let removeTraitType = "" //Enter a Trait you want to remove here. (ie: "Head")
 This utility generates a dnaList for import from a previous generation's metadata. As mentioned several times, the better options is typically to regenerate everything; however, this gives the ability to prevent duplicates from being generated based on old information. 
 
 You must place your previously generated _metadata.json file in the build_old folder. 
+
+## recreateAndSortMetadata
+This utility recreates all individual metadata files as well as _metadata.json and orders them numerically. This can be useful if _metadata.json was accidentally deleted from the build folder or if you need each item in _metadata.json to be ordered numerically.
+
+No edits necessary to use this util. 
+
+<br/>
+<br/>
+<br/>
 
 🛠️🛠️ Note again that the engine and *especially* documentation are a work in progress. Both will be improved upon further. 
 
