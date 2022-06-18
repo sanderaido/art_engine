@@ -22,7 +22,7 @@ collection so they can team Mint or whatever without resorting to minting with t
 -rework weight system to allow exact counts to be used as weights. 
 */
 
-const collectionSize = 100;
+const collectionSize = 10000;
 const toCreateNow = 100;
 
 const scaleSize = (num) => {
@@ -65,7 +65,7 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: scaleSize(25),
+    growEditionSizeTo: scaleSize(2500),
     layersOrder: [
       { name: "SkeletalBody" },
       { name: "Head"},
@@ -77,10 +77,22 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: scaleSize(100),
+    growEditionSizeTo: scaleSize(5000),
     layersOrder: [
       { name: "Body" },
-      { name: "Head" },
+      { name: "Head"},
+      { name: "Back" },
+      { name: "Legs" },
+      { name: "Arms" },
+      { name: "Mouth" },
+      { name: "Eyes" },
+    ],
+  },
+  {
+    growEditionSizeTo: scaleSize(10000),
+    layersOrder: [
+      { name: "Body" },
+      // { name: "Head" },
       { name: "Back" },
       { name: "Legs" },
       { name: "Arms" },
