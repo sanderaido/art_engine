@@ -28,6 +28,7 @@ const {
   namedWeight,
   exactWeight,
   importOldDna,
+  layerVariations,
 } = require(`${basePath}/src/config.js`);
 const canvas = createCanvas(format.width, format.height);
 const ctx = canvas.getContext("2d");
@@ -397,13 +398,45 @@ const createDnaNames = (_layers) => {
   return randNum.join(DNA_DELIMITER);
 };
 
-const createDnaExact = (_layers) => {
+const createVariation = (_variations) => {
+  let setVariant = [];
+  _variations.forEach((variant) => {
+    var totalWeight = 0;
+    variant.Weight.forEach((Weight) => {
+      totalWeight += Weight;
+    });
+    // number between 0 - totalWeight
+    let random = Math.floor(Math.random() * totalWeight);
+    for (var i = 0; i < variant.Weight.length; i++) {
+      // subtract the current weight from the random weight until we reach a sub zero value.
+      random -= variant.Weight[i];
+      if (random < 0) {
+        return setVariant.push(
+          `${variant.name}:${variant.variations[i]}`
+        );
+      }
+    }
+  });
+  return setVariant.join(DNA_DELIMITER);
+};
+
+const createDnaExact = (_layers, _remainingInLayersOrder, _currentEdition) => {
   let randNum = [];
+  let layerSizes = allLayerSizes();
   _layers.forEach((layer) => {
     var totalWeight = 0;
+    let expected = layerSizes[layer.name] - _currentEdition;
+    let remaining = toCreateNow - _currentEdition
     layer.elements.forEach((element) => {
       totalWeight += allTraitsCount[element.name];
     });
+
+    // Require totalWeight to match either current remaining layersOrder, overall size for layer, or remaining collectionSize. 
+    if (totalWeight != _remainingInLayersOrder && totalWeight != expected && totalWeight != remaining) {
+      throw new Error(`${layer.name} layer total weight (${totalWeight}) does not match either layersOrder weight (${_remainingInLayersOrder}),
+      overall expected weight from multiple layersOrders (${expected}), or remaining collection size (${remaining})`);
+    };
+
     // number between 0 - totalWeight
     // We keep the random function here to ensure we don't generate all the same layers back to back.
     let random = Math.floor(Math.random() * totalWeight);
@@ -504,6 +537,20 @@ const allLayersOrders = () => {
   return layerList;
 }
 
+const allLayerSizes = () => {
+  let layerList = new Object();
+  for (let i = 0; i < layerConfigurations.length; i++) {
+    const layers = layersSetup(
+      layerConfigurations[i].layersOrder
+    );
+    
+    layers.forEach((layer) => {
+      layerList[layer.name] = layerConfigurations[i].growEditionSizeTo
+    });
+  };
+  return layerList;
+}
+
 const startCreating = async () => {
   if (exactWeight) {
     let allLayers = allLayersOrders();
@@ -533,13 +580,15 @@ const startCreating = async () => {
     while (
       editionCount <= layerConfigurations[layerConfigIndex].growEditionSizeTo
     ) {
-      // At the moment, we can't have both namedWeight and exactWeight active at once.
+
+      let currentEdition = editionCount - 1;
+      let remainingInLayersOrder = layerConfigurations[layerConfigIndex].growEditionSizeTo - currentEdition;
+      
       if (exactWeight && namedWeight) {
         throw new Error(`namedWeight and exactWeight can't be used together. Please mark one or both as false in config.js`);
       }
      
-      let newDna = (exactWeight) ? createDnaExact(layers) : (namedWeight) ? createDnaNames(layers) : createDna(layers);
-      // console.log(newDna);
+      let newDna = (exactWeight) ? createDnaExact(layers, remainingInLayersOrder, currentEdition) : (namedWeight) ? createDnaNames(layers) : createDna(layers);
 
       if (isDnaUnique(dnaList, newDna)) {
         let results = constructLayerToDna(newDna, layers);
