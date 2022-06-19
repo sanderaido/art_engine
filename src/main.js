@@ -28,7 +28,6 @@ const {
   namedWeight,
   exactWeight,
   importOldDna,
-  layerVariations,
 } = require(`${basePath}/src/config.js`);
 const canvas = createCanvas(format.width, format.height);
 const ctx = canvas.getContext("2d");
@@ -398,28 +397,6 @@ const createDnaNames = (_layers) => {
   return randNum.join(DNA_DELIMITER);
 };
 
-const createVariation = (_variations) => {
-  let setVariant = [];
-  _variations.forEach((variant) => {
-    var totalWeight = 0;
-    variant.Weight.forEach((Weight) => {
-      totalWeight += Weight;
-    });
-    // number between 0 - totalWeight
-    let random = Math.floor(Math.random() * totalWeight);
-    for (var i = 0; i < variant.Weight.length; i++) {
-      // subtract the current weight from the random weight until we reach a sub zero value.
-      random -= variant.Weight[i];
-      if (random < 0) {
-        return setVariant.push(
-          `${variant.name}:${variant.variations[i]}`
-        );
-      }
-    }
-  });
-  return setVariant.join(DNA_DELIMITER);
-};
-
 const createDnaExact = (_layers, _remainingInLayersOrder, _currentEdition) => {
   let randNum = [];
   let layerSizes = allLayerSizes();
@@ -431,7 +408,7 @@ const createDnaExact = (_layers, _remainingInLayersOrder, _currentEdition) => {
       totalWeight += allTraitsCount[element.name];
     });
 
-    // Require totalWeight to match either current remaining layersOrder, overall size for layer, or remaining collectionSize. 
+    // Require totalWeight to match either current remaining layersOrder, overall size for multiple layersOrders, or remaining collectionSize. 
     if (totalWeight != _remainingInLayersOrder && totalWeight != expected && totalWeight != remaining) {
       throw new Error(`${layer.name} layer total weight (${totalWeight}) does not match either layersOrder weight (${_remainingInLayersOrder}),
       overall expected weight from multiple layersOrders (${expected}), or remaining collection size (${remaining})`);
