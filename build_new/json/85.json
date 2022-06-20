@@ -2,13 +2,13 @@
   "name": "Your Collection #85",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/85.png",
-  "dna": "938b83ee3158b8b40606dbce75a42e61425c3ff0",
+  "dna": "751301ade5a6a8d6c22fae4f44a98ec3adbd60b1",
   "edition": 85,
-  "date": 1655408510779,
+  "date": 1655737860137,
   "attributes": [
     {
-      "trait_type": "SkeletalBody",
-      "value": "SkeletalScalesPointed"
+      "trait_type": "Body",
+      "value": "SmoothForked"
     },
     {
       "trait_type": "Head",
@@ -16,15 +16,15 @@
     },
     {
       "trait_type": "Back",
-      "value": "BetaFins"
+      "value": "DorsalFins"
     },
     {
       "trait_type": "Legs",
-      "value": "BetaLegs"
+      "value": "TentacleLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "FidlerClaws"
+      "value": "BetaArms"
     },
     {
       "trait_type": "Mouth",

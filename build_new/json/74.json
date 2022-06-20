@@ -2,13 +2,13 @@
   "name": "Your Collection #74",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/74.png",
-  "dna": "b550435dff8333d12f4db6d87edcb64fa5cdb58b",
+  "dna": "e3de7d198e78dfc7e1c403b90080d2f709f4bbdf",
   "edition": 74,
-  "date": 1655408511407,
+  "date": 1655737858830,
   "attributes": [
     {
-      "trait_type": "SkeletalBody",
-      "value": "SkeletalScalesRounded"
+      "trait_type": "Body",
+      "value": "ScalesBeta"
     },
     {
       "trait_type": "Head",
@@ -16,19 +16,19 @@
     },
     {
       "trait_type": "Back",
-      "value": "StrapOnShark"
+      "value": "Blowhole"
     },
     {
       "trait_type": "Legs",
-      "value": "BetaLegs"
+      "value": "FinLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "LureArms"
+      "value": "BetaArms"
     },
     {
       "trait_type": "Mouth",
-      "value": "AnglerMouth"
+      "value": "BaseMouth"
     },
     {
       "trait_type": "Eyes",

@@ -2,13 +2,13 @@
   "name": "Your Collection #97",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/97.png",
-  "dna": "01f00bb58f791d369bbd8c8269569f42608b4f6d",
+  "dna": "e64e35b156cdbb5fa447b50402cbc03bf4c38553",
   "edition": 97,
-  "date": 1655408515742,
+  "date": 1655737861668,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesRounded"
+      "value": "SmoothTruncate"
     },
     {
       "trait_type": "Head",
@@ -16,11 +16,11 @@
     },
     {
       "trait_type": "Back",
-      "value": "SharkFin"
+      "value": "Blowhole"
     },
     {
       "trait_type": "Legs",
-      "value": "FinLegs"
+      "value": "LobsterLegs"
     },
     {
       "trait_type": "Arms",
@@ -28,7 +28,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "TurtleBeak"
+      "value": "AnglerMouth"
     },
     {
       "trait_type": "Eyes",

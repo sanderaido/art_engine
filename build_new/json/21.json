@@ -2,29 +2,25 @@
   "name": "Your Collection #21",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/21.png",
-  "dna": "92c9b69fc889ff7355e57c28606a9409efd4a3f7",
+  "dna": "4890f2f90efbee62a570df65063d27b78bd9cdfa",
   "edition": 21,
-  "date": 1655408512242,
+  "date": 1655737850213,
   "attributes": [
-    {
-      "trait_type": "Body",
-      "value": "ScalesForked"
-    },
     {
       "trait_type": "Head",
       "value": "FishHead"
     },
     {
       "trait_type": "Back",
-      "value": "StrapOnShark"
+      "value": "SharkFin"
     },
     {
       "trait_type": "Legs",
-      "value": "LobsterLegs"
+      "value": "BetaLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "TurtleArms"
+      "value": "BetaArms"
     },
     {
       "trait_type": "Mouth",

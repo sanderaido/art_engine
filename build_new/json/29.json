@@ -2,13 +2,13 @@
   "name": "Your Collection #29",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/29.png",
-  "dna": "82e4541f3ebddc0decca049f16e267f126edc29e",
+  "dna": "2228f2cf3c8046fc71b13391fa3ca8867c929235",
   "edition": 29,
-  "date": 1655408508743,
+  "date": 1655737851606,
   "attributes": [
     {
-      "trait_type": "SkeletalBody",
-      "value": "SkeletalScalesBeta"
+      "trait_type": "Body",
+      "value": "SmoothLunate"
     },
     {
       "trait_type": "Head",
@@ -16,19 +16,19 @@
     },
     {
       "trait_type": "Back",
-      "value": "BetaFins"
+      "value": "Blowhole"
     },
     {
       "trait_type": "Legs",
-      "value": "FinLegs"
+      "value": "LobsterLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "FinArms"
+      "value": "TentacleArms"
     },
     {
       "trait_type": "Mouth",
-      "value": "AnglerMouth"
+      "value": "BaseMouth"
     },
     {
       "trait_type": "Eyes",

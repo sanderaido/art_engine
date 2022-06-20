@@ -2,13 +2,13 @@
   "name": "Your Collection #71",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/71.png",
-  "dna": "de4b8e30f5f2e8d3b8466c896a52ded4a7de8b93",
+  "dna": "a8f3c15317389eef6e621381c68444a439493ee2",
   "edition": 71,
-  "date": 1655408513180,
+  "date": 1655737858476,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesLunate"
+      "value": "ScalesForked"
     },
     {
       "trait_type": "Head",
@@ -16,11 +16,11 @@
     },
     {
       "trait_type": "Back",
-      "value": "StrapOnShark"
+      "value": "BetaFins"
     },
     {
       "trait_type": "Legs",
-      "value": "FinLegs"
+      "value": "BetaLegs"
     },
     {
       "trait_type": "Arms",
@@ -28,7 +28,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "AnglerMouth"
+      "value": "BaseMouth"
     },
     {
       "trait_type": "Eyes",

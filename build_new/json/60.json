@@ -2,13 +2,13 @@
   "name": "Your Collection #60",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/60.png",
-  "dna": "5b7a93d8a2a1348fb7a781a3d16986cb7ddefa66",
+  "dna": "5e79917c4e5eeb6592e3bdacee756aa945a93abe",
   "edition": 60,
-  "date": 1655408520056,
+  "date": 1655737856651,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesBeta"
+      "value": "ScalesPointed"
     },
     {
       "trait_type": "Head",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Arms",
-      "value": "FidlerClaws"
+      "value": "FinArms"
     },
     {
       "trait_type": "Mouth",

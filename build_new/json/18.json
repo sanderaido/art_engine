@@ -2,14 +2,10 @@
   "name": "Your Collection #18",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/18.png",
-  "dna": "9542fa4eb5fbdd2ee262fafb6f09244accdfd2f9",
+  "dna": "b24e52949ee00e8500551bf2dde401934b8f6b84",
   "edition": 18,
-  "date": 1655408513075,
+  "date": 1655737849703,
   "attributes": [
-    {
-      "trait_type": "Body",
-      "value": "SmoothRounded"
-    },
     {
       "trait_type": "Head",
       "value": "FishHead"
@@ -32,7 +28,7 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "LobsterEye"
+      "value": "AnglerEyes"
     }
   ],
   "compiler": "HashLips Art Engine - datboi's fork"

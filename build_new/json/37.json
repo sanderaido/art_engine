@@ -2,13 +2,13 @@
   "name": "Your Collection #37",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/37.png",
-  "dna": "ceb11418ef9ad7da7e35f17cfe9233c51fc7ec03",
+  "dna": "83988be9541c2764f43680afc1c776c36c21cd80",
   "edition": 37,
-  "date": 1655408518908,
+  "date": 1655737852721,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesPointed"
+      "value": "ScalesBeta"
     },
     {
       "trait_type": "Head",
@@ -16,19 +16,19 @@
     },
     {
       "trait_type": "Back",
-      "value": "DolphinFin"
+      "value": "Blowhole"
     },
     {
       "trait_type": "Legs",
-      "value": "BetaLegs"
+      "value": "LureLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "BetaArms"
+      "value": "NemoFins"
     },
     {
       "trait_type": "Mouth",
-      "value": "CatfishMouth"
+      "value": "AnglerMouth"
     },
     {
       "trait_type": "Eyes",

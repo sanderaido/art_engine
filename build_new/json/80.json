@@ -2,13 +2,13 @@
   "name": "Your Collection #80",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/80.png",
-  "dna": "7c7f52ba8faef06fcd71103a5e7f38c17b1d5f04",
+  "dna": "b782e0ea53140d17fc2eba66e01a5ce24e304836",
   "edition": 80,
-  "date": 1655408510538,
+  "date": 1655737859553,
   "attributes": [
     {
-      "trait_type": "SkeletalBody",
-      "value": "SkeletalScalesTruncate"
+      "trait_type": "Body",
+      "value": "ScalesLunate"
     },
     {
       "trait_type": "Head",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Arms",
-      "value": "BetaArms"
+      "value": "TentacleArms"
     },
     {
       "trait_type": "Mouth",
@@ -32,7 +32,7 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "AnglerEyes"
+      "value": "LobsterEye"
     }
   ],
   "compiler": "HashLips Art Engine - datboi's fork"

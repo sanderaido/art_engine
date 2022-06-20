@@ -2,33 +2,29 @@
   "name": "Your Collection #10",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/10.png",
-  "dna": "0e3962db0e25366f2f4908345ee2557dc53888fa",
+  "dna": "a94a300a9ac2c4f09836ea355553e1703073d0ad",
   "edition": 10,
-  "date": 1655408512964,
+  "date": 1655737848389,
   "attributes": [
-    {
-      "trait_type": "Body",
-      "value": "ScalesLunate"
-    },
     {
       "trait_type": "Head",
       "value": "FishHead"
     },
     {
       "trait_type": "Back",
-      "value": "DorsalFins"
+      "value": "BetaFins"
     },
     {
       "trait_type": "Legs",
-      "value": "BetaLegs"
+      "value": "LobsterLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "FinArms"
+      "value": "LureArms"
     },
     {
       "trait_type": "Mouth",
-      "value": "AnglerMouth"
+      "value": "BaseMouth"
     },
     {
       "trait_type": "Eyes",

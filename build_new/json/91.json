@@ -2,13 +2,13 @@
   "name": "Your Collection #91",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/91.png",
-  "dna": "88276a5e3701f960791ecb312229333755dfce9e",
+  "dna": "b29105627fd5312f96c14021ba3a3e7bfa771431",
   "edition": 91,
-  "date": 1655408514190,
+  "date": 1655737860855,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesLunate"
+      "value": "ScalesBeta"
     },
     {
       "trait_type": "Head",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Legs",
-      "value": "LobsterLegs"
+      "value": "FinLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "FinArms"
+      "value": "FidlerClaws"
     },
     {
       "trait_type": "Mouth",

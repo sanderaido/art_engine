@@ -2,9 +2,9 @@
   "name": "Your Collection #70",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/70.png",
-  "dna": "34b956386286057620303e4a902b9a66f71a46cd",
+  "dna": "a6e7b7b1d132e354f962483355b5a6c05cd72341",
   "edition": 70,
-  "date": 1655408520524,
+  "date": 1655737858358,
   "attributes": [
     {
       "trait_type": "Body",
@@ -16,11 +16,11 @@
     },
     {
       "trait_type": "Back",
-      "value": "BetaFins"
+      "value": "Blowhole"
     },
     {
       "trait_type": "Legs",
-      "value": "FinLegs"
+      "value": "BetaLegs"
     },
     {
       "trait_type": "Arms",
@@ -28,7 +28,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "SwordfishMouth"
+      "value": "BaseMouth"
     },
     {
       "trait_type": "Eyes",

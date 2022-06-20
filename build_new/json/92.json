@@ -2,13 +2,13 @@
   "name": "Your Collection #92",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/92.png",
-  "dna": "9bd69b1ffa86c960f74202d33dc59cf4e40daf5c",
+  "dna": "f859203d14d641345824eab2ba0bb48c9b31fa5a",
   "edition": 92,
-  "date": 1655408520298,
+  "date": 1655737860972,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "SmoothForked"
+      "value": "ScalesBeta"
     },
     {
       "trait_type": "Head",
@@ -16,7 +16,7 @@
     },
     {
       "trait_type": "Back",
-      "value": "DolphinFin"
+      "value": "BetaFins"
     },
     {
       "trait_type": "Legs",
@@ -24,11 +24,11 @@
     },
     {
       "trait_type": "Arms",
-      "value": "FidlerClaws"
+      "value": "FinArms"
     },
     {
       "trait_type": "Mouth",
-      "value": "BaseMouth"
+      "value": "AnglerMouth"
     },
     {
       "trait_type": "Eyes",

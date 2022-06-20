@@ -2,13 +2,13 @@
   "name": "Your Collection #48",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/48.png",
-  "dna": "2568f77adaa3a10abfbbc386cfcafdecfff04111",
+  "dna": "0419479d321f6060d233ffbbe182abdc39ffb93e",
   "edition": 48,
-  "date": 1655408510426,
+  "date": 1655737854285,
   "attributes": [
     {
-      "trait_type": "SkeletalBody",
-      "value": "SkeletalSmoothForked"
+      "trait_type": "Body",
+      "value": "SmoothBeta"
     },
     {
       "trait_type": "Head",
@@ -16,7 +16,7 @@
     },
     {
       "trait_type": "Back",
-      "value": "DorsalFins"
+      "value": "BetaFins"
     },
     {
       "trait_type": "Legs",
@@ -32,7 +32,7 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "AnglerEyes"
+      "value": "TurtleEyes"
     }
   ],
   "compiler": "HashLips Art Engine - datboi's fork"

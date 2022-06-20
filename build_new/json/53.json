@@ -2,13 +2,13 @@
   "name": "Your Collection #53",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/53.png",
-  "dna": "12f63f4e445554f0e85f36422f37cb581474f589",
+  "dna": "90966662dc0f8f9b5b45bd64b54ddf61a99eae6d",
   "edition": 53,
-  "date": 1655408509570,
+  "date": 1655737855198,
   "attributes": [
     {
-      "trait_type": "SkeletalBody",
-      "value": "SkeletalScalesLunate"
+      "trait_type": "Body",
+      "value": "ScalesPointed"
     },
     {
       "trait_type": "Head",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Legs",
-      "value": "LobsterLegs"
+      "value": "TentacleLegs"
     },
     {
       "trait_type": "Arms",
@@ -28,7 +28,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "BaseMouth"
+      "value": "AnglerMouth"
     },
     {
       "trait_type": "Eyes",

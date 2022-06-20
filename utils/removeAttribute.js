@@ -19,12 +19,13 @@ if (!fs.existsSync(dir)) {
 	});
 }
 
-let removeValue = "None" //Enter a value you want to remove here. (ie: "None")
-let removeTraitType = "" //Enter a Trait you want to remove here. (ie: "Head")
+let removeValue = "" //Enter a value you want to remove here. (ie: "None")
+let removeTraitType = "Skeletal" //Enter a Trait you want to remove here. (ie: "Head")
 
 data.forEach((item) => {
   var resultValue=item.attributes.filter(obj=> obj.value !== removeValue); // value removal
   var result=resultValue.filter(obj=> obj.trait_type !== removeTraitType); // trait_types removal
+  // var result=resultValue.filter(obj=> (!obj.trait_type.includes(removeTraitType))); // trait_types contains removal
   item.attributes = result;
   fs.writeFileSync(`${basePath}/build_new/json/${item.edition}.json`, JSON.stringify(item, null, 2));
 });

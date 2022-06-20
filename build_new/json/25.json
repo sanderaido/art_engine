@@ -2,21 +2,17 @@
   "name": "Your Collection #25",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/25.png",
-  "dna": "0f7bd10eb050628511da2826464d3fa4dd64183b",
+  "dna": "02eda2a48bb7ae5e1851a4e222299f1dfa3bcd18",
   "edition": 25,
-  "date": 1655408517317,
+  "date": 1655737851116,
   "attributes": [
-    {
-      "trait_type": "Body",
-      "value": "SmoothBeta"
-    },
     {
       "trait_type": "Head",
       "value": "FishHead"
     },
     {
       "trait_type": "Back",
-      "value": "BetaFins"
+      "value": "Blowhole"
     },
     {
       "trait_type": "Legs",
@@ -24,7 +20,7 @@
     },
     {
       "trait_type": "Arms",
-      "value": "BetaArms"
+      "value": "FidlerClaws"
     },
     {
       "trait_type": "Mouth",

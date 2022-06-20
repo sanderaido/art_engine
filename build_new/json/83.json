@@ -2,13 +2,13 @@
   "name": "Your Collection #83",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/83.png",
-  "dna": "c20e1457bdae3625ddd8a10ea11fd03bb36d235d",
+  "dna": "6a2813bc4e94a4c2543b7963bd2f42271be60782",
   "edition": 83,
-  "date": 1655408519022,
+  "date": 1655737859905,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesLunate"
+      "value": "SmoothPointed"
     },
     {
       "trait_type": "Head",
@@ -16,19 +16,19 @@
     },
     {
       "trait_type": "Back",
-      "value": "DolphinFin"
+      "value": "Blowhole"
     },
     {
       "trait_type": "Legs",
-      "value": "BetaLegs"
+      "value": "FinLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "FinArms"
+      "value": "BetaArms"
     },
     {
       "trait_type": "Mouth",
-      "value": "CatfishMouth"
+      "value": "TurtleBeak"
     },
     {
       "trait_type": "Eyes",
