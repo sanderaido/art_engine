@@ -5,10 +5,9 @@ This is a fork of Hashlip's art engine. It is currently a *Work in Progress* as 
 <br/>
 <br/>
 
-## You can find me on twitter or Discord,
+## Relevant links / socials,
 
-- Twitter: https://twitter.com/WTFdatboi1337
-- Discord datboi#1337
+[datboi](https://linktr.ee/datboi1337)
 
 <br/>
 <br/>
