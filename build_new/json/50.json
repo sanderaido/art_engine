@@ -2,9 +2,9 @@
   "name": "Your Collection #50",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/50.png",
-  "dna": "e20cbc9b639ad702ba405046466e44377fa476c0",
+  "dna": "d889d44bb81fb7395be9087953fbf2d95d0f3a1a",
   "edition": 50,
-  "date": 1655737854621,
+  "date": 1655928767581,
   "attributes": [
     {
       "trait_type": "Body",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Legs",
-      "value": "LobsterLegs"
+      "value": "FinLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "BetaArms"
+      "value": "NemoFins"
     },
     {
       "trait_type": "Mouth",

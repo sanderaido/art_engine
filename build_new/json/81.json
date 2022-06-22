@@ -2,9 +2,9 @@
   "name": "Your Collection #81",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/81.png",
-  "dna": "5ee8c575abc015154eb4ab1e78b8a23822f53a85",
+  "dna": "7f4f2af3f1ca13d616d4a0db727db0f98130ee25",
   "edition": 81,
-  "date": 1655737859670,
+  "date": 1655928772199,
   "attributes": [
     {
       "trait_type": "Body",
@@ -16,7 +16,7 @@
     },
     {
       "trait_type": "Back",
-      "value": "SharkFin"
+      "value": "BetaFins"
     },
     {
       "trait_type": "Legs",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Arms",
-      "value": "FinArms"
+      "value": "FidlerClaws"
     },
     {
       "trait_type": "Mouth",

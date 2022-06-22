@@ -2,13 +2,13 @@
   "name": "Your Collection #78",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/78.png",
-  "dna": "495aad31d92ee23694b99bdddda4df8e220cb869",
+  "dna": "d839690b745800694c511667d42f3f82a4be9d49",
   "edition": 78,
-  "date": 1655737859297,
+  "date": 1655928771693,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesRounded"
+      "value": "ScalesLunate"
     },
     {
       "trait_type": "Head",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Legs",
-      "value": "FinLegs"
+      "value": "BetaLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "FidlerClaws"
+      "value": "BetaArms"
     },
     {
       "trait_type": "Mouth",

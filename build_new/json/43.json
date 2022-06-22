@@ -2,13 +2,13 @@
   "name": "Your Collection #43",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/43.png",
-  "dna": "80debcd2bce5665967c547fa6c45256a5b5e6e19",
+  "dna": "398f00be68dcdb8da04c351a1ad00e09cb11ba52",
   "edition": 43,
-  "date": 1655737853643,
+  "date": 1655928766448,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesPointed"
+      "value": "ScalesTruncate"
     },
     {
       "trait_type": "Head",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Legs",
-      "value": "BetaLegs"
+      "value": "FinLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "FidlerClaws"
+      "value": "FinArms"
     },
     {
       "trait_type": "Mouth",

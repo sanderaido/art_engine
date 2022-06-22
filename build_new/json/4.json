@@ -2,17 +2,21 @@
   "name": "Your Collection #4",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/4.png",
-  "dna": "b6de0fc3cd79895f63b26436ca15013c7a3ec457",
+  "dna": "704f25cd90573a1b04d0b7931657485c62f567bd",
   "edition": 4,
-  "date": 1655737847415,
+  "date": 1655928760397,
   "attributes": [
+    {
+      "trait_type": "SkeletalBody",
+      "value": "SkeletalScalesForked"
+    },
     {
       "trait_type": "Head",
       "value": "FishHead"
     },
     {
       "trait_type": "Back",
-      "value": "DorsalFins"
+      "value": "Blowhole"
     },
     {
       "trait_type": "Legs",
@@ -24,7 +28,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "CatfishMouth"
+      "value": "BaseMouth"
     },
     {
       "trait_type": "Eyes",

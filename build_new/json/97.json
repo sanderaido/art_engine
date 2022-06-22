@@ -2,13 +2,13 @@
   "name": "Your Collection #97",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/97.png",
-  "dna": "e64e35b156cdbb5fa447b50402cbc03bf4c38553",
+  "dna": "dfb6c076dfe4d269e024be035b578c06bce165c3",
   "edition": 97,
-  "date": 1655737861668,
+  "date": 1655928774851,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "SmoothTruncate"
+      "value": "SmoothForked"
     },
     {
       "trait_type": "Head",
@@ -20,15 +20,15 @@
     },
     {
       "trait_type": "Legs",
-      "value": "LobsterLegs"
+      "value": "BetaLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "TentacleArms"
+      "value": "FidlerClaws"
     },
     {
       "trait_type": "Mouth",
-      "value": "AnglerMouth"
+      "value": "SwordfishMouth"
     },
     {
       "trait_type": "Eyes",

@@ -10,6 +10,9 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 - Util to 'bring to front'. This will enable people to move X number of tokens to the first # in the
 collection so they can team Mint or whatever without resorting to minting with tokenId.
 - option to add numerical trait/attribute. Like a statblock
+- Still want an option to generate an exact number of a trait when not using exact weights. Maybe a 
+different rarityDelimiter? Like if you define a new variable as $, then when #weight, it generates normally,
+but when you have $weight, it generated that number exactly?
 */
 
 /* DONE
@@ -92,7 +95,7 @@ const layerConfigurations = [
     growEditionSizeTo: scaleSize(10000),
     layersOrder: [
       { name: "Body" },
-      // { name: "Head" },
+      { name: "Head" },
       { name: "Back" },
       { name: "Legs" },
       { name: "Arms" },

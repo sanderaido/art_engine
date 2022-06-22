@@ -2,25 +2,29 @@
   "name": "Your Collection #11",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/11.png",
-  "dna": "8c71430fdc248b9c57b37fb311455073ac829ff9",
+  "dna": "0371ebc0464342530dc03910c1f385795bcb68aa",
   "edition": 11,
-  "date": 1655737848542,
+  "date": 1655928761624,
   "attributes": [
+    {
+      "trait_type": "SkeletalBody",
+      "value": "SkeletalScalesPointed"
+    },
     {
       "trait_type": "Head",
       "value": "FishHead"
     },
     {
       "trait_type": "Back",
-      "value": "DorsalFins"
+      "value": "DolphinFin"
     },
     {
       "trait_type": "Legs",
-      "value": "FinLegs"
+      "value": "BetaLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "FinArms"
+      "value": "BetaArms"
     },
     {
       "trait_type": "Mouth",

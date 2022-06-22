@@ -2,13 +2,13 @@
   "name": "Your Collection #88",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/88.png",
-  "dna": "a5a5553257b344e8fc174ffe23370e4f1c209dde",
+  "dna": "f601905d91908ac5bc7a1fafc0a22b6982a2eb47",
   "edition": 88,
-  "date": 1655737860504,
+  "date": 1655928773322,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesTruncate"
+      "value": "ScalesLunate"
     },
     {
       "trait_type": "Head",
@@ -16,15 +16,15 @@
     },
     {
       "trait_type": "Back",
-      "value": "StrapOnShark"
+      "value": "Blowhole"
     },
     {
       "trait_type": "Legs",
-      "value": "TurtleLegs"
+      "value": "LobsterLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "FinArms"
+      "value": "FidlerClaws"
     },
     {
       "trait_type": "Mouth",

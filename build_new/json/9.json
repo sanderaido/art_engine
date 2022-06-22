@@ -2,10 +2,14 @@
   "name": "Your Collection #9",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/9.png",
-  "dna": "df57b89666d8775415ec6e5646d0fa69f3ac5b20",
+  "dna": "3641948895fa312ec670371fe6fec710f99b6317",
   "edition": 9,
-  "date": 1655737848218,
+  "date": 1655928761283,
   "attributes": [
+    {
+      "trait_type": "SkeletalBody",
+      "value": "SkeletalSmoothBeta"
+    },
     {
       "trait_type": "Head",
       "value": "FishHead"
@@ -20,7 +24,7 @@
     },
     {
       "trait_type": "Arms",
-      "value": "FinArms"
+      "value": "FidlerClaws"
     },
     {
       "trait_type": "Mouth",

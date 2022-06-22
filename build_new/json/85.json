@@ -2,13 +2,13 @@
   "name": "Your Collection #85",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/85.png",
-  "dna": "751301ade5a6a8d6c22fae4f44a98ec3adbd60b1",
+  "dna": "81416646579f24ea51a25fc75dcae045d224df6f",
   "edition": 85,
-  "date": 1655737860137,
+  "date": 1655928772811,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "SmoothForked"
+      "value": "ScalesLunate"
     },
     {
       "trait_type": "Head",
@@ -16,11 +16,11 @@
     },
     {
       "trait_type": "Back",
-      "value": "DorsalFins"
+      "value": "Blowhole"
     },
     {
       "trait_type": "Legs",
-      "value": "TentacleLegs"
+      "value": "BetaLegs"
     },
     {
       "trait_type": "Arms",

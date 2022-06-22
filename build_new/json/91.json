@@ -2,9 +2,9 @@
   "name": "Your Collection #91",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/91.png",
-  "dna": "b29105627fd5312f96c14021ba3a3e7bfa771431",
+  "dna": "70fe2c650f4cd23e5ff931d70e6efb11cb614ffc",
   "edition": 91,
-  "date": 1655737860855,
+  "date": 1655928773858,
   "attributes": [
     {
       "trait_type": "Body",
@@ -16,15 +16,15 @@
     },
     {
       "trait_type": "Back",
-      "value": "DolphinFin"
+      "value": "Blowhole"
     },
     {
       "trait_type": "Legs",
-      "value": "FinLegs"
+      "value": "BetaLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "FidlerClaws"
+      "value": "BetaArms"
     },
     {
       "trait_type": "Mouth",

@@ -2,13 +2,13 @@
   "name": "Your Collection #69",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/69.png",
-  "dna": "bd76c543ecfb86efd2c0ee7689d41cbd4505618e",
+  "dna": "cf57080dfb581af091196527d26218f61dde9114",
   "edition": 69,
-  "date": 1655737858242,
+  "date": 1655928770413,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesRounded"
+      "value": "SmoothBeta"
     },
     {
       "trait_type": "Head",
@@ -16,19 +16,19 @@
     },
     {
       "trait_type": "Back",
-      "value": "Blowhole"
+      "value": "TurtleShell"
     },
     {
       "trait_type": "Legs",
-      "value": "LureLegs"
+      "value": "BetaLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "FinArms"
+      "value": "BetaArms"
     },
     {
       "trait_type": "Mouth",
-      "value": "AnglerMouth"
+      "value": "BaseMouth"
     },
     {
       "trait_type": "Eyes",

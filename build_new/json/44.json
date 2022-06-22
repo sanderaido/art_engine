@@ -2,13 +2,13 @@
   "name": "Your Collection #44",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/44.png",
-  "dna": "985d9c1c84917be3c01f9c642fdae7515b4725f9",
+  "dna": "2cdd5b94d53bb4757ab4008026722ff8ddce808e",
   "edition": 44,
-  "date": 1655737853780,
+  "date": 1655928766572,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesLunate"
+      "value": "ScalesBeta"
     },
     {
       "trait_type": "Head",
@@ -16,19 +16,19 @@
     },
     {
       "trait_type": "Back",
-      "value": "DolphinFin"
+      "value": "Blowhole"
     },
     {
       "trait_type": "Legs",
-      "value": "FinLegs"
+      "value": "BetaLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "FinArms"
+      "value": "FidlerClaws"
     },
     {
       "trait_type": "Mouth",
-      "value": "AnglerMouth"
+      "value": "BaseMouth"
     },
     {
       "trait_type": "Eyes",

@@ -2,13 +2,13 @@
   "name": "Your Collection #47",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/47.png",
-  "dna": "ae48ae9d408314062b8593eb85b55d61a2547deb",
+  "dna": "47dd387bc979d3fc8f11e82714aa444f4e41c0be",
   "edition": 47,
-  "date": 1655737854157,
+  "date": 1655928767073,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesForked"
+      "value": "ScalesRounded"
     },
     {
       "trait_type": "Head",
@@ -20,11 +20,11 @@
     },
     {
       "trait_type": "Legs",
-      "value": "BetaLegs"
+      "value": "TentacleLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "FinArms"
+      "value": "LureArms"
     },
     {
       "trait_type": "Mouth",

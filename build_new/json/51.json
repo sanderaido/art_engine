@@ -2,13 +2,13 @@
   "name": "Your Collection #51",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/51.png",
-  "dna": "83ee99fe14e295a2dafcabd51d8f6cbac465552c",
+  "dna": "4085f47816b77bab834cff6b4cbacae9dd272075",
   "edition": 51,
-  "date": 1655737854818,
+  "date": 1655928767735,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesBeta"
+      "value": "SmoothRounded"
     },
     {
       "trait_type": "Head",
@@ -16,19 +16,19 @@
     },
     {
       "trait_type": "Back",
-      "value": "Blowhole"
+      "value": "DolphinFin"
     },
     {
       "trait_type": "Legs",
-      "value": "BetaLegs"
+      "value": "FinLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "TurtleArms"
+      "value": "FinArms"
     },
     {
       "trait_type": "Mouth",
-      "value": "BaseMouth"
+      "value": "AnglerMouth"
     },
     {
       "trait_type": "Eyes",
