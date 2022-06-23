@@ -2,13 +2,13 @@
   "name": "Your Collection #100",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/100.png",
-  "dna": "50b2fa554f5e8373506c908e201e17165099a6da",
+  "dna": "596fa87a3d3f65f0a19caa58955ede13a54c973e",
   "edition": 100,
-  "date": 1655928775327,
+  "date": 1655952017190,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesBeta"
+      "value": "ScalesRounded"
     },
     {
       "trait_type": "Head",
@@ -16,7 +16,7 @@
     },
     {
       "trait_type": "Back",
-      "value": "BetaFins"
+      "value": "Blowhole"
     },
     {
       "trait_type": "Legs",
@@ -24,11 +24,11 @@
     },
     {
       "trait_type": "Arms",
-      "value": "TentacleArms"
+      "value": "FidlerClaws"
     },
     {
       "trait_type": "Mouth",
-      "value": "BaseMouth"
+      "value": "AnglerMouth"
     },
     {
       "trait_type": "Eyes",

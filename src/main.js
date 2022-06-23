@@ -131,6 +131,7 @@ const layersSetup = (layersOrder) => {
       layerObj.options?.["bypassDNA"] !== undefined
         ? layerObj.options?.["bypassDNA"]
         : false,
+    layerVariations: layerObj['layerVariations'],
   }));
   return layers;
 };
@@ -204,15 +205,39 @@ const addAttributes = (_element) => {
   });
 };
 
-const loadLayerImg = async (_layer) => {
-  try {
-    return new Promise(async (resolve) => {
-      const image = await loadImage(`${_layer.selectedElement.path}`);
-      resolve({ layer: _layer, loadedImage: image });
-    });
-  } catch (error) {
-    console.error("Error loading image:", error);
-  }
+// const loadLayerImg = async (_layer) => {
+//   try {
+//     return new Promise(async (resolve) => {
+//       const image = await loadImage(`${_layer.selectedElement.path}`);
+//       resolve({ layer: _layer, loadedImage: image });
+//     });
+//   } catch (error) {
+//     console.error("Error loading image:", error);
+//   }
+// };
+
+const loadLayerImg = (_layer) => {
+  return new Promise((resolve, reject) => {
+    let path = _layer.selectedElement.path;
+    if (_layer.layerVariations != undefined) {
+      path = path.split('#')[0];
+      // console.log(`Path # 1: ${path}`);
+      // console.log(_layer.variant);
+      path = path.concat(_layer.variant.concat('.png'));
+      // console.log(_layer.variant);
+      // console.log(`Path # 2: ${path}`);
+      path = path.replace(_layer.name, _layer.name.concat('-variant'));
+      // console.log(`Path # 3: ${path}`);
+    }
+    if (debugLogs) console.log('PATH', { path, exists: fs.existsSync(path) });
+    loadImage(`${path}`)
+      .then((image) => {
+        resolve({ layer: _layer, loadedImage: image });
+      })
+      .catch(() => {
+        reject();
+      });
+  });
 };
 
 const addText = (_sig, x, y, size) => {
@@ -249,11 +274,17 @@ const constructLayerToDna = (_dna = "", _layers = []) => {
     let selectedElement = layer.elements.find(
       (e) => e.id == cleanDna(_dna.split(DNA_DELIMITER)[index])
     );
+    let variant = layer.layerVariations != undefined ? (_dna.split('&').pop()).split(DNA_DELIMITER).shift() : '';
+    // console.log(`variant def ||||||||||||| ${variant}`);
     return {
       name: layer.name,
       blend: layer.blend,
       opacity: layer.opacity,
       selectedElement: selectedElement,
+      layerVariations: layer.layerVariations,
+      variant: layer.layerVariations != undefined ? (_dna.split('&').pop()).split(DNA_DELIMITER).shift() : '',
+      // variant: layer.layerVariations != undefined ? layer.variant : '',
+      // variant: layer.variant,
     };
   });
   return mappedDnaToLayers;
@@ -387,37 +418,28 @@ const createDnaNames = (_layers) => {
       // subtract the current weight from the random weight until we reach a sub zero value.
       random -= rarityCount[newWeight];
       if (random < 0) {
-        return randNum.push(
-          `${layer.elements[i].id}:${layer.elements[i].filename}${
-            layer.bypassDNA ? "?bypassDNA=true" : ""
-          }`
-        );
+        if(_layers.layerVariations != undefined) {
+          return randNum.push(
+            `${layer.elements[i].id}:${layer.elements[i].filename}# ${_variant}${
+              layer.bypassDNA ? "?bypassDNA=true" : ""
+            }`
+          );
+        } else {
+          return randNum.push(
+            `${layer.elements[i].id}:${layer.elements[i].filename}${
+              layer.bypassDNA ? "?bypassDNA=true" : ""
+            }`
+          );
+        }
+        // return randNum.push(
+        //   `${layer.elements[i].id}:${layer.elements[i].filename}${
+        //     layer.bypassDNA ? "?bypassDNA=true" : ""
+        //   }`
+        // );
       } 
     } 
   });
   return randNum.join(DNA_DELIMITER);
-};
-
-const createVariation = (_variations) => {
-  let setVariant = [];
-  _variations.forEach((variant) => {
-    var totalWeight = 0;
-    variant.Weight.forEach((Weight) => {
-      totalWeight += Weight;
-    });
-    // number between 0 - totalWeight
-    let random = Math.floor(Math.random() * totalWeight);
-    for (var i = 0; i < variant.Weight.length; i++) {
-      // subtract the current weight from the random weight until we reach a sub zero value.
-      random -= variant.Weight[i];
-      if (random < 0) {
-        return setVariant.push(
-          `${variant.name}:${variant.variations[i]}`
-        );
-      }
-    }
-  });
-  return setVariant.join(DNA_DELIMITER);
 };
 
 const createDnaExact = (_layers, _remainingInLayersOrder, _currentEdition) => {
@@ -458,7 +480,38 @@ const createDnaExact = (_layers, _remainingInLayersOrder, _currentEdition) => {
   return randNum.join(DNA_DELIMITER);
 };
 
-const createDna = (_layers) => {
+const createDna = (_layers, _variant) => {
+  let randNum = [];
+  _layers.forEach((layer) => {
+    var totalWeight = 0;
+    layer.elements.forEach((element) => {
+      totalWeight += element.weight;
+    });
+    // number between 0 - totalWeight
+    let random = Math.floor(Math.random() * totalWeight);
+    for (var i = 0; i < layer.elements.length; i++) {
+      // subtract the current weight from the random weight until we reach a sub zero value.
+      random -= layer.elements[i].weight;
+      if (random < 0) {
+        // console.log(`${layer.elements[i].filename} |||||||||||||||| ${layer.layerVariations}`);
+        if(layer.layerVariations != undefined) {
+          return randNum.push(
+            `${layer.elements[i].id}:${layer.elements[i].name}& ${_variant}`
+          );
+        } else {
+          return randNum.push(
+            `${layer.elements[i].id}:${layer.elements[i].filename}${
+              layer.bypassDNA ? "?bypassDNA=true" : ""
+            }`
+          );
+        }
+      }
+    }
+  });
+  return randNum.join(DNA_DELIMITER);
+};
+
+const createDnaOG = (_layers) => {
   let randNum = [];
   _layers.forEach((layer) => {
     var totalWeight = 0;
@@ -551,6 +604,29 @@ const allLayerSizes = () => {
   return layerList;
 }
 
+const createVariation = (_variations) => {
+  let setVariant = [];
+  _variations.forEach((variant) => {
+    var totalWeight = 0;
+    variant.Weight.forEach((Weight) => {
+      totalWeight += Weight;
+    });
+    // number between 0 - totalWeight
+    let random = Math.floor(Math.random() * totalWeight);
+    for (var i = 0; i < variant.Weight.length; i++) {
+      // subtract the current weight from the random weight until we reach a sub zero value.
+      random -= variant.Weight[i];
+      if (random < 0) {
+        // console.log(`${variant.name}:${variant.variations[i]}`);
+        return setVariant.push(
+          `${variant.name}:${variant.variations[i]}`
+        );
+      }
+    }
+  });
+  return setVariant.join(DNA_DELIMITER);
+};
+
 const startCreating = async () => {
   if (exactWeight) {
     let allLayers = allLayersOrders();
@@ -587,11 +663,17 @@ const startCreating = async () => {
       if (exactWeight && namedWeight) {
         throw new Error(`namedWeight and exactWeight can't be used together. Please mark one or both as false in config.js`);
       }
-     
-      let newDna = (exactWeight) ? createDnaExact(layers, remainingInLayersOrder, currentEdition) : (namedWeight) ? createDnaNames(layers) : createDna(layers);
+
+      let newVariant = createVariation(layerVariations);
+      let variant = newVariant.split(':').pop();
+
+      let newDna = (exactWeight) ? createDnaExact(layers, remainingInLayersOrder, currentEdition) : (namedWeight) ? createDnaNames(layers) : createDna(layers, variant);
+      console.log(newDna+newVariant);
+      console.log(layers);
 
       if (isDnaUnique(dnaList, newDna)) {
         let results = constructLayerToDna(newDna, layers);
+        // console.log(results);
 
         if (exactWeight) {
           results.forEach((layer) => {

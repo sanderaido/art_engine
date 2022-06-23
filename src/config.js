@@ -34,7 +34,7 @@ const scaleSize = (num) => {
 };
 
 // ********* Advanced weight options *********
-// Note: only one of these options can be marked trued at once. 
+// Note: only one of these options can be marked true at once. 
 
 // Set this to true if you want to use named rarity instead of numbers. 
 const namedWeight = false;
@@ -43,7 +43,7 @@ const namedWeight = false;
 * Note that your weights must add up to the total number
 * you want of that trait.
 */
-const exactWeight = true;
+const exactWeight = false;
 
 
 const network = NETWORK.eth;
@@ -71,10 +71,10 @@ const layerConfigurations = [
     growEditionSizeTo: scaleSize(2500),
     layersOrder: [
       { name: "SkeletalBody" },
-      { name: "Head"},
+      { name: "Head", layerVariations: 'Color' },
       { name: "Back" },
       { name: "Legs" },
-      { name: "Arms" },
+      { name: "Arms", layerVariations: 'Color' },
       { name: "Mouth" },
       { name: "Eyes" },
     ],
@@ -184,6 +184,31 @@ const rarity_config = {
   Common: { ranks: [5600, 10000] }, //, fileName: 'Common.png' },
 };
 
+const layerVariations = [
+  {
+    variationCount: 1,
+    name: 'Color',
+    variations: [
+      'Blue',
+      'Green',
+      'Purple',
+      'Red',
+    ],
+    Weight: [
+      35,
+      25,
+      25,
+      15,
+    ],
+  },
+  // {
+  //   variationCount: 2,
+  //   name: 'MermaidColor',
+  //   variations: ['Human', 'Zombie', 'Skeletal'],
+  //   Weight: [63, 31, 6],
+  // },
+];
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 * Do not use this unless 100% necessary and you understand the risk
 * Generating collection in stages leads to potential duplicates. 
@@ -217,6 +242,6 @@ module.exports = {
   toCreateNow,
   collectionSize,
   namedWeight,
-  // layerVariations,
+  layerVariations,
   exactWeight,
 };

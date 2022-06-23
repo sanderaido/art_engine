@@ -2,13 +2,13 @@
   "name": "Your Collection #7",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/7.png",
-  "dna": "5fb3b784de99dd99d0b578937563f6592d777353",
+  "dna": "335906fd5d147dbfb654997213e6cbcce3973dd3",
   "edition": 7,
-  "date": 1655928760860,
+  "date": 1655952009710,
   "attributes": [
     {
       "trait_type": "SkeletalBody",
-      "value": "SkeletalSmoothTruncate"
+      "value": "SkeletalSmoothLunate"
     },
     {
       "trait_type": "Head",
@@ -16,15 +16,15 @@
     },
     {
       "trait_type": "Back",
-      "value": "SharkFin"
+      "value": "BetaFins"
     },
     {
       "trait_type": "Legs",
-      "value": "LobsterLegs"
+      "value": "BetaLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "NemoFins"
+      "value": "FinArms"
     },
     {
       "trait_type": "Mouth",

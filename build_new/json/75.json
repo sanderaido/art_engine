@@ -2,13 +2,13 @@
   "name": "Your Collection #75",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/75.png",
-  "dna": "c75c8f8bea10b173f096bb897a85134fea78c340",
+  "dna": "53e20c30c64d33fb49ecb66bb7c1ceadde79522c",
   "edition": 75,
-  "date": 1655928771174,
+  "date": 1655952015220,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesTruncate"
+      "value": "ScalesForked"
     },
     {
       "trait_type": "Head",
@@ -16,19 +16,19 @@
     },
     {
       "trait_type": "Back",
-      "value": "Blowhole"
+      "value": "DolphinFin"
     },
     {
       "trait_type": "Legs",
-      "value": "BetaLegs"
+      "value": "LureLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "NemoFins"
+      "value": "FidlerClaws"
     },
     {
       "trait_type": "Mouth",
-      "value": "SwordfishMouth"
+      "value": "BaseMouth"
     },
     {
       "trait_type": "Eyes",

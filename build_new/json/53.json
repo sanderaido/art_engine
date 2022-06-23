@@ -2,9 +2,9 @@
   "name": "Your Collection #53",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/53.png",
-  "dna": "31e6e4f82a6554202541dafa16c99c4f34db6e17",
+  "dna": "f61c0afa693a61de9c63728a25b96b32cfce68e6",
   "edition": 53,
-  "date": 1655928768120,
+  "date": 1655952013442,
   "attributes": [
     {
       "trait_type": "Body",
@@ -16,7 +16,7 @@
     },
     {
       "trait_type": "Back",
-      "value": "Blowhole"
+      "value": "StrapOnShark"
     },
     {
       "trait_type": "Legs",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Arms",
-      "value": "LureArms"
+      "value": "TentacleArms"
     },
     {
       "trait_type": "Mouth",
@@ -32,7 +32,7 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "LobsterEye"
+      "value": "AnglerEyes"
     }
   ],
   "compiler": "HashLips Art Engine - datboi's fork"

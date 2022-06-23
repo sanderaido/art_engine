@@ -2,13 +2,13 @@
   "name": "Your Collection #79",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/79.png",
-  "dna": "cf09555bf3b27fd1a7e3f8b5897e041d01111d62",
+  "dna": "406659226852b2a797f9b99c70313570f178ffc9",
   "edition": 79,
-  "date": 1655928771810,
+  "date": 1655952015532,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "SmoothBeta"
+      "value": "SmoothPointed"
     },
     {
       "trait_type": "Head",
@@ -16,7 +16,7 @@
     },
     {
       "trait_type": "Back",
-      "value": "DolphinFin"
+      "value": "BetaFins"
     },
     {
       "trait_type": "Legs",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Arms",
-      "value": "BetaArms"
+      "value": "FinArms"
     },
     {
       "trait_type": "Mouth",
@@ -32,7 +32,7 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "AnglerEyes"
+      "value": "LobsterEye"
     }
   ],
   "compiler": "HashLips Art Engine - datboi's fork"

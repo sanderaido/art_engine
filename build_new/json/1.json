@@ -2,13 +2,13 @@
   "name": "Your Collection #1",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/1.png",
-  "dna": "95e0f8bfc3c8ac3dbb24355b9275199c8f6ff12a",
+  "dna": "587cf2005acd12ba5bacf3b73be4f704aec4c912",
   "edition": 1,
-  "date": 1655928759996,
+  "date": 1655952009178,
   "attributes": [
     {
       "trait_type": "SkeletalBody",
-      "value": "SkeletalScalesForked"
+      "value": "SkeletalScalesBeta"
     },
     {
       "trait_type": "Head",
@@ -16,7 +16,7 @@
     },
     {
       "trait_type": "Back",
-      "value": "Blowhole"
+      "value": "DolphinFin"
     },
     {
       "trait_type": "Legs",
@@ -28,7 +28,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "BaseMouth"
+      "value": "CatfishMouth"
     },
     {
       "trait_type": "Eyes",

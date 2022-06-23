@@ -17,12 +17,12 @@ if (!fs.existsSync(dir)) {
 	});
 }
 
-
+let delimiter = "&";
 
 data.forEach((item) => {
   // let filtered
   item.attributes.forEach((attribute) => {
-    let cleanName = attribute.value.split("&").shift();
+    let cleanName = attribute.value.split(delimiter).shift();
 
     attribute.value = cleanName;
   })
@@ -31,4 +31,4 @@ data.forEach((item) => {
 
 fs.writeFileSync(`${basePath}/build_new/json/_metadata.json`, JSON.stringify(data, null, 2));
 
-console.log(`Cleaned up metadata names by removing `);
+console.log(`Cleaned up metadata by splitting on ${delimiter}`);

@@ -2,13 +2,13 @@
   "name": "Your Collection #22",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/22.png",
-  "dna": "4b634d4657bc061bdbfb9f90f1d78578f4c6e64e",
+  "dna": "6849f266bfc62cce64ff7f786b36a25cc12527f1",
   "edition": 22,
-  "date": 1655928763507,
+  "date": 1655952010956,
   "attributes": [
     {
       "trait_type": "SkeletalBody",
-      "value": "SkeletalScalesTruncate"
+      "value": "SkeletalScalesRounded"
     },
     {
       "trait_type": "Head",
@@ -16,7 +16,7 @@
     },
     {
       "trait_type": "Back",
-      "value": "BetaFins"
+      "value": "Blowhole"
     },
     {
       "trait_type": "Legs",
@@ -28,7 +28,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "AnglerMouth"
+      "value": "BaseMouth"
     },
     {
       "trait_type": "Eyes",

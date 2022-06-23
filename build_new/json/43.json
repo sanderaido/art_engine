@@ -2,13 +2,13 @@
   "name": "Your Collection #43",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/43.png",
-  "dna": "398f00be68dcdb8da04c351a1ad00e09cb11ba52",
+  "dna": "b5989057f079e2dd3b5980710688ce61ac135e49",
   "edition": 43,
-  "date": 1655928766448,
+  "date": 1655952012644,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesTruncate"
+      "value": "SmoothBeta"
     },
     {
       "trait_type": "Head",
@@ -20,15 +20,15 @@
     },
     {
       "trait_type": "Legs",
-      "value": "FinLegs"
+      "value": "LobsterLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "FinArms"
+      "value": "BetaArms"
     },
     {
       "trait_type": "Mouth",
-      "value": "AnglerMouth"
+      "value": "CatfishMouth"
     },
     {
       "trait_type": "Eyes",

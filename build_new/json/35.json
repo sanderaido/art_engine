@@ -2,13 +2,13 @@
   "name": "Your Collection #35",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/35.png",
-  "dna": "91882a5f461b934e6d7def1c3ac1e6b1df9e7961",
+  "dna": "5af2ecf51722f4ae37f7dfa62d3533d86599d2c1",
   "edition": 35,
-  "date": 1655928765408,
+  "date": 1655952011996,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesTruncate"
+      "value": "SmoothForked"
     },
     {
       "trait_type": "Head",
@@ -16,7 +16,7 @@
     },
     {
       "trait_type": "Back",
-      "value": "Blowhole"
+      "value": "SharkFin"
     },
     {
       "trait_type": "Legs",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Arms",
-      "value": "LobsterClaws"
+      "value": "TentacleArms"
     },
     {
       "trait_type": "Mouth",

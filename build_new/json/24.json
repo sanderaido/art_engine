@@ -2,13 +2,13 @@
   "name": "Your Collection #24",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/24.png",
-  "dna": "00167a2a29e922210badbdb0b6ae672d51d88847",
+  "dna": "b819fa0facaad6e812a9e453dbe759cb39d32285",
   "edition": 24,
-  "date": 1655928763786,
+  "date": 1655952011117,
   "attributes": [
     {
       "trait_type": "SkeletalBody",
-      "value": "SkeletalScalesLunate"
+      "value": "SkeletalScalesPointed"
     },
     {
       "trait_type": "Head",
@@ -16,7 +16,7 @@
     },
     {
       "trait_type": "Back",
-      "value": "DolphinFin"
+      "value": "BetaFins"
     },
     {
       "trait_type": "Legs",
@@ -28,7 +28,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "AnglerMouth"
+      "value": "TurtleBeak"
     },
     {
       "trait_type": "Eyes",

@@ -2,13 +2,13 @@
   "name": "Your Collection #85",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/85.png",
-  "dna": "81416646579f24ea51a25fc75dcae045d224df6f",
+  "dna": "70fe2c650f4cd23e5ff931d70e6efb11cb614ffc",
   "edition": 85,
-  "date": 1655928772811,
+  "date": 1655952016007,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesLunate"
+      "value": "ScalesBeta"
     },
     {
       "trait_type": "Head",

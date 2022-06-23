@@ -2,13 +2,13 @@
   "name": "Your Collection #34",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/34.png",
-  "dna": "84e77222e971f8398039f5b52fb992a2e7e265c4",
+  "dna": "3d4ce2e73273ab6ad4e01e87e9678db06ca53142",
   "edition": 34,
-  "date": 1655928765283,
+  "date": 1655952011916,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "SmoothPointed"
+      "value": "ScalesRounded"
     },
     {
       "trait_type": "Head",
@@ -24,15 +24,15 @@
     },
     {
       "trait_type": "Arms",
-      "value": "BetaArms"
+      "value": "FinArms"
     },
     {
       "trait_type": "Mouth",
-      "value": "CatfishMouth"
+      "value": "AnglerMouth"
     },
     {
       "trait_type": "Eyes",
-      "value": "AnglerEyes"
+      "value": "BaseEyes"
     }
   ],
   "compiler": "HashLips Art Engine - datboi's fork"
