@@ -13,6 +13,9 @@ collection so they can team Mint or whatever without resorting to minting with t
 - Still want an option to generate an exact number of a trait when not using exact weights. Maybe a 
 different rarityDelimiter? Like if you define a new variable as $, then when #weight, it generates normally,
 but when you have $weight, it generated that number exactly?
+- Account for traits across multiple layers with the same name in exact weight system. Unique name was expected, 
+but traits like 'None' will have their weights counted across multiple layers. Either exclude duplicate trait
+names, or require a delimeter like & and use 'attributeCleanName'.
 */
 
 /* DONE

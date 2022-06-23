@@ -668,8 +668,8 @@ const startCreating = async () => {
       let variant = newVariant.split(':').pop();
 
       let newDna = (exactWeight) ? createDnaExact(layers, remainingInLayersOrder, currentEdition) : (namedWeight) ? createDnaNames(layers) : createDna(layers, variant);
-      console.log(newDna+newVariant);
-      console.log(layers);
+      // console.log(newDna+newVariant);
+      // console.log(layers);
 
       if (isDnaUnique(dnaList, newDna)) {
         let results = constructLayerToDna(newDna, layers);
