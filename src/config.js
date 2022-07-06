@@ -16,6 +16,8 @@ but when you have $weight, it generated that number exactly?
 - Account for traits across multiple layers with the same name in exact weight system. Unique name was expected, 
 but traits like 'None' will have their weights counted across multiple layers. Either exclude duplicate trait
 names, or require a delimeter like & and use 'attributeCleanName'.
+- Adjust scaleMints system to use *actual* # of that layerconfig, rather than cumulative. ie: if I want [10,10,10] 
+I should be able to set growEditionSizeTo to [10,10,10] not [10,20,30]. Maybe even have option to set them to %?
 */
 
 /* DONE
