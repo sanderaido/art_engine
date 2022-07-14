@@ -245,9 +245,17 @@ const drawElement = (_renderObject, _index, _layersLen) => {
 
 const constructLayerToDna = (_dna = "", _layers = []) => {
   let mappedDnaToLayers = _layers.map((layer, index) => {
+    if (_dna.split(DNA_DELIMITER)[index] == undefined) {
+      throw new Error(`Some weights in your ${layer.name} folder are either undefined or incorrect.
+      NOTE: All layers must include a weight. If using 'namedWeight' system, all layers must contain NAMED weight, no numbers!`);
+    }
     let selectedElement = layer.elements.find(
       (e) => e.id == cleanDna(_dna.split(DNA_DELIMITER)[index])
     );
+    if (_dna.search(selectedElement.name) < 0) {
+      throw new Error(`Some weights in your ${layer.name} folder are either undefined or incorrect.
+      NOTE: All layers must include a weight. If using 'namedWeight' system, all layers must contain NAMED weight, no numbers!`);
+    }
     return {
       name: layer.name,
       blend: layer.blend,
@@ -340,7 +348,7 @@ const createDnaNames = (_layers) => {
           rarityCount.Common++;
       }
     });
-    // Find any missing ratings and log the remainder of 10,000
+    // Find any missing rarities and log the remainder of 10,000
     let remainder = 0;
     for (const key in rarityCount) {
       let diff = (rarity_config[key]['ranks'][1] - rarity_config[key]['ranks'][0]);

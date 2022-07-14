@@ -3,8 +3,8 @@ const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 
 
-const collectionSize = 100;
-const toCreateNow = 10;
+const collectionSize = 10000;
+const toCreateNow = 100;
 
 const scaleSize = (num) => {
   if (collectionSize === toCreateNow) return num;
@@ -46,7 +46,7 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: scaleSize(25),
+    growEditionSizeTo: scaleSize(2500),
     layersOrder: [
       { name: "SkeletalBody" },
       { name: "Head"},
@@ -58,7 +58,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: scaleSize(100),
+    growEditionSizeTo: scaleSize(collectionSize),
     layersOrder: [
       { name: "Body" },
       { name: "Head" },

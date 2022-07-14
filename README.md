@@ -86,6 +86,10 @@ Adjusting every `growEditionSizeTo` anytime you want to test something out on a 
 ## scaleSize Example
 By default, this repository is working with a collection of 10,000, but scaling the size down to 100 for testing purposes. 
 
+NOTE: This feature can be bypassed by setting `growEditionSizeTo` to numbers vs using `scaleSize`. If you do use this feature, `collectionSize` and `toCreateNow` must match to create the full collection!
+
+TIP: To avoid potential scaling issues, you can set your final layersOrder to equal `collectionSize`. 
+
 ```js
 const collectionSize = 10000;
 const toCreateNow = 100;
@@ -99,7 +103,7 @@ const scaleSize = (num) => {
 # Utils
 
 ## cleanMetadata
-This utility gives the option to remove some commonly request items. Set any to true to remove them from generated metadata. Original metadata is preserved, and clean metadata is saved to build_new/json
+This utility gives the option to remove some commonly requested items. Set any to true to remove them from generated metadata. Original metadata is preserved, and clean metadata is saved to build_new/json
 
 ```js
 let removeDna = true;
