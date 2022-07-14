@@ -4,7 +4,7 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 
 
 const collectionSize = 100;
-const toCreateNow = 100;
+const toCreateNow = 10;
 
 const scaleSize = (num) => {
   if (collectionSize === toCreateNow) return num;

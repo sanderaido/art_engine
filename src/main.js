@@ -37,7 +37,7 @@ var attributesList = [];
 var dnaList = new Set();
 const DNA_DELIMITER = "-";
 const HashlipsGiffer = require(`${basePath}/modules/HashlipsGiffer.js`);
-const oldDna = require(`${basePath}/build_old/_oldDna.json`);
+const oldDna = `${basePath}/build_old/_oldDna.json`;
 
 let hashlipsGiffer = null;
 let allTraitsCount;
