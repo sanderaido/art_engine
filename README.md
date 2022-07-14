@@ -58,7 +58,7 @@ You can switch back to using numbered weights by setting `namedWeight` to false 
 // Set this to true if you want to use named rarity instead of numbers. 
 const namedWeight = true;
 ```
-![namedWeight](https://user-images.githubusercontent.com/92766571/172919080-802baa6a-132c-4bc2-a2e0-08ee50b8ec35.png)
+![namedVsNumbered](https://user-images.githubusercontent.com/92766571/179042357-3d045785-807e-48e5-b9bb-c789d146e905.png)
 
 # Use exact weight instead of rng
 This fork gives the option to use define exact counts of traits rather than using weight to randomly determine counts of traits. 
