@@ -57,12 +57,14 @@ const buildSetup = () => {
     fs.mkdirSync(`${buildDir}/gifs`);
   }
   if (importOldDna) {
-    if (oldDna.length !== resumeNum) {
+    let rawdata = fs.readFileSync(oldDna);
+    let data = JSON.parse(rawdata);
+    if (data.length !== resumeNum) {
       throw new Error(
         `resumeNum (${resumeNum}) does not match count in _oldDna file (${oldDna.length}). 
         Please make sure you have the correct _metadata file in the build_old folder and re-run generateOldDna`);
     }
-    oldDna.forEach((item) => {
+    data.forEach((item) => {
       dnaList.add(item);
     });
   }
