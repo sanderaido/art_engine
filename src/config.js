@@ -61,10 +61,10 @@ const baseUri = "ipfs://TESTING";
 const solanaMetadata = {
   symbol: "YC",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  external_url: "https://linktr.ee/datboi1337",
   creators: [
     {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
+      address: "9LfrWG5WY7LsJ4yEjwD8NAKZ4mLSTfLFZQ7B61ZqEzBH",
       share: 100,
     },
   ],

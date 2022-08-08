@@ -229,6 +229,9 @@ const loadLayerImg = (_layer) => {
       path = path.replace(_layer.name, _layer.name.concat('-variant'));
       // console.log(`Path # 3: ${path}`);
     }
+    if (!fs.existsSync(path)) {
+      throw new Error(`The selected file (${path}) does not exist. Check spelling and location.`);
+    }
     if (debugLogs) console.log('PATH', { path, exists: fs.existsSync(path) });
     loadImage(`${path}`)
       .then((image) => {
@@ -335,7 +338,7 @@ const isDnaUnique = (_DnaList = new Set(), _dna = "") => {
   return !_DnaList.has(_filteredDNA);
 };
 
-const createDnaNames = (_layers) => {
+const createDnaNames = (_layers, _variant) => {
   let randNum = [];
   _layers.forEach((layer) => {
     const rarityCount = {
@@ -442,7 +445,7 @@ const createDnaNames = (_layers) => {
   return randNum.join(DNA_DELIMITER);
 };
 
-const createDnaExact = (_layers, _remainingInLayersOrder, _currentEdition) => {
+const createDnaExact = (_layers, _remainingInLayersOrder, _currentEdition, _variant) => {
   let randNum = [];
   let layerSizes = allLayerSizes();
   _layers.forEach((layer) => {
@@ -666,14 +669,12 @@ const startCreating = async () => {
 
       let newVariant = createVariation(layerVariations);
       let variant = newVariant.split(':').pop();
+      let variantName = newVariant.split(':')[0];
 
-      let newDna = (exactWeight) ? createDnaExact(layers, remainingInLayersOrder, currentEdition) : (namedWeight) ? createDnaNames(layers) : createDna(layers, variant);
-      // console.log(newDna+newVariant);
-      // console.log(layers);
+      let newDna = (exactWeight) ? createDnaExact(layers, remainingInLayersOrder, currentEdition, variant) : (namedWeight) ? createDnaNames(layers, variant) : createDna(layers, variant);
 
       if (isDnaUnique(dnaList, newDna)) {
         let results = constructLayerToDna(newDna, layers);
-        // console.log(results);
 
         if (exactWeight) {
           results.forEach((layer) => {
@@ -704,6 +705,10 @@ const startCreating = async () => {
           if (background.generate) {
             drawBackground();
           }
+          attributesList.push({
+            trait_type: variantName,
+            value: variant,
+          });
           renderObjectArray.forEach((renderObject, index) => {
             drawElement(
               renderObject,
