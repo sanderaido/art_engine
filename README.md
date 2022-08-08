@@ -81,7 +81,31 @@ Define your variations in the layerVariations const in config.js.
 
 ## Layer variation example
 In this fork, there are currently two layers with variations (Arms and Head). If you look at the file structure, you will see each have '-variant' folders with each trait duplicated the number of colors edfined in layerVariations.
-
+Define layerVariations:
+```js
+const layerVariations = [
+  {
+    variationCount: 1,
+    name: 'Color',
+    variations: [
+      'Blue',
+      'Green',
+      'Purple',
+      'Red',
+    ],
+    Weight: [
+      35,
+      25,
+      25,
+      15,
+    ],
+  },
+];
+```
+Determine which layers need variants:
+```js
+{ name: "Arms", layerVariations: 'Color' },
+```
 Base folder for the trait (Arms) as well as it's variant folder (Arms-variant):
 <br/>
 ![b3b893cc92e9779c35cb6e1ebc14c798](https://user-images.githubusercontent.com/92766571/183504630-bf9fc530-318b-42d2-86ac-bdcbceafddb4.png)
