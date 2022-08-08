@@ -2,8 +2,8 @@ const basePath = process.cwd();
 const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 
-const collectionSize = 10000;
-const toCreateNow = 100;
+const collectionSize = 1000;
+const toCreateNow = 1000;
 
 const scaleSize = (num) => {
   if (collectionSize === toCreateNow) return num;
@@ -180,12 +180,6 @@ const layerVariations = [
       15,
     ],
   },
-  // {
-  //   variationCount: 2,
-  //   name: 'MermaidColor',
-  //   variations: ['Human', 'Zombie', 'Skeletal'],
-  //   Weight: [63, 31, 6],
-  // },
 ];
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 

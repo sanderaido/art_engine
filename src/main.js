@@ -222,13 +222,8 @@ const loadLayerImg = (_layer) => {
     let path = _layer.selectedElement.path;
     if (_layer.layerVariations != undefined) {
       path = path.split('#')[0];
-      // console.log(`Path # 1: ${path}`);
-      // console.log(_layer.variant);
       path = path.concat(_layer.variant.concat('.png'));
-      // console.log(_layer.variant);
-      // console.log(`Path # 2: ${path}`);
       path = path.replace(_layer.name, _layer.name.concat('-variant'));
-      // console.log(`Path # 3: ${path}`);
     }
     if (!fs.existsSync(path)) {
       throw new Error(`The selected file (${path}) does not exist. Check spelling and location.`);
@@ -289,7 +284,6 @@ const constructLayerToDna = (_dna = "", _layers = []) => {
     }
 
     let variant = layer.layerVariations != undefined ? (_dna.split('&').pop()).split(DNA_DELIMITER).shift() : '';
-    // console.log(`variant def ||||||||||||| ${variant}`);
 
     return {
       name: layer.name,
@@ -298,8 +292,6 @@ const constructLayerToDna = (_dna = "", _layers = []) => {
       selectedElement: selectedElement,
       layerVariations: layer.layerVariations,
       variant: layer.layerVariations != undefined ? (_dna.split('&').pop()).split(DNA_DELIMITER).shift() : '',
-      // variant: layer.layerVariations != undefined ? layer.variant : '',
-      // variant: layer.variant,
     };
   });
   return mappedDnaToLayers;
@@ -509,7 +501,6 @@ const createDna = (_layers, _variant) => {
       // subtract the current weight from the random weight until we reach a sub zero value.
       random -= layer.elements[i].weight;
       if (random < 0) {
-        // console.log(`${layer.elements[i].filename} |||||||||||||||| ${layer.layerVariations}`);
         if(layer.layerVariations != undefined) {
           return randNum.push(
             `${layer.elements[i].id}:${layer.elements[i].name}& ${_variant}`
@@ -633,7 +624,6 @@ const createVariation = (_variations) => {
       // subtract the current weight from the random weight until we reach a sub zero value.
       random -= variant.Weight[i];
       if (random < 0) {
-        // console.log(`${variant.name}:${variant.variations[i]}`);
         return setVariant.push(
           `${variant.name}:${variant.variations[i]}`
         );
