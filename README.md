@@ -24,6 +24,10 @@ This is a fork of Hashlip's art engine. It is currently a *Work in Progress* as 
 - [Set trait weight to equal the exact number of times you want that trait in the collection rather than using rng](#use-exact-weight-instead-of-rng)
   - [Exact weight example](#exact-weight-example)
 
+## Layer Variation
+- [Assign layerVariations to layers to ensure they match other layers with that variation](#layer-variation-system)
+  - [layerVariations example](#layer-variation-example)
+
 ## Resume creation
 
 - [Generate NFT in stages](#generate-nft-in-stages)
@@ -70,6 +74,14 @@ To use exact weight system, set exactWeight to true in config.js. PLEASE NOTE: e
 const exactWeight = true;
 ```
 
+# Layer variation system
+Use this option to assign a 'variation' to multiple layers. The most common use-case for this option would be ensuring certain traits are the same color or skin pattern. For any trait that has variations, put a placeholder in the normal layer's folder with the desired weight, then put each of it's variations into the layer's '-variant' folder named with the variant name instead of a weight.
+Define your variations in the layerVariations const in config.js.
+**NOTE**: If a layer has variations, it must contain *all* the variants. For example, the base images in this fork have 4 variants defined (Blue, Green, Purple, and Red), so any layer using layerVariations must include a variant for each of those colors. 
+
+## Layer variation example
+In this fork, there are currently two layers with variations (Arms and Head). If you look at the file structure, you will see each have '-variant' folders with each trait duplicated the number of colors edfined in layerVariations.
+
 # Generate NFT in stages
 This fork gives the ability to start generation at any number. This can sometimes be useful, but in 99% of cases generation should be done all at once. These options simply provide tools for the other 1%. Utilizing a previous generations dna will help to prevent duplicates from being generated. Please be sure to utilize the oldDna [Util](#generateolddna).
 
@@ -86,9 +98,9 @@ Adjusting every `growEditionSizeTo` anytime you want to test something out on a 
 ## scaleSize Example
 By default, this repository is working with a collection of 10,000, but scaling the size down to 100 for testing purposes. 
 
-NOTE: This feature can be bypassed by setting `growEditionSizeTo` to numbers vs using `scaleSize`. If you do use this feature, `collectionSize` and `toCreateNow` must match to create the full collection!
+**NOTE**: This feature can be bypassed by setting `growEditionSizeTo` to numbers vs using `scaleSize`. If you do use this feature, `collectionSize` and `toCreateNow` must match to create the full collection!
 
-TIP: To avoid potential scaling issues, you can set your final layersOrder to equal `collectionSize`. 
+**TIP**: To avoid potential scaling issues, you can set your final layersOrder to equal `collectionSize`. 
 
 ```js
 const collectionSize = 10000;
