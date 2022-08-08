@@ -1,0 +1,39 @@
+{
+  "name": "Your Collection #30",
+  "description": "Remember to replace this description",
+  "image": "ipfs://TESTING/30.png",
+  "dna": "ce34c080b9f6a3d9be2b1195bc7623ad0fa90840",
+  "edition": 30,
+  "date": 1655952011608,
+  "attributes": [
+    {
+      "trait_type": "Body",
+      "value": "ScalesBeta"
+    },
+    {
+      "trait_type": "Head",
+      "value": "FishHead"
+    },
+    {
+      "trait_type": "Back",
+      "value": "Blowhole"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "LobsterLegs"
+    },
+    {
+      "trait_type": "Arms",
+      "value": "NemoFins"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "BaseMouth"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "BaseEyes"
+    }
+  ],
+  "compiler": "HashLips Art Engine - datboi's fork"
+}

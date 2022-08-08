@@ -1,0 +1,39 @@
+{
+  "name": "Your Collection #22",
+  "description": "Remember to replace this description",
+  "image": "ipfs://TESTING/22.png",
+  "dna": "6849f266bfc62cce64ff7f786b36a25cc12527f1",
+  "edition": 22,
+  "date": 1655952010956,
+  "attributes": [
+    {
+      "trait_type": "SkeletalBody",
+      "value": "SkeletalScalesRounded"
+    },
+    {
+      "trait_type": "Head",
+      "value": "FishHead"
+    },
+    {
+      "trait_type": "Back",
+      "value": "Blowhole"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "BetaLegs"
+    },
+    {
+      "trait_type": "Arms",
+      "value": "BetaArms"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "BaseMouth"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "AnglerEyes"
+    }
+  ],
+  "compiler": "HashLips Art Engine - datboi's fork"
+}

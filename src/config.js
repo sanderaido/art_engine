@@ -2,7 +2,6 @@ const basePath = process.cwd();
 const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 
-
 const collectionSize = 10000;
 const toCreateNow = 100;
 
@@ -12,7 +11,7 @@ const scaleSize = (num) => {
 };
 
 // ********* Advanced weight options *********
-// Note: only one of these options can be marked trued at once. 
+// Note: only one of these options can be marked true at once. 
 
 // Set this to true if you want to use named rarity instead of numbers. 
 const namedWeight = true;
@@ -34,10 +33,10 @@ const baseUri = "ipfs://TESTING";
 const solanaMetadata = {
   symbol: "YC",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  external_url: "https://linktr.ee/datboi1337",
   creators: [
     {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
+      address: "9LfrWG5WY7LsJ4yEjwD8NAKZ4mLSTfLFZQ7B61ZqEzBH",
       share: 100,
     },
   ],
@@ -49,6 +48,18 @@ const layerConfigurations = [
     growEditionSizeTo: scaleSize(2500),
     layersOrder: [
       { name: "SkeletalBody" },
+      { name: "Head", layerVariations: 'Color' },
+      { name: "Back" },
+      { name: "Legs" },
+      { name: "Arms", layerVariations: 'Color' },
+      { name: "Mouth" },
+      { name: "Eyes" },
+    ],
+  },
+  {
+    growEditionSizeTo: scaleSize(5000),
+    layersOrder: [
+      { name: "Body" },
       { name: "Head"},
       { name: "Back" },
       { name: "Legs" },
@@ -58,7 +69,9 @@ const layerConfigurations = [
     ],
   },
   {
+
     growEditionSizeTo: scaleSize(collectionSize),
+
     layersOrder: [
       { name: "Body" },
       { name: "Head" },
@@ -71,7 +84,7 @@ const layerConfigurations = [
   },
 ];
 
-const shuffleLayerConfigurations = true;
+const shuffleLayerConfigurations = false;
 
 const debugLogs = false;
 
@@ -149,6 +162,31 @@ const rarity_config = {
   Uncommon: { ranks: [3100, 5600] }, //, fileName: 'Uncommon.png' },
   Common: { ranks: [5600, 10000] }, //, fileName: 'Common.png' },
 };
+
+const layerVariations = [
+  {
+    variationCount: 1,
+    name: 'Color',
+    variations: [
+      'Blue',
+      'Green',
+      'Purple',
+      'Red',
+    ],
+    Weight: [
+      35,
+      25,
+      25,
+      15,
+    ],
+  },
+  // {
+  //   variationCount: 2,
+  //   name: 'MermaidColor',
+  //   variations: ['Human', 'Zombie', 'Skeletal'],
+  //   Weight: [63, 31, 6],
+  // },
+];
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 * Do not use this unless 100% necessary and you understand the risk

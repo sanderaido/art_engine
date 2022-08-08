@@ -1,0 +1,39 @@
+{
+  "name": "Your Collection #20",
+  "description": "Remember to replace this description",
+  "image": "ipfs://TESTING/20.png",
+  "dna": "7c85e6b2351f5dc2b1845c17f9b41c65fced4a7b",
+  "edition": 20,
+  "date": 1655952010795,
+  "attributes": [
+    {
+      "trait_type": "SkeletalBody",
+      "value": "SkeletalSmoothBeta"
+    },
+    {
+      "trait_type": "Head",
+      "value": "FishHead"
+    },
+    {
+      "trait_type": "Back",
+      "value": "SharkFin"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "FinLegs"
+    },
+    {
+      "trait_type": "Arms",
+      "value": "BetaArms"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "AnglerMouth"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "EyeScar"
+    }
+  ],
+  "compiler": "HashLips Art Engine - datboi's fork"
+}

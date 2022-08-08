@@ -1,0 +1,3902 @@
+[
+  {
+    "name": "Your Collection #1",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/1.png",
+    "dna": "587cf2005acd12ba5bacf3b73be4f704aec4c912",
+    "edition": 1,
+    "date": 1655952009178,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalScalesBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "CatfishMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #2",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/2.png",
+    "dna": "923b2a60d60e340aa3a2cb3c46874161471ba07e",
+    "edition": 2,
+    "date": 1655952009269,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalSmoothForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DorsalFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "BaseEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #3",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/3.png",
+    "dna": "3d8140ef9cf8b4f35771f0ca916f3afe75c43a59",
+    "edition": 3,
+    "date": 1655952009357,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalScalesForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DorsalFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "ThreeEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #4",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/4.png",
+    "dna": "aa6e846931beee575813dfa31cee606dc165203e",
+    "edition": 4,
+    "date": 1655952009446,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalScalesLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "SharkEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #5",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/5.png",
+    "dna": "69e27fa4383499a6fed43d01f8afed76f0b06647",
+    "edition": 5,
+    "date": 1655952009530,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalScalesLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LureLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #6",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/6.png",
+    "dna": "0e6a56d4b0da348c7adb9d535ae51fc71857fee1",
+    "edition": 6,
+    "date": 1655952009622,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalScalesForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LobsterLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "CatfishMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "EyeScar"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #7",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/7.png",
+    "dna": "335906fd5d147dbfb654997213e6cbcce3973dd3",
+    "edition": 7,
+    "date": 1655952009710,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalSmoothLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #8",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/8.png",
+    "dna": "941ee55cc931d24c26295f02cdd24a2f532aad7d",
+    "edition": 8,
+    "date": 1655952009798,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalSmoothForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #9",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/9.png",
+    "dna": "b4d30a121140f1e775a93e6f625ba9838fd26426",
+    "edition": 9,
+    "date": 1655952009876,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalScalesBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "EyeScar"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #10",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/10.png",
+    "dna": "834c3f4389918dff9578229e8890a349a008072e",
+    "edition": 10,
+    "date": 1655952009963,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalScalesPointed"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "BaseEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #11",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/11.png",
+    "dna": "b99e8163d20cb76ec8ceca645cfa41f530b582d1",
+    "edition": 11,
+    "date": 1655952010048,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalSmoothTruncate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #12",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/12.png",
+    "dna": "290caccd533ad8e9d661fd7a274c46450984d677",
+    "edition": 12,
+    "date": 1655952010134,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalSmoothRounded"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "StrapOnShark"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "TurtleArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "EyeScar"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #13",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/13.png",
+    "dna": "3ec37c303470eca2fd6bdd28c31e31adb96aa7ba",
+    "edition": 13,
+    "date": 1655952010219,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalScalesTruncate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DorsalFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #14",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/14.png",
+    "dna": "333cc826f33e8c0007dd5fa0b1298458464d25ce",
+    "edition": 14,
+    "date": 1655952010301,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalScalesForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "SwordfishMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #15",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/15.png",
+    "dna": "e7f55ceb4cb10aea2595ea191e4046c6914e274a",
+    "edition": 15,
+    "date": 1655952010386,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalSmoothPointed"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "ThreeEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #16",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/16.png",
+    "dna": "162923aa2f919e03ca2985abb737f99d8e924dd3",
+    "edition": 16,
+    "date": 1655952010472,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalScalesTruncate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LobsterLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "EyeScar"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #17",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/17.png",
+    "dna": "b92bff8588ceb31563138de498fe4fad7baa3945",
+    "edition": 17,
+    "date": 1655952010550,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalSmoothLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "StrapOnShark"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #18",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/18.png",
+    "dna": "9312e84440095ccd6d3b3b78f18e9255374b9ccd",
+    "edition": 18,
+    "date": 1655952010635,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalSmoothBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "NemoFins"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "BaseEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #19",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/19.png",
+    "dna": "080ef43156a0fb7d8ad3ecba2c19f86da530af6f",
+    "edition": 19,
+    "date": 1655952010717,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalScalesLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "LobsterEye"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #20",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/20.png",
+    "dna": "7c85e6b2351f5dc2b1845c17f9b41c65fced4a7b",
+    "edition": 20,
+    "date": 1655952010795,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalSmoothBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "SharkFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "EyeScar"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #21",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/21.png",
+    "dna": "f67547f9464f4d0ee73a5f0188d57baff8ac856d",
+    "edition": 21,
+    "date": 1655952010877,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalScalesRounded"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "LobsterEye"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #22",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/22.png",
+    "dna": "6849f266bfc62cce64ff7f786b36a25cc12527f1",
+    "edition": 22,
+    "date": 1655952010956,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalScalesRounded"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #23",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/23.png",
+    "dna": "905dc87e174488c7a7ee27d769d4987c3a0ef47d",
+    "edition": 23,
+    "date": 1655952011031,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalScalesBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "LobsterEye"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #24",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/24.png",
+    "dna": "b819fa0facaad6e812a9e453dbe759cb39d32285",
+    "edition": 24,
+    "date": 1655952011117,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalScalesPointed"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "TurtleBeak"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #25",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/25.png",
+    "dna": "27d7e1300c2bfa2c5a0640b2126095ea3edc1721",
+    "edition": 25,
+    "date": 1655952011193,
+    "attributes": [
+      {
+        "trait_type": "SkeletalBody",
+        "value": "SkeletalScalesBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "SharkFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #26",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/26.png",
+    "dna": "a6cb1f6127ea6a320bae9cad4175ed1bb7f82b87",
+    "edition": 26,
+    "date": 1655952011278,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "NemoFins"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #27",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/27.png",
+    "dna": "55b2cc7d26079a0232eb7608af2261a9f5070043",
+    "edition": 27,
+    "date": 1655952011355,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "SharkFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "CatfishMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #28",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/28.png",
+    "dna": "c2e07bf7d1866bfae70d155f65efc73fe222d973",
+    "edition": 28,
+    "date": 1655952011437,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "SmoothBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "TentacleArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #29",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/29.png",
+    "dna": "fb82c5487d512e8aa11766bbdcf7e4931324c626",
+    "edition": 29,
+    "date": 1655952011521,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "EyeScar"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #30",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/30.png",
+    "dna": "ce34c080b9f6a3d9be2b1195bc7623ad0fa90840",
+    "edition": 30,
+    "date": 1655952011608,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LobsterLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "NemoFins"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "BaseEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #31",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/31.png",
+    "dna": "35530e25dca99f300e8148910f22b335157ae95c",
+    "edition": 31,
+    "date": 1655952011687,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesRounded"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LobsterLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "BaseEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #32",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/32.png",
+    "dna": "9028564c360f976cb9a280503dd638f4cd6fbed9",
+    "edition": 32,
+    "date": 1655952011759,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "LobsterEye"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #33",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/33.png",
+    "dna": "21085cb11df95102e1cddcd577df0c3fe3b6ba00",
+    "edition": 33,
+    "date": 1655952011837,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #34",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/34.png",
+    "dna": "3d4ce2e73273ab6ad4e01e87e9678db06ca53142",
+    "edition": 34,
+    "date": 1655952011916,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesRounded"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "BaseEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #35",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/35.png",
+    "dna": "5af2ecf51722f4ae37f7dfa62d3533d86599d2c1",
+    "edition": 35,
+    "date": 1655952011996,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "SmoothForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "SharkFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "TentacleArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #36",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/36.png",
+    "dna": "56a7de0cb468687ae566b41b4ed5cbd595d169fc",
+    "edition": 36,
+    "date": 1655952012077,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #37",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/37.png",
+    "dna": "7da7a1bfbde9eecb1e4b8f22b7cb31885cb41a06",
+    "edition": 37,
+    "date": 1655952012161,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "SmoothRounded"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "TentacleArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "EyeScar"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #38",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/38.png",
+    "dna": "9295a6c35b04dd7d81706c8f511260eee8275db8",
+    "edition": 38,
+    "date": 1655952012238,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "SmoothRounded"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LobsterLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #39",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/39.png",
+    "dna": "4dd4d943a4dfd9c62ff51cbd4ad076dba7c9d6b1",
+    "edition": 39,
+    "date": 1655952012319,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "SwordfishMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "EyeScar"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #40",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/40.png",
+    "dna": "fd71693c00407487adfa9ecc526abead5b15a9b5",
+    "edition": 40,
+    "date": 1655952012399,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "SharkFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #41",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/41.png",
+    "dna": "422964d68eb3339e9d6bb6fd19176fd712b85fd7",
+    "edition": 41,
+    "date": 1655952012481,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesPointed"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #42",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/42.png",
+    "dna": "9a7eea1ba81b28a180ebc9c92c80927747d833f2",
+    "edition": 42,
+    "date": 1655952012567,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesTruncate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DorsalFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LobsterLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "TurtleArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "CatfishMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #43",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/43.png",
+    "dna": "b5989057f079e2dd3b5980710688ce61ac135e49",
+    "edition": 43,
+    "date": 1655952012644,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "SmoothBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LobsterLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "CatfishMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #44",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/44.png",
+    "dna": "e51d476fc6e94f60206e566a4787b9381dc4c283",
+    "edition": 44,
+    "date": 1655952012721,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #45",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/45.png",
+    "dna": "173cefb6e713f92f1e40ae5250668a34f1f36528",
+    "edition": 45,
+    "date": 1655952012807,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesRounded"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "LureArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #46",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/46.png",
+    "dna": "18e95e8118c2e54a75ec54314cc12be788ed99ec",
+    "edition": 46,
+    "date": 1655952012883,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "SmoothForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LobsterLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #47",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/47.png",
+    "dna": "b72182b913b84025087dbc4976d544e9b54b2c60",
+    "edition": 47,
+    "date": 1655952012965,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #48",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/48.png",
+    "dna": "add8a233397d6cde2e674e52a28db658f6eedfce",
+    "edition": 48,
+    "date": 1655952013041,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DorsalFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LureLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "NemoFins"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "SharkEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #49",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/49.png",
+    "dna": "064977d56844ca4826049ff0781a6312544cc9c6",
+    "edition": 49,
+    "date": 1655952013117,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "SmoothBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DorsalFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "EyeScar"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #50",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/50.png",
+    "dna": "10b8d01d1eff6bbb5ad3b83efd01f7e5d4780673",
+    "edition": 50,
+    "date": 1655952013200,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "NemoFins"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #51",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/51.png",
+    "dna": "8274ab22784d125a8d04564e57850e7fbb44fc5a",
+    "edition": 51,
+    "date": 1655952013282,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "SharkFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "LobsterClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #52",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/52.png",
+    "dna": "ebd76ae2ee77d07b8ce94d4c62ffd17ab3158349",
+    "edition": 52,
+    "date": 1655952013363,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #53",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/53.png",
+    "dna": "f61c0afa693a61de9c63728a25b96b32cfce68e6",
+    "edition": 53,
+    "date": 1655952013442,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "StrapOnShark"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "TentacleArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #54",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/54.png",
+    "dna": "1468119713962c98439ee1d0541be7811a530187",
+    "edition": 54,
+    "date": 1655952013524,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesPointed"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "TentacleLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "SharkEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #55",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/55.png",
+    "dna": "75a022e9abf2cf4c5028bb4c2d39af5d50c87bdc",
+    "edition": 55,
+    "date": 1655952013609,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DorsalFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "SharkEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #56",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/56.png",
+    "dna": "9ba282c47504a60a094cf75183cd9ffb0842f1a5",
+    "edition": 56,
+    "date": 1655952013690,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "LureArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "SharkEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #57",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/57.png",
+    "dna": "6ec5c726eb5239b5846a29c15dfc96ab3411b0a3",
+    "edition": 57,
+    "date": 1655952013773,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "CatfishMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #58",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/58.png",
+    "dna": "79934687e1398ea440b4dfd243f2632d3080cb29",
+    "edition": 58,
+    "date": 1655952013849,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LureLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "ThreeEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #59",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/59.png",
+    "dna": "93de70f5abf6353c861425ed0384a110f1a4d676",
+    "edition": 59,
+    "date": 1655952013927,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "NemoFins"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "EyeScar"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #60",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/60.png",
+    "dna": "f7d7eff05b5fe015a685e9ac64f8f5bde78d9474",
+    "edition": 60,
+    "date": 1655952014013,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "SmoothPointed"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #61",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/61.png",
+    "dna": "ae4d820c6cffbbb897a2e5ecbdd5f7d2fe78edd0",
+    "edition": 61,
+    "date": 1655952014088,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesTruncate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "BaseEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #62",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/62.png",
+    "dna": "b88c229f18dc3be0b38358590dc9ba6acb339848",
+    "edition": 62,
+    "date": 1655952014169,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesTruncate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DorsalFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LureLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "TentacleArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #63",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/63.png",
+    "dna": "c0742efdfd8d1828085a0eb5577e0acd371a0899",
+    "edition": 63,
+    "date": 1655952014245,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "SmoothLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "CatfishMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "LobsterEye"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #64",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/64.png",
+    "dna": "e43400a8573785a664641ee8dcab7bcdcf0b2365",
+    "edition": 64,
+    "date": 1655952014327,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesPointed"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LureLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "SharkEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #65",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/65.png",
+    "dna": "df62e763e4ff7d77e5c5d9a134bb60bcc03b2f60",
+    "edition": 65,
+    "date": 1655952014410,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "SmoothPointed"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "LureArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #66",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/66.png",
+    "dna": "27c9e2008f4ba81237100142fa7a2ccddc0810b5",
+    "edition": 66,
+    "date": 1655952014492,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesTruncate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LureLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "LobsterEye"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #67",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/67.png",
+    "dna": "14ff4e309fe9187be7ea7065613ef16174130501",
+    "edition": 67,
+    "date": 1655952014571,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "SharkEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #68",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/68.png",
+    "dna": "1ff2baaf1d9defadbcd71aa8457382b454fd3995",
+    "edition": 68,
+    "date": 1655952014657,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesTruncate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "ThreeEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #69",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/69.png",
+    "dna": "f3bd26aa4787823790e8c1a2b64d97a7ee5be2b8",
+    "edition": 69,
+    "date": 1655952014734,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesRounded"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DorsalFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "LureArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "LobsterEye"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #70",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/70.png",
+    "dna": "90ec7f787c7d8df969e0722623e7703350d69252",
+    "edition": 70,
+    "date": 1655952014819,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "SmoothBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DorsalFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "TentacleLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "TentacleArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "SwordfishMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #71",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/71.png",
+    "dna": "ab26486d3a0036dc00464679a9b2b05a2d78dcd7",
+    "edition": 71,
+    "date": 1655952014898,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "SmoothLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "TentacleLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "EyeScar"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #72",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/72.png",
+    "dna": "6411ed296899a360b80249ffb198aea97faf7ee6",
+    "edition": 72,
+    "date": 1655952014973,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesPointed"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "BaseEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #73",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/73.png",
+    "dna": "77186e3eca90d1aff805c9b8ad1b187286dc9a58",
+    "edition": 73,
+    "date": 1655952015058,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LureLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "SharkEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #74",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/74.png",
+    "dna": "82c362c5980e188951758c2c5880f8561a85e12c",
+    "edition": 74,
+    "date": 1655952015136,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "SmoothForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LobsterLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "BaseEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #75",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/75.png",
+    "dna": "53e20c30c64d33fb49ecb66bb7c1ceadde79522c",
+    "edition": 75,
+    "date": 1655952015220,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LureLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #76",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/76.png",
+    "dna": "e210355865e61edc4b1e4cf945dd779886a84756",
+    "edition": 76,
+    "date": 1655952015293,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DorsalFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "LureArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "LobsterEye"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #77",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/77.png",
+    "dna": "95efd069fda2680f07abd345350b43886128b4dd",
+    "edition": 77,
+    "date": 1655952015374,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "TurtleLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "TentacleArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "CatfishMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #78",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/78.png",
+    "dna": "1f2ec38279cf41679a2f48f5c27f7c34d896b34b",
+    "edition": 78,
+    "date": 1655952015459,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "SharkFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #79",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/79.png",
+    "dna": "406659226852b2a797f9b99c70313570f178ffc9",
+    "edition": 79,
+    "date": 1655952015532,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "SmoothPointed"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "LobsterEye"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #80",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/80.png",
+    "dna": "d8eabd405ee7c8a29d52cd7259fdb7d71badfde5",
+    "edition": 80,
+    "date": 1655952015614,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "TurtleEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #81",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/81.png",
+    "dna": "b24765e7faa8e9a500504bf780cd400a5f0058d8",
+    "edition": 81,
+    "date": 1655952015698,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "SmoothLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #82",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/82.png",
+    "dna": "1ffac2cf3f0b2581aed0a8e1ae7b21cd628bdd1c",
+    "edition": 82,
+    "date": 1655952015772,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "SharkFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "TurtleArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "LobsterEye"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #83",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/83.png",
+    "dna": "bf52c51e6b488830d330e571b46a0598a36387b0",
+    "edition": 83,
+    "date": 1655952015853,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "SmoothBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LureLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "LureArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #84",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/84.png",
+    "dna": "8e8df98eda7391bb028351346773c8e8542a1415",
+    "edition": 84,
+    "date": 1655952015928,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "TurtleArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "BaseEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #85",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/85.png",
+    "dna": "70fe2c650f4cd23e5ff931d70e6efb11cb614ffc",
+    "edition": 85,
+    "date": 1655952016007,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #86",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/86.png",
+    "dna": "1c7729de8c36a5f9e0a2cd0ba6cf874eaf880e29",
+    "edition": 86,
+    "date": 1655952016084,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesLunate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "TentacleLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "SwordfishMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "BaseEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #87",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/87.png",
+    "dna": "84d93d031ad478661650e06fe5d8657c5a213650",
+    "edition": 87,
+    "date": 1655952016161,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "SharkFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LobsterLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #88",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/88.png",
+    "dna": "36b159894c08a0e97ac06f77cd8449b54368c94c",
+    "edition": 88,
+    "date": 1655952016241,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesPointed"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DorsalFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #89",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/89.png",
+    "dna": "7ffc361323c573f091fefa6adbd666f859e50613",
+    "edition": 89,
+    "date": 1655952016316,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "StrapOnShark"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LobsterLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "EyeScar"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #90",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/90.png",
+    "dna": "fd1b7e116b94ad735059cdb801093e646c5e349b",
+    "edition": 90,
+    "date": 1655952016395,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "SmoothForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #91",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/91.png",
+    "dna": "b1ff4070de0532d13bfc68124eefc0c50987e7de",
+    "edition": 91,
+    "date": 1655952016479,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "SmoothTruncate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "TurtleArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "CatfishMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "SharkEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #92",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/92.png",
+    "dna": "10238a360176a9bedec9895f83f07107af2539a5",
+    "edition": 92,
+    "date": 1655952016557,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "ThreeEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #93",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/93.png",
+    "dna": "11d0412cc281a533b962a4ee102c164dff48633f",
+    "edition": 93,
+    "date": 1655952016635,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesRounded"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "StrapOnShark"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LobsterLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "TentacleArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "SwordfishMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #94",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/94.png",
+    "dna": "def3dddf5d069cda126055c81c6af7e2ef2fff9b",
+    "edition": 94,
+    "date": 1655952016716,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesTruncate"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "TurtleShell"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "LobsterEye"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #95",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/95.png",
+    "dna": "17b08cb3b4c673fb60336ef9fbb8883f0691ec22",
+    "edition": 95,
+    "date": 1655952016794,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "TentacleLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #96",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/96.png",
+    "dna": "9c8dbf1423d6dbfc72c29716581c302482b447cf",
+    "edition": 96,
+    "date": 1655952016880,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #97",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/97.png",
+    "dna": "7b7c8bbd9f09c4085c9349e17902c88122f7862f",
+    "edition": 97,
+    "date": 1655952016954,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesBeta"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "TentacleArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "LobsterEye"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #98",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/98.png",
+    "dna": "dfe33b7f78fdd9bbbe29dbbba8336a13170f3bd3",
+    "edition": 98,
+    "date": 1655952017033,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "FinLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #99",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/99.png",
+    "dna": "b322dd81d46283f2d5acb1bfb45004f505dd1a25",
+    "edition": 99,
+    "date": 1655952017115,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesPointed"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "DolphinFin"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  },
+  {
+    "name": "Your Collection #100",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/100.png",
+    "dna": "596fa87a3d3f65f0a19caa58955ede13a54c973e",
+    "edition": 100,
+    "date": 1655952017190,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesRounded"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FidlerClaws"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "HashLips Art Engine - datboi's fork"
+  }
+]

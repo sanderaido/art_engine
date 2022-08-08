@@ -1,0 +1,39 @@
+{
+  "name": "Your Collection #55",
+  "description": "Remember to replace this description",
+  "image": "ipfs://TESTING/55.png",
+  "dna": "75a022e9abf2cf4c5028bb4c2d39af5d50c87bdc",
+  "edition": 55,
+  "date": 1655952013609,
+  "attributes": [
+    {
+      "trait_type": "Body",
+      "value": "ScalesLunate"
+    },
+    {
+      "trait_type": "Head",
+      "value": "FishHead"
+    },
+    {
+      "trait_type": "Back",
+      "value": "DorsalFins"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "FinLegs"
+    },
+    {
+      "trait_type": "Arms",
+      "value": "FidlerClaws"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "AnglerMouth"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "SharkEyes"
+    }
+  ],
+  "compiler": "HashLips Art Engine - datboi's fork"
+}

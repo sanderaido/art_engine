@@ -1,0 +1,39 @@
+{
+  "name": "Your Collection #93",
+  "description": "Remember to replace this description",
+  "image": "ipfs://TESTING/93.png",
+  "dna": "11d0412cc281a533b962a4ee102c164dff48633f",
+  "edition": 93,
+  "date": 1655952016635,
+  "attributes": [
+    {
+      "trait_type": "Body",
+      "value": "ScalesRounded"
+    },
+    {
+      "trait_type": "Head",
+      "value": "FishHead"
+    },
+    {
+      "trait_type": "Back",
+      "value": "StrapOnShark"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "LobsterLegs"
+    },
+    {
+      "trait_type": "Arms",
+      "value": "TentacleArms"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "SwordfishMouth"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "AnglerEyes"
+    }
+  ],
+  "compiler": "HashLips Art Engine - datboi's fork"
+}

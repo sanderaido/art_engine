@@ -1,0 +1,39 @@
+{
+  "name": "Your Collection #42",
+  "description": "Remember to replace this description",
+  "image": "ipfs://TESTING/42.png",
+  "dna": "9a7eea1ba81b28a180ebc9c92c80927747d833f2",
+  "edition": 42,
+  "date": 1655952012567,
+  "attributes": [
+    {
+      "trait_type": "Body",
+      "value": "ScalesTruncate"
+    },
+    {
+      "trait_type": "Head",
+      "value": "FishHead"
+    },
+    {
+      "trait_type": "Back",
+      "value": "DorsalFins"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "LobsterLegs"
+    },
+    {
+      "trait_type": "Arms",
+      "value": "TurtleArms"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "CatfishMouth"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "AnglerEyes"
+    }
+  ],
+  "compiler": "HashLips Art Engine - datboi's fork"
+}

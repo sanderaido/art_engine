@@ -1,0 +1,39 @@
+{
+  "name": "Your Collection #63",
+  "description": "Remember to replace this description",
+  "image": "ipfs://TESTING/63.png",
+  "dna": "c0742efdfd8d1828085a0eb5577e0acd371a0899",
+  "edition": 63,
+  "date": 1655952014245,
+  "attributes": [
+    {
+      "trait_type": "Body",
+      "value": "SmoothLunate"
+    },
+    {
+      "trait_type": "Head",
+      "value": "FishHead"
+    },
+    {
+      "trait_type": "Back",
+      "value": "DolphinFin"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "BetaLegs"
+    },
+    {
+      "trait_type": "Arms",
+      "value": "FinArms"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "CatfishMouth"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "LobsterEye"
+    }
+  ],
+  "compiler": "HashLips Art Engine - datboi's fork"
+}

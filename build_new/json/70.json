@@ -1,0 +1,39 @@
+{
+  "name": "Your Collection #70",
+  "description": "Remember to replace this description",
+  "image": "ipfs://TESTING/70.png",
+  "dna": "90ec7f787c7d8df969e0722623e7703350d69252",
+  "edition": 70,
+  "date": 1655952014819,
+  "attributes": [
+    {
+      "trait_type": "Body",
+      "value": "SmoothBeta"
+    },
+    {
+      "trait_type": "Head",
+      "value": "FishHead"
+    },
+    {
+      "trait_type": "Back",
+      "value": "DorsalFins"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "TentacleLegs"
+    },
+    {
+      "trait_type": "Arms",
+      "value": "TentacleArms"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "SwordfishMouth"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "AnglerEyes"
+    }
+  ],
+  "compiler": "HashLips Art Engine - datboi's fork"
+}
