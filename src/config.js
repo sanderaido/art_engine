@@ -3,7 +3,6 @@ const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 
 /* TODO
--work in variation functionality
 -Create incompatible layers system.
 -work in rarity calculations
 -option to include rarity in metadata
@@ -28,6 +27,7 @@ I should be able to set growEditionSizeTo to [10,10,10] not [10,20,30]. Maybe ev
 - Continue to build on resumeNum and enable a resumted generation? Maybe pull dna from metadata?
 -option to not display none in metadata -- Solution: use removeAttribute
 -rework weight system to allow exact counts to be used as weights. 
+-work in variation functionality
 */
 
 const collectionSize = 10000;
