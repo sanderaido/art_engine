@@ -82,6 +82,13 @@ Define your variations in the layerVariations const in config.js.
 ## Layer variation example
 In this fork, there are currently two layers with variations (Arms and Head). If you look at the file structure, you will see each have '-variant' folders with each trait duplicated the number of colors edfined in layerVariations.
 
+Base folder for the trait (Arms) as well as it's variant folder (Arms-variant):
+![b3b893cc92e9779c35cb6e1ebc14c798](https://user-images.githubusercontent.com/92766571/183504630-bf9fc530-318b-42d2-86ac-bdcbceafddb4.png)
+Base trait folder contents. These files should be named the same way any other trait would be (trait#weight):
+![41bfc893d8e659dc8177664efbeb1ed7-1](https://user-images.githubusercontent.com/92766571/183504941-9dcb384b-f884-4a3e-b5a4-dc83fdc2aea0.png)
+Variant folder contents. These files should be named with the traits name (exactly matching that in the base trait folder) followed by a space and the variant's name (the four colors in this case):
+![316d7b63f6010d123e4b396c4fd32126-1](https://user-images.githubusercontent.com/92766571/183505249-0d752e61-4ed8-46ca-a084-3055f3bf1302.png)
+
 # Generate NFT in stages
 This fork gives the ability to start generation at any number. This can sometimes be useful, but in 99% of cases generation should be done all at once. These options simply provide tools for the other 1%. Utilizing a previous generations dna will help to prevent duplicates from being generated. Please be sure to utilize the oldDna [Util](#generateolddna).
 
