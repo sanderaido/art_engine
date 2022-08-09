@@ -207,17 +207,6 @@ const addAttributes = (_element) => {
   });
 };
 
-// const loadLayerImg = async (_layer) => {
-//   try {
-//     return new Promise(async (resolve) => {
-//       const image = await loadImage(`${_layer.selectedElement.path}`);
-//       resolve({ layer: _layer, loadedImage: image });
-//     });
-//   } catch (error) {
-//     console.error("Error loading image:", error);
-//   }
-// };
-
 const loadLayerImg = (_layer) => {
   return new Promise((resolve, reject) => {
     let path = _layer.selectedElement.path;
@@ -426,11 +415,9 @@ const createDnaNames = (_layers, _variant) => {
       // subtract the current weight from the random weight until we reach a sub zero value.
       random -= rarityCount[newWeight];
       if (random < 0) {
-        if(_layers.layerVariations != undefined) {
+        if(layer.layerVariations != undefined) {
           return randNum.push(
-            `${layer.elements[i].id}:${layer.elements[i].filename}# ${_variant}${
-              layer.bypassDNA ? "?bypassDNA=true" : ""
-            }`
+            `${layer.elements[i].id}:${layer.elements[i].name}& ${_variant}`
           );
         } else {
           return randNum.push(
@@ -439,11 +426,6 @@ const createDnaNames = (_layers, _variant) => {
             }`
           );
         }
-        // return randNum.push(
-        //   `${layer.elements[i].id}:${layer.elements[i].filename}${
-        //     layer.bypassDNA ? "?bypassDNA=true" : ""
-        //   }`
-        // );
       } 
     } 
   });
@@ -478,11 +460,17 @@ const createDnaExact = (_layers, _remainingInLayersOrder, _currentEdition, _vari
         random -= allTraitsCount[layer.elements[i].name];
       }
       if (random < 0) {
-        return randNum.push(
-          `${layer.elements[i].id}:${layer.elements[i].filename}${
-            layer.bypassDNA ? "?bypassDNA=true" : ""
-          }`
-        );
+        if(layer.layerVariations != undefined) {
+          return randNum.push(
+            `${layer.elements[i].id}:${layer.elements[i].name}& ${_variant}`
+          );
+        } else {
+          return randNum.push(
+            `${layer.elements[i].id}:${layer.elements[i].filename}${
+              layer.bypassDNA ? "?bypassDNA=true" : ""
+            }`
+          );
+        }
       }
     }
   });
@@ -672,11 +660,8 @@ const startCreating = async () => {
       }
 
       let newVariant = createVariation(layerVariations);
-      console.log(newVariant);
       let variant = newVariant.split(':').pop();
-      console.log(variant);
       let variantName = newVariant.split(':')[0];
-      console.log(variantName);
 
       let newDna = (exactWeight) ? createDnaExact(layers, remainingInLayersOrder, currentEdition, variant) : (namedWeight) ? createDnaNames(layers, variant) : createDna(layers, variant);
 
