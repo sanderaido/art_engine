@@ -216,5 +216,6 @@ module.exports = {
   collectionSize,
   namedWeight,
   exactWeight,
+  layerVariations,
   importOldDna,
 };

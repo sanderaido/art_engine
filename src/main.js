@@ -27,6 +27,7 @@ const {
   collectionSize,
   namedWeight,
   exactWeight,
+  layerVariations,
   importOldDna,
 } = require(`${basePath}/src/config.js`);
 const canvas = createCanvas(format.width, format.height);
@@ -671,8 +672,11 @@ const startCreating = async () => {
       }
 
       let newVariant = createVariation(layerVariations);
+      console.log(newVariant);
       let variant = newVariant.split(':').pop();
+      console.log(variant);
       let variantName = newVariant.split(':')[0];
+      console.log(variantName);
 
       let newDna = (exactWeight) ? createDnaExact(layers, remainingInLayersOrder, currentEdition, variant) : (namedWeight) ? createDnaNames(layers, variant) : createDna(layers, variant);
 
