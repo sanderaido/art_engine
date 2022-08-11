@@ -38,7 +38,7 @@ This is a fork of Hashlip's art engine. It is currently a *Work in Progress* as 
 - [Generate NFT in smaller sets for testing](#generate-nft-in-smaller-sets-for-testing)
   - [scaleSize Example](#scalesize-example)
 
-## Allow duplicates
+## Allow duplicate images/metadata
 
 - [Allow duplicate images to be duplicated](#allow-duplicates)
 
