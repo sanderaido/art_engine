@@ -191,6 +191,13 @@ const layerVariations = [
 const resumeNum = 0;
 const importOldDna = false;
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+* NOTE: As the name implies, this will allow duplicates to be
+* generated in the collection. Do not set this to true unless
+* you specifically want duplicates in your collection.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+const allowDuplicates = true;
+
 module.exports = {
   format,
   baseUri,
@@ -218,4 +225,5 @@ module.exports = {
   exactWeight,
   layerVariations,
   importOldDna,
+  allowDuplicates,
 };

@@ -29,6 +29,7 @@ const {
   exactWeight,
   layerVariations,
   importOldDna,
+  allowDuplicates,
 } = require(`${basePath}/src/config.js`);
 const canvas = createCanvas(format.width, format.height);
 const ctx = canvas.getContext("2d");
@@ -665,7 +666,10 @@ const startCreating = async () => {
 
       let newDna = (exactWeight) ? createDnaExact(layers, remainingInLayersOrder, currentEdition, variant) : (namedWeight) ? createDnaNames(layers, variant) : createDna(layers, variant);
 
-      if (isDnaUnique(dnaList, newDna)) {
+      let duplicatesAllowed = (allowDuplicates) ? true : isDnaUnique(dnaList, newDna);
+
+      // if (isDnaUnique(dnaList, newDna)) {
+      if (duplicatesAllowed) {
         let results = constructLayerToDna(newDna, layers);
 
         if (exactWeight) {
