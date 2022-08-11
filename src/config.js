@@ -196,7 +196,7 @@ const importOldDna = false;
 * generated in the collection. Do not set this to true unless
 * you specifically want duplicates in your collection.
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-const allowDuplicates = true;
+const allowDuplicates = false;
 
 module.exports = {
   format,
