@@ -38,6 +38,10 @@ This is a fork of Hashlip's art engine. It is currently a *Work in Progress* as 
 - [Generate NFT in smaller sets for testing](#generate-nft-in-smaller-sets-for-testing)
   - [scaleSize Example](#scalesize-example)
 
+## Allow duplicate images/metadata
+
+- [Allow duplicate images to be duplicated](#allow-duplicates)
+
 ## Utils
 
 - [cleanMetadata](#cleanmetadata)
@@ -147,6 +151,11 @@ const scaleSize = (num) => {
   if (collectionSize === toCreateNow) return num;
   return Math.floor((num / collectionSize) * toCreateNow);
 };
+```
+# Allow duplicates 
+If you want duplicates in your collection, you can set the allowDuplicates flag to true. 
+```js
+const allowDuplicates = true;
 ```
 
 # Utils
