@@ -135,11 +135,6 @@ const layersSetup = (layersOrder) => {
         ? layerObj.options?.["bypassDNA"]
         : false,
     layerVariations: layerObj['layerVariations'],
-    // @Ricky
-    // layerVariations: 
-    //   layerObj.options?.["layerVariations"] !== undefined
-    //   ? layerObj.options?.["layerVariations"]
-    //   : undefined,
   }));
   return layers;
 };
