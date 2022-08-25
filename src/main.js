@@ -135,6 +135,11 @@ const layersSetup = (layersOrder) => {
         ? layerObj.options?.["bypassDNA"]
         : false,
     layerVariations: layerObj['layerVariations'],
+    // @Ricky
+    // layerVariations: 
+    //   layerObj.options?.["layerVariations"] !== undefined
+    //   ? layerObj.options?.["layerVariations"]
+    //   : undefined,
   }));
   return layers;
 };
@@ -701,11 +706,14 @@ const startCreating = async () => {
           if (background.generate) {
             drawBackground();
           }
-          attributesList.push({
-            trait_type: variantName,
-            value: variant,
-          });
+          let variantMetadata = false
           renderObjectArray.forEach((renderObject, index) => {
+            Object.keys(renderObject.layer).forEach(key => {
+              if (renderObject.layer.layerVariations !== undefined) {
+                variantMetadata = true;
+              }
+            })
+            
             drawElement(
               renderObject,
               index,
@@ -715,6 +723,12 @@ const startCreating = async () => {
               hashlipsGiffer.add();
             }
           });
+          if (variantMetadata) {
+            attributesList.push({
+              trait_type: variantName,
+              value: variant,
+            });
+          }
           if (gif.export) {
             hashlipsGiffer.stop();
           }
