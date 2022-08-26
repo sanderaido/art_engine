@@ -38,7 +38,7 @@ set to 1of1 name or for just a single '1of1' trait. Create separate util to crea
 */
 
 const collectionSize = 1000;
-const toCreateNow = 1000;
+const toCreateNow = 10;
 
 const scaleSize = (num) => {
   if (collectionSize === toCreateNow) return num;
@@ -80,29 +80,29 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: scaleSize(250),
-    layersOrder: [
-      // { name: "SkeletalBody" },
-      { name: "Head", layerVariations: 'Color' },
-      { name: "Back" },
-      { name: "Legs" },
-      { name: "Arms", layerVariations: 'Color' },
-      { name: "Mouth" },
-      { name: "Eyes" },
-    ],
-  },
-  {
     growEditionSizeTo: scaleSize(500),
     layersOrder: [
-      { name: "Body" },
-      { name: "Head"},
+      // { name: "SkeletalBody" },
+      { name: "Head", options: {layerVariations: 'Color', displayName: 'test',} },
       { name: "Back" },
       { name: "Legs" },
-      { name: "Arms" },
+      { name: "Arms", options: {layerVariations: 'Color'} },
       { name: "Mouth" },
       { name: "Eyes" },
     ],
   },
+  // {
+  //   growEditionSizeTo: scaleSize(500),
+  //   layersOrder: [
+  //     { name: "Body" },
+  //     { name: "Head"},
+  //     { name: "Back" },
+  //     { name: "Legs" },
+  //     { name: "Arms" },
+  //     { name: "Mouth" },
+  //     { name: "Eyes" },
+  //   ],
+  // },
   {
 
     growEditionSizeTo: scaleSize(collectionSize),
@@ -209,10 +209,10 @@ const layerVariations = [
       'Red',
     ],
     Weight: [
-      35,
-      25,
-      25,
       15,
+      25,
+      25,
+      35,
     ],
   },
 ];

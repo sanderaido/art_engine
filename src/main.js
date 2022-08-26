@@ -134,7 +134,11 @@ const layersSetup = (layersOrder) => {
       layerObj.options?.["bypassDNA"] !== undefined
         ? layerObj.options?.["bypassDNA"]
         : false,
-    layerVariations: layerObj['layerVariations'],
+    // layerVariations: layerObj['layerVariations'],
+    layerVariations: 
+      layerObj.options?.['layerVariations'] !== undefined
+        ? layerObj.options?.['layerVariations']
+        : undefined
   }));
   return layers;
 };
@@ -211,11 +215,15 @@ const addAttributes = (_element) => {
 const loadLayerImg = (_layer) => {
   return new Promise((resolve, reject) => {
     let path = _layer.selectedElement.path;
+    console.log(path);
     if (_layer.layerVariations != undefined) {
       path = path.split('#')[0];
       path = path.concat(_layer.variant.concat('.png'));
-      path = path.replace(_layer.name, _layer.name.concat('-variant'));
+      console.log(_layer.selectedElement.name);
+      path = path.replace(_layer.selectedElement.name, _layer.selectedElement.name.concat('-variant'));
+      console.log(path);
     }
+    // console.log(path);
     if (!fs.existsSync(path)) {
       throw new Error(`The selected file (${path}) does not exist. Check spelling and location.`);
     }
@@ -681,6 +689,7 @@ const startCreating = async () => {
         let loadedElements = [];
 
         results.forEach((layer) => {
+          console.log(layer);
           loadedElements.push(loadLayerImg(layer));
         });
 
