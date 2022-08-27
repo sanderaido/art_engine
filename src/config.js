@@ -45,13 +45,13 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: scaleSize(250),
+    growEditionSizeTo: scaleSize(300),
     layersOrder: [
       // { name: "SkeletalBody" },
-      { name: "Head", layerVariations: 'Color' },
+      { name: "Head", options: {layerVariations: 'Color', displayName: 'test',} },
       { name: "Back" },
       { name: "Legs" },
-      { name: "Arms", layerVariations: 'Color' },
+      { name: "Arms", options: {layerVariations: 'Color'} },
       { name: "Mouth" },
       { name: "Eyes" },
     ],
@@ -174,10 +174,10 @@ const layerVariations = [
       'Red',
     ],
     Weight: [
-      35,
-      25,
-      25,
       15,
+      25,
+      25,
+      35,
     ],
   },
 ];

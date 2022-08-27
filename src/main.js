@@ -134,7 +134,13 @@ const layersSetup = (layersOrder) => {
       layerObj.options?.["bypassDNA"] !== undefined
         ? layerObj.options?.["bypassDNA"]
         : false,
-    layerVariations: layerObj['layerVariations'],
+    // layerVariations: layerObj['layerVariations'],
+    layerVariations: 
+      layerObj.options?.['layerVariations'] !== undefined
+        ? layerObj.options?.['layerVariations']
+        : undefined,
+    ogName: layerObj.name,
+    
   }));
   return layers;
 };
@@ -214,7 +220,7 @@ const loadLayerImg = (_layer) => {
     if (_layer.layerVariations != undefined) {
       path = path.split('#')[0];
       path = path.concat(_layer.variant.concat('.png'));
-      path = path.replace(_layer.name, _layer.name.concat('-variant'));
+      path = path.replace(_layer.ogName, _layer.ogName.concat('-variant'));
     }
     if (!fs.existsSync(path)) {
       throw new Error(`The selected file (${path}) does not exist. Check spelling and location.`);
@@ -283,6 +289,7 @@ const constructLayerToDna = (_dna = "", _layers = []) => {
       selectedElement: selectedElement,
       layerVariations: layer.layerVariations,
       variant: layer.layerVariations != undefined ? (_dna.split('&').pop()).split(DNA_DELIMITER).shift() : '',
+      ogName: layer.ogName,
     };
   });
   return mappedDnaToLayers;
