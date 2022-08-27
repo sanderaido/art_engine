@@ -138,7 +138,9 @@ const layersSetup = (layersOrder) => {
     layerVariations: 
       layerObj.options?.['layerVariations'] !== undefined
         ? layerObj.options?.['layerVariations']
-        : undefined
+        : undefined,
+    ogName: layerObj.name,
+    
   }));
   return layers;
 };
@@ -215,15 +217,11 @@ const addAttributes = (_element) => {
 const loadLayerImg = (_layer) => {
   return new Promise((resolve, reject) => {
     let path = _layer.selectedElement.path;
-    console.log(path);
     if (_layer.layerVariations != undefined) {
       path = path.split('#')[0];
       path = path.concat(_layer.variant.concat('.png'));
-      console.log(_layer.selectedElement.name);
-      path = path.replace(_layer.selectedElement.name, _layer.selectedElement.name.concat('-variant'));
-      console.log(path);
+      path = path.replace(_layer.ogName, _layer.ogName.concat('-variant'));
     }
-    // console.log(path);
     if (!fs.existsSync(path)) {
       throw new Error(`The selected file (${path}) does not exist. Check spelling and location.`);
     }
@@ -291,6 +289,7 @@ const constructLayerToDna = (_dna = "", _layers = []) => {
       selectedElement: selectedElement,
       layerVariations: layer.layerVariations,
       variant: layer.layerVariations != undefined ? (_dna.split('&').pop()).split(DNA_DELIMITER).shift() : '',
+      ogName: layer.ogName,
     };
   });
   return mappedDnaToLayers;
@@ -689,7 +688,6 @@ const startCreating = async () => {
         let loadedElements = [];
 
         results.forEach((layer) => {
-          console.log(layer);
           loadedElements.push(loadLayerImg(layer));
         });
 
