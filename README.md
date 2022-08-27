@@ -108,7 +108,7 @@ const layerVariations = [
 ```
 Determine which layers need variants:
 ```js
-{ name: "Arms", layerVariations: 'Color' },
+{ name: "Arms", options: {layerVariations: 'Color'} },
 ```
 Base folder for the trait (Arms) as well as it's variant folder (Arms-variant):
 <br/>
@@ -137,19 +137,19 @@ const importOldDna = false;
 # Generate NFT in smaller sets for testing
 Adjusting every `growEditionSizeTo` anytime you want to test something out on a smaller scale can be frustrating. This system allows you to set your `collectionSize` once, then your `growEditionSizeTo` definitions are replaced with scaleSize. Ensure the numbers fed to that function add up to your `collectionSize`, and you can change `toCreateNow` on the fly to whatever scale you want to test. All rarity is scaled where applicable, so no need to make weight adjustments!
 ## scaleSize Example
-By default, this repository is working with a collection of 10,000, but scaling the size down to 100 for testing purposes. 
+By default, this repository is working with a collection of 1000. You can test this feature quickly by simply setting `toCreatNow` to a smaller number.
 
 **NOTE**: This feature can be bypassed by setting `growEditionSizeTo` to numbers vs using `scaleSize`. If you do use this feature, `collectionSize` and `toCreateNow` must match to create the full collection!
 
 **TIP**: To avoid potential scaling issues, you can set your final layersOrder to equal `collectionSize`. 
 
 ```js
-const collectionSize = 10000;
-const toCreateNow = 100;
+const collectionSize = 1000;
+const toCreateNow = 1000;
 
 const scaleSize = (num) => {
   if (collectionSize === toCreateNow) return num;
-  return Math.floor((num / collectionSize) * toCreateNow);
+  return Math.ceil((num / collectionSize) * toCreateNow);
 };
 ```
 # Allow duplicates 

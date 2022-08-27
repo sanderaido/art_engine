@@ -7,7 +7,7 @@ const toCreateNow = 1000;
 
 const scaleSize = (num) => {
   if (collectionSize === toCreateNow) return num;
-  return Math.floor((num / collectionSize) * toCreateNow);
+  return Math.ceil((num / collectionSize) * toCreateNow);
 };
 
 // ********* Advanced weight options *********
