@@ -6,6 +6,15 @@ const { layerConfigurations } = require(`${basePath}/src/config.js`);
 
 const { getElements } = require("../src/main.js");
 
+/* **********************
+******** Options ********
+************************/
+const includeRank = false;
+const includeRarity = false;
+/* **********************
+******** Options ********
+************************/
+
 // read json data
 let rawdata = fs.readFileSync(`${basePath}/build/json/_metadata.json`);
 let data = JSON.parse(rawdata);
@@ -42,6 +51,8 @@ layerConfigurations.forEach((config) => {
   });
 });
 
+console.log(rarityData);
+
 // fill up rarity chart with occurrences from metadata
 data.forEach((element) => {
   let attributes = element.attributes;
@@ -50,12 +61,14 @@ data.forEach((element) => {
     let value = attribute.value;
 
     let rarityDataTraits = rarityData[traitType];
-    rarityDataTraits.forEach((rarityDataTrait) => {
-      if (rarityDataTrait.trait == value) {
-        // keep track of occurrences
-        rarityDataTrait.occurrence++;
-      }
-    });
+    if (rarityDataTraits != undefined) {
+      rarityDataTraits.forEach((rarityDataTrait) => {
+        if (rarityDataTrait.trait == value) {
+          // keep track of occurrences
+          rarityDataTrait.occurrence++;
+        }
+      });
+    }
   });
 });
 
@@ -72,11 +85,13 @@ for (var layer in rarityData) {
   }
 }
 
+// console.log(rarityData);
+
 // print out rarity data
-for (var layer in rarityData) {
-  console.log(`Trait type: ${layer}`);
-  for (var trait in rarityData[layer]) {
-    console.log(rarityData[layer][trait]);
-  }
-  console.log();
-}
+// for (var layer in rarityData) {
+//   console.log(`Trait type: ${layer}`);
+//   for (var trait in rarityData[layer]) {
+//     console.log(rarityData[layer][trait]);
+//   }
+//   console.log();
+// }

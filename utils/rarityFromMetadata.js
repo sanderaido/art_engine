@@ -5,39 +5,48 @@ const isLocal = typeof process.pkg === 'undefined';
 const basePath = isLocal ? process.cwd() : path.dirname(process.execPath);
 const fs = require('fs');
 
+/* **********************
+******** Options ********
+************************/
+const includeRank = false;
+const includeRarity = false;
+
+
 // Read json data
 let rawdata = fs.readFileSync(`${basePath}/build/json/_metadata.json`);
 let data = JSON.parse(rawdata);
+let editionSize = data.length;
 
 // Create new directory if it doesn't already exist
-const dir = `${basePath}/build_new/json`;
+const dir = `${basePath}/rarity/json`;
 if (!fs.existsSync(dir)) {
 	fs.mkdirSync(dir, {
 		recursive: true
 	});
 }
 
-// let removeValue = "None" //Enter a value you want to remove here. (ie: "None")
-// let removeTraitType = "" //Enter a Trait you want to remove here. (ie: "Head")
-
 let rarityData = [];
+let layers = [];
 
 data.forEach((item) => {
-    let count = 0;
-    for (var i = 0; i < item.attributes.length; i++) {
-
-    }
-}
-
-
-
-
-//   var resultValue=item.attributes.filter(obj=> obj.value !== removeValue); // value removal
-//   var result=resultValue.filter(obj=> obj.trait_type !== removeTraitType); // trait_types removal
-//   item.attributes = result;
-//   fs.writeFileSync(`${basePath}/build_new/json/${item.edition}.json`, JSON.stringify(item, null, 2));
+    // let newLayer = [];
+    let attributes = item.attributes;
+    attributes.forEach((attribute) => {
+        let traitType = attribute.trait_type;
+        // let value = attribute.value;
+        if(!layers.includes(traitType)) {
+            layers.push(traitType);
+        }
+        // newLayer.push(traitType);
+    });
+    // if (!layers.includes(traitTYpe))
+    // layers[]
 });
 
-fs.writeFileSync(`${basePath}/build_new/json/_metadata.json`, JSON.stringify(data, null, 2));
+console.log(layers);
+// console.log(rarityData);
 
-console.log(`Removed all ${removeValue} and ${removeTraitType} attributes`);
+
+fs.writeFileSync(`${basePath}/rarity/json/_metadata.json`, JSON.stringify(data, null, 2));
+
+console.log(`Hey, it didn't error out`);
