@@ -3,6 +3,7 @@ const fs = require("fs");
 const layersDir = `${basePath}/layers`;
 
 const { layerConfigurations } = require(`${basePath}/src/config.js`);
+const { layerVariations } = require(`${basePath}/src/config.js`);
 
 const { getElements } = require("../src/main.js");
 
@@ -19,6 +20,14 @@ const includeRarity = false;
 let rawdata = fs.readFileSync(`${basePath}/build/json/_metadata.json`);
 let data = JSON.parse(rawdata);
 let editionSize = data.length;
+
+// Create new directory if it doesn't already exist
+const dir = `${basePath}/rarity/json`;
+if (!fs.existsSync(dir)) {
+	fs.mkdirSync(dir, {
+		recursive: true
+	});
+}
 
 let rarityData = [];
 
@@ -44,6 +53,24 @@ layerConfigurations.forEach((config) => {
         ? layer.options?.["displayName"]
         : layer.name;
     // don't include duplicate layers
+    layerVariations.forEach((variation) => {
+      let variant = variation.name
+      let variantInfo = [];
+      console.log(variation.variations.length);
+      for (i = 0; variation.variations.length; i++) {
+        // let newVariant = {
+        //   trait: variation.variations[i],
+        //   weight: variation.Weight[i],
+        //   occurrence: 0,
+        // }
+        variantInfo.push("tet");
+      }
+      console.log(variantInfo);
+      // layers.push(variantInfo);
+    });
+    // console.log(layers);
+    elementsForLayer.push("test");
+    console.log(elementsForLayer);
     if (!rarityData.includes(layer.name)) {
       // add elements for each layer to chart
       rarityData[layerName] = elementsForLayer;
@@ -51,7 +78,7 @@ layerConfigurations.forEach((config) => {
   });
 });
 
-console.log(rarityData);
+// console.log(rarityData);
 
 // fill up rarity chart with occurrences from metadata
 data.forEach((element) => {
@@ -72,6 +99,14 @@ data.forEach((element) => {
   });
 });
 
+data.forEach((element) => {
+
+})
+
+
+// console.log(rarityData);
+// console.log(data);
+
 // convert occurrences to occurence string
 for (var layer in rarityData) {
   for (var attribute in rarityData[layer]) {
@@ -85,7 +120,8 @@ for (var layer in rarityData) {
   }
 }
 
-// console.log(rarityData);
+fs.writeFileSync(`${basePath}/rarity/json/rarityBreakdown.json`, JSON.stringify(rarityData, null, 2));
+
 
 // print out rarity data
 // for (var layer in rarityData) {

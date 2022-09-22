@@ -23,7 +23,7 @@ const namedWeight = true;
 const exactWeight = false;
 
 
-const network = NETWORK.eth;
+const network = NETWORK.sol;
 
 // General metadata for Ethereum
 const namePrefix = "Your Collection";
@@ -37,7 +37,15 @@ const solanaMetadata = {
   creators: [
     {
       address: "9LfrWG5WY7LsJ4yEjwD8NAKZ4mLSTfLFZQ7B61ZqEzBH",
-      share: 100,
+      share: 30,
+    },
+    {
+      address: "9LfrWG5WY7LsJ4yEjwD8NAKZ4mLSTfLFZQ7B61ZqEzBH",
+      share: 30,
+    },
+    {
+      address: "9LfrWG5WY7LsJ4yEjwD8NAKZ4mLSTfLFZQ7B61ZqEzBH",
+      share: 40,
     },
   ],
 };
@@ -179,7 +187,7 @@ const layerVariations = [
       25,
       35,
     ],
-  },
+  }
 ];
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
