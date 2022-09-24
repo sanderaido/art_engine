@@ -2,13 +2,13 @@
   "name": "Your Collection #5",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/5.png",
-  "dna": "69e27fa4383499a6fed43d01f8afed76f0b06647",
+  "dna": "e30950aeb684334d5069890bc040b586c32cc3ea",
   "edition": 5,
-  "date": 1655952009530,
+  "date": 1663987724059,
   "attributes": [
     {
-      "trait_type": "SkeletalBody",
-      "value": "SkeletalScalesLunate"
+      "trait_type": "Body",
+      "value": "ScalesLunate"
     },
     {
       "trait_type": "Head",
@@ -16,15 +16,15 @@
     },
     {
       "trait_type": "Back",
-      "value": "Blowhole"
+      "value": "DorsalFins"
     },
     {
       "trait_type": "Legs",
-      "value": "LureLegs"
+      "value": "BetaLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "BetaArms"
+      "value": "FidlerClaws"
     },
     {
       "trait_type": "Mouth",
@@ -32,7 +32,11 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "AnglerEyes"
+      "value": "EyeScar"
+    },
+    {
+      "trait_type": "rarityScore",
+      "value": 24
     }
   ],
   "compiler": "HashLips Art Engine - datboi's fork"

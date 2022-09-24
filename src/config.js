@@ -23,7 +23,7 @@ const namedWeight = true;
 const exactWeight = false;
 
 
-const network = NETWORK.sol;
+const network = NETWORK.eth;
 
 // General metadata for Ethereum
 const namePrefix = "Your Collection";

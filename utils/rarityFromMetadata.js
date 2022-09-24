@@ -25,72 +25,143 @@ if (!fs.existsSync(dir)) {
 	});
 }
 
-let rarityData = [];
 let layers = [];
 
+// Get layers
 data.forEach((item) => {
   let attributes = item.attributes;
   attributes.forEach((attribute) => {
     let traitType = attribute.trait_type;
     if(!layers.includes(traitType)) {
-      let newLayer = {
+      let newLayer = [{
         trait: traitType,
         count: 0,
-      }
-      layers.push(newLayer);
+      }]
+      layers[traitType] = newLayer;
     }
   });
 });
 
-/* 
-layers
-  |__data
-    |__attributes (filtered for current layer);
+// Count each trait in each layer
+data.forEach((item) => {
+  let attributes = item.attributes;
+  attributes.forEach((attribute) => {
+    let traitType = attribute.trait_type;
+    let value = attribute.value;
+    if(layers[traitType][0].trait == traitType) {
+      layers[traitType][0].trait = value;
+      layers[traitType][0].count = 1;
+    } else {
+      let layerExists = false;
+      for (let i = 0; i < layers[traitType].length; i++) {
+        if(layers[traitType][i].trait == value) {
+          layers[traitType][i].count++;
+          layerExists = true;
+          break;
+        }
+      }
+      if(!layerExists) {
+        let newTrait = {
+          trait: value,
+          count: 1,
+        }
+        layers[traitType].push(newTrait);
+      }
+    }
+  }); 
+});
+
+// Calculate score for each item based on trait counts 
+let scores = []; 
+data.forEach((item) => {
+  let rarityScore = 0
+  let attributes = item.attributes;
+  attributes.forEach((attribute) => {
+    let traitType = attribute.trait_type;
+    let value = attribute.value;
+    for (let i = 0; i < layers[traitType].length; i++) {
+      if(layers[traitType][i].trait == value) {
+        rarityScore += layers[traitType][i].count;
+      }    
+    }
+  });
+  let scoreTrait = {
+    trait_type: "rarityScore",
+    value: rarityScore,
+  }
+  item.attributes.push(scoreTrait);
+  scores.push(rarityScore);
+  fs.writeFileSync(`${basePath}/build_new/json/${item.edition}.json`, JSON.stringify(item, null, 2));
+});
+
+fs.writeFileSync(`${basePath}/build_new/json/_metadata.json`, JSON.stringify(data, null, 2));
+
+// Sort scores decending
+scores.sort((a,b) => b-a);
+
+// Read new json data to pull scores
+let newRawdata = fs.readFileSync(`${basePath}/build_new/json/_metadata.json`);
+let newData = JSON.parse(newRawdata);
+
+/*
+create sorted list of scores above
+compare score in each item to array, when it matches, assign the next rank
+decrement from collectionSize
 */
+let rank = editionSize;
 
-// layers.forEach((layer) => {
-//   let counts = [];
-//   data.forEach((item) => {
-//     let attributes = item.attributes;
-//     attributes.forEach((attribute) => {
-//       let traitType = attribute.trait_type;
-//       let value = attribute.value;
-//       if(!rarityData.includes(layer)) {
-//         let newCount = {
-//           trait: value,
-//           count: 1,
-//         }
-//         counts.push(newCount);
-//       } 
-//     });
-
-//   });
-//   console.log(counts);
-// })
-
-console.log(layers);
-
-// data.forEach((element) => {
-//   let attributes = element.attributes;
-//   attributes.forEach((attribute) => {
-//     let traitType = attribute.trait_type;
-//     let value = attribute.value;
-
-//     let rarityDataTraits = layers[traitType];
-//     if (rarityDataTraits != undefined) {
-//       rarityDataTraits.forEach((rarityDataTrait) => {
-//         if (rarityDataTrait.trait == value) {
-//           // keep track of occurrences
-//           rarityDataTrait.occurrence++;
-//         }
-//       });
-//     }
-//   });
-// });
-
-// console.log(rarityData);
+newData.forEach((item) => {
+  console.log(item.attributes.trait_type);
+  // for(let i = 0; scores.length; i++) {
+  //   if (scores[i] == item.attributes..value) {
+  //     let newRank = {
+  //       trait_type: "Rank",
+  //       value: rank,
+  //     }
+  //     item.attributes.push(newRank);
+  //     rank--;
+  //     fs.writeFileSync(`${basePath}/build_new/json/${item.edition}.json`, JSON.stringify(item, null, 2));
+  //     break;
+  //   }
+  // }
 
 
-fs.writeFileSync(`${basePath}/rarity/json/_metadata.json`, JSON.stringify(data, null, 2));
+  // let attributes = item.attributes;
+  // attributes.forEach((attribute) => {
+  //   if (attribute.trait_type == 'rarityScore') {
+  //     console.log(attribute.value);
 
-console.log(`Hey, it didn't error out`);
+
+
+  //     for(let i = 0; scores.length; i++) {
+  //       console.log(`score: ${scores[i]}`);
+  //       if (scores[i] == attribute.value) {
+  //         let newRank = {
+  //           trait_type: "Rank",
+  //           value: rank,
+  //         }
+  //         item.attributes.push(newRank);
+  //         rank--;
+  //         fs.writeFileSync(`${basePath}/build_new/json/${item.edition}.json`, JSON.stringify(item, null, 2));
+  //         break;
+  //       }
+  //     }
+
+
+
+      
+  //   }
+  // });
+});
+
+fs.writeFileSync(`${basePath}/build_new/json/_metadata.json`, JSON.stringify(newData, null, 2));
+
+// console.log(layers);
+
+// @Ricky this isn't working for some reason
+fs.writeFileSync(`${basePath}/rarity/json/rarityBreakdown.json`, JSON.stringify(layers["test"]));
+
+console.log(`This data can also be viewed in ${basePath}/rarity/json/rarityBreakdown.json`);
+
+
+// for named rank, mod rarity table from config
