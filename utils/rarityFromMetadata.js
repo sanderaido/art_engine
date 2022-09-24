@@ -32,20 +32,14 @@ data.forEach((item) => {
   let attributes = item.attributes;
   attributes.forEach((attribute) => {
     let traitType = attribute.trait_type;
-    // let value = attribute.value;
-    // if(!layers.includes(traitType)) {
-    //   let newLayer = {
-    //     trait: value,
-    //     occurence: 0,
-    //   }
-    //   layers.push(newLayer)
-    // } 
-    // layers[traitType] = newLayer;
     if(!layers.includes(traitType)) {
-      layers.push(traitType);
+      let newLayer = {
+        trait: traitType,
+        count: 0,
+      }
+      layers.push(newLayer);
     }
   });
-  // rarityData[]
 });
 
 /* 
@@ -54,26 +48,25 @@ layers
     |__attributes (filtered for current layer);
 */
 
-layers.forEach((layer) => {
-  data.forEach((item) => {
-    let attributes = item.attributes;
-    attributes.forEach((attribute) => {
-      let traitType = attribute.trait_type;
-      let value = attribute.value;
-      if(!rarityData.includes(layer)) {
-        
-      }
+// layers.forEach((layer) => {
+//   let counts = [];
+//   data.forEach((item) => {
+//     let attributes = item.attributes;
+//     attributes.forEach((attribute) => {
+//       let traitType = attribute.trait_type;
+//       let value = attribute.value;
+//       if(!rarityData.includes(layer)) {
+//         let newCount = {
+//           trait: value,
+//           count: 1,
+//         }
+//         counts.push(newCount);
+//       } 
+//     });
 
-
-      // if (traitType == layer) {
-      //   console.log(true);
-      // } else {
-      //   console.log(false);
-      // }
-    })
-  })
-
-})
+//   });
+//   console.log(counts);
+// })
 
 console.log(layers);
 
