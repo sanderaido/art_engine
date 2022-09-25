@@ -48,6 +48,7 @@ This is a fork of Hashlip's art engine. It is currently a *Work in Progress* as 
 - [removeAttribute](#removeattribute)
 - [generateOldDna](#generateolddna)
 - [recreateAndSortMetadata](#recreateandsortmetadata)
+- [rarityFromMetadata](#rarityfrommetadata)
 
 ### Notes
 
@@ -187,6 +188,48 @@ You must place your previously generated _metadata.json file in the build_old fo
 This utility recreates all individual metadata files as well as _metadata.json and orders them numerically. This can be useful if _metadata.json was accidentally deleted from the build folder or if you need each item in _metadata.json to be ordered numerically.
 
 No edits necessary to use this util. 
+
+## rarityFromMetadata
+This utility counts all traits and calculates their occurence percentages, calculates scores based on each NFT's traits, ranks each NFT by their score, and determines their named rarity (Common, Uncommon, Rare, Epic, Legendary, Mythic). It also enables the ability to add any or all of this information to the metadata itself! 
+
+**NOTE**: This utility replaces the old 'rarity.js' script. 'yarn rarity' will now call this utility.
+**NOTE**: Due to a change in how traits are determined, this will no longer display any 0 qty traits. Be sure to review 'rarityBreakdown' in the rarity folder. 
+
+By default, Rank and Rarity will be added to the metadata when running this utility. You can adjust what will be added to the metadata by editing these items: 
+```js
+const includeScore = true;
+const includeRank = true;
+const includeRarity = true;
+const includeTraitPercentages = true;
+```
+includeScore will add a trait to the metadata like:
+```js
+{
+  "trait_type": "rarityScore",
+  "value": 173
+}
+```
+includeRank will add a trait to the metadata like:
+```js
+{
+  "trait_type": "Rank",
+  "value": 29
+}
+```
+includeRarity will add a trait to the metadata like:
+```js
+{
+  "trait_type": "Rarity",
+  "value": "Rare"
+}
+```
+includeTraitPercentages will add occurence percentages to all other traits like:
+```js
+{
+  "trait_type": "Color",
+  "value": "Red (12.00%)"
+}
+```
 
 <br/>
 <br/>
