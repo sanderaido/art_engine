@@ -2,13 +2,13 @@
   "name": "Your Collection #90",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/90.png",
-  "dna": "fd1b7e116b94ad735059cdb801093e646c5e349b",
+  "dna": "6751a32c089fecabc146cff3638b7b66ca53e1bc",
   "edition": 90,
-  "date": 1655952016395,
+  "date": 1664076726762,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "SmoothForked"
+      "value": "ScalesForked"
     },
     {
       "trait_type": "Head",
@@ -16,11 +16,11 @@
     },
     {
       "trait_type": "Back",
-      "value": "Blowhole"
+      "value": "StrapOnShark"
     },
     {
       "trait_type": "Legs",
-      "value": "BetaLegs"
+      "value": "TentacleLegs"
     },
     {
       "trait_type": "Arms",
@@ -28,11 +28,19 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "AnglerMouth"
+      "value": "BaseMouth"
     },
     {
       "trait_type": "Eyes",
-      "value": "AnglerEyes"
+      "value": "BaseEyes"
+    },
+    {
+      "trait_type": "Rank",
+      "value": 9
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
     }
   ],
   "compiler": "HashLips Art Engine - datboi's fork"

@@ -2,13 +2,13 @@
   "name": "Your Collection #31",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/31.png",
-  "dna": "35530e25dca99f300e8148910f22b335157ae95c",
+  "dna": "fa9b14b7456fc65a324f4ddd67705f762c0cf020",
   "edition": 31,
-  "date": 1655952011687,
+  "date": 1664076722207,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesRounded"
+      "value": "ScalesLunate"
     },
     {
       "trait_type": "Head",
@@ -16,7 +16,7 @@
     },
     {
       "trait_type": "Back",
-      "value": "BetaFins"
+      "value": "DorsalFins"
     },
     {
       "trait_type": "Legs",
@@ -24,15 +24,23 @@
     },
     {
       "trait_type": "Arms",
-      "value": "FidlerClaws"
+      "value": "FinArms"
     },
     {
       "trait_type": "Mouth",
-      "value": "AnglerMouth"
+      "value": "BaseMouth"
     },
     {
       "trait_type": "Eyes",
-      "value": "BaseEyes"
+      "value": "SharkEyes"
+    },
+    {
+      "trait_type": "Rank",
+      "value": 24
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
     }
   ],
   "compiler": "HashLips Art Engine - datboi's fork"

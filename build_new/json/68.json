@@ -2,13 +2,13 @@
   "name": "Your Collection #68",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/68.png",
-  "dna": "1ff2baaf1d9defadbcd71aa8457382b454fd3995",
+  "dna": "175f334532236ddf144bd4264e6523c614bfa51d",
   "edition": 68,
-  "date": 1655952014657,
+  "date": 1664076725089,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesTruncate"
+      "value": "SmoothBeta"
     },
     {
       "trait_type": "Head",
@@ -16,7 +16,7 @@
     },
     {
       "trait_type": "Back",
-      "value": "DolphinFin"
+      "value": "SharkFin"
     },
     {
       "trait_type": "Legs",
@@ -28,11 +28,19 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "BaseMouth"
+      "value": "CatfishMouth"
     },
     {
       "trait_type": "Eyes",
-      "value": "ThreeEyes"
+      "value": "LobsterEye"
+    },
+    {
+      "trait_type": "Rank",
+      "value": 26
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
     }
   ],
   "compiler": "HashLips Art Engine - datboi's fork"

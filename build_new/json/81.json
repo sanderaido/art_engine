@@ -2,13 +2,13 @@
   "name": "Your Collection #81",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/81.png",
-  "dna": "b24765e7faa8e9a500504bf780cd400a5f0058d8",
+  "dna": "c20708efb64ed233845332d161a7a5159870ad29",
   "edition": 81,
-  "date": 1655952015698,
+  "date": 1664076726098,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "SmoothLunate"
+      "value": "ScalesLunate"
     },
     {
       "trait_type": "Head",
@@ -33,6 +33,14 @@
     {
       "trait_type": "Eyes",
       "value": "AnglerEyes"
+    },
+    {
+      "trait_type": "Rank",
+      "value": 97
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
     }
   ],
   "compiler": "HashLips Art Engine - datboi's fork"

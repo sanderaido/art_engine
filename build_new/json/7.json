@@ -2,29 +2,25 @@
   "name": "Your Collection #7",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/7.png",
-  "dna": "335906fd5d147dbfb654997213e6cbcce3973dd3",
+  "dna": "aa121a4cfb2dc28a98af179881904da09dfbace8",
   "edition": 7,
-  "date": 1655952009710,
+  "date": 1664076719327,
   "attributes": [
     {
-      "trait_type": "SkeletalBody",
-      "value": "SkeletalSmoothLunate"
-    },
-    {
-      "trait_type": "Head",
+      "trait_type": "test",
       "value": "FishHead"
     },
     {
       "trait_type": "Back",
-      "value": "BetaFins"
+      "value": "Blowhole"
     },
     {
       "trait_type": "Legs",
-      "value": "BetaLegs"
+      "value": "LobsterLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "FinArms"
+      "value": "LureArms"
     },
     {
       "trait_type": "Mouth",
@@ -32,7 +28,19 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "AnglerEyes"
+      "value": "LobsterEye"
+    },
+    {
+      "trait_type": "Color",
+      "value": "Green"
+    },
+    {
+      "trait_type": "Rank",
+      "value": 5
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Legendary"
     }
   ],
   "compiler": "HashLips Art Engine - datboi's fork"

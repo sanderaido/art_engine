@@ -2,9 +2,9 @@
   "name": "Your Collection #32",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/32.png",
-  "dna": "9028564c360f976cb9a280503dd638f4cd6fbed9",
+  "dna": "b03c3b721c549bde4c3061ae64ae745e17fd3607",
   "edition": 32,
-  "date": 1655952011759,
+  "date": 1664076722305,
   "attributes": [
     {
       "trait_type": "Body",
@@ -16,7 +16,7 @@
     },
     {
       "trait_type": "Back",
-      "value": "Blowhole"
+      "value": "SharkFin"
     },
     {
       "trait_type": "Legs",
@@ -32,7 +32,15 @@
     },
     {
       "trait_type": "Eyes",
-      "value": "LobsterEye"
+      "value": "BaseEyes"
+    },
+    {
+      "trait_type": "Rank",
+      "value": 63
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
     }
   ],
   "compiler": "HashLips Art Engine - datboi's fork"
