@@ -2,9 +2,9 @@
   "name": "Your Collection #3",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/3.png",
-  "dna": "b17392c5289c1df998cfff7b0a8847daf2ee374b",
+  "dna": "0560cdc83f5d9cfed4023aa413e26d8edf3a2ff3",
   "edition": 3,
-  "date": 1663987723826,
+  "date": 1664076718799,
   "attributes": [
     {
       "trait_type": "test",
@@ -12,31 +12,35 @@
     },
     {
       "trait_type": "Back",
-      "value": "DolphinFin"
+      "value": "StrapOnShark"
     },
     {
       "trait_type": "Legs",
-      "value": "BetaLegs"
+      "value": "FinLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "NemoFins"
+      "value": "LureArms"
     },
     {
       "trait_type": "Mouth",
-      "value": "AnglerMouth"
+      "value": "BaseMouth"
     },
     {
       "trait_type": "Eyes",
-      "value": "EyeScar"
+      "value": "AnglerEyes"
     },
     {
       "trait_type": "Color",
-      "value": "Red"
+      "value": "Purple"
     },
     {
-      "trait_type": "rarityScore",
-      "value": 21
+      "trait_type": "Rank",
+      "value": 10
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
     }
   ],
   "compiler": "HashLips Art Engine - datboi's fork"

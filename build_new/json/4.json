@@ -2,41 +2,45 @@
   "name": "Your Collection #4",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/4.png",
-  "dna": "2044d1739c1bc82727bb7b16c38df74ab155ad68",
+  "dna": "a8c952d0508184919beb38bddf068d8c37bb95ea",
   "edition": 4,
-  "date": 1663987723955,
+  "date": 1664076718934,
   "attributes": [
     {
-      "trait_type": "Body",
-      "value": "ScalesBeta"
-    },
-    {
-      "trait_type": "Head",
+      "trait_type": "test",
       "value": "FishHead"
     },
     {
       "trait_type": "Back",
-      "value": "Blowhole"
+      "value": "DorsalFins"
     },
     {
       "trait_type": "Legs",
-      "value": "BetaLegs"
+      "value": "FinLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "LureArms"
+      "value": "BetaArms"
     },
     {
       "trait_type": "Mouth",
-      "value": "BaseMouth"
+      "value": "AnglerMouth"
     },
     {
       "trait_type": "Eyes",
-      "value": "EyeScar"
+      "value": "SharkEyes"
     },
     {
-      "trait_type": "rarityScore",
-      "value": 27
+      "trait_type": "Color",
+      "value": "Purple"
+    },
+    {
+      "trait_type": "Rank",
+      "value": 30
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
     }
   ],
   "compiler": "HashLips Art Engine - datboi's fork"
