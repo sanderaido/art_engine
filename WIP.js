@@ -11,8 +11,6 @@ but when you have $weight, it generated that number exactly?
   Make it an option. "Do you want to skip variants that don't exist or pick again?" - "Pick again" should be default. 
 ============
 -Create incompatible layers system.
--work in rarity calculations
--option to include rarity in metadata
 - Util to 'bring to front'. This will enable people to move X number of tokens to the first # in the
 collection so they can team Mint or whatever without resorting to minting with tokenId.
 - option to add numerical trait/attribute. Like a statblock
@@ -34,4 +32,6 @@ set to 1of1 name or for just a single '1of1' trait. Create separate util to crea
 -option to not display none in metadata -- Solution: use removeAttribute
 -rework weight system to allow exact counts to be used as weights. 
 -work in variation functionality
+-work in rarity calculations
+-option to include rarity in metadata
 */
