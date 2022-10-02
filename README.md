@@ -193,14 +193,15 @@ No edits necessary to use this util.
 This utility counts all traits and calculates their occurence percentages, calculates scores based on each NFT's traits, ranks each NFT by their score, and determines their named rarity (Common, Uncommon, Rare, Epic, Legendary, Mythic). It also enables the ability to add any or all of this information to the metadata itself! 
 
 **NOTE**: This utility replaces the old 'rarity.js' script. 'yarn rarity' will now call this utility.
+<br/>
 **NOTE**: Due to a change in how traits are determined, this will no longer display any 0 qty traits. Be sure to review 'rarityBreakdown' in the rarity folder. 
 
 By default, Rank and Rarity will be added to the metadata when running this utility. You can adjust what will be added to the metadata by editing these items: 
 ```js
-const includeScore = true;
+const includeScore = false;
 const includeRank = true;
 const includeRarity = true;
-const includeTraitPercentages = true;
+const includeTraitPercentages = false;
 ```
 includeScore will add a trait to the metadata like:
 ```js
