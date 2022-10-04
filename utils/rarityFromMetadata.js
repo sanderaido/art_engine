@@ -21,10 +21,16 @@ let rawdata = fs.readFileSync(`${basePath}/build/json/_metadata.json`);
 let data = JSON.parse(rawdata);
 let editionSize = data.length;
 
-// Create new directory if it doesn't already exist
+// Create new directories if it doesn't already exist
 const dir = `${basePath}/rarity/json`;
 if (!fs.existsSync(dir)) {
 	fs.mkdirSync(dir, {
+		recursive: true
+	});
+}
+const newDir = `${basePath}/build_new/json`;
+if (!fs.existsSync(newDir)) {
+	fs.mkdirSync(newDir, {
 		recursive: true
 	});
 }
@@ -135,7 +141,7 @@ data.forEach((item) => {
     let value = attribute.value.split(' (')[0];
     for (let i = 0; i < layers[traitType].length; i++) {
       if(layers[traitType][i].trait == value) {
-        rarityScore += layers[traitType][i].count;
+        rarityScore -= layers[traitType][i].count;
       }    
     }
   });
@@ -151,7 +157,13 @@ data.forEach((item) => {
 fs.writeFileSync(`${basePath}/build_new/json/_metadata.json`, JSON.stringify(data, null, 2));
 
 // Sort scores decending
-scores.sort((a,b) => a-b);
+scores.sort((a,b) => b-a);
+
+const mod = (scores[(scores.length)-1] * -1) + 1;
+
+for(let i = 0; i < scores.length; i++) {
+  scores[i] += mod;
+}
 
 // Read new json data to pull scores
 let newRawdata = fs.readFileSync(`${basePath}/build_new/json/_metadata.json`);
@@ -165,12 +177,13 @@ for(let i = rank; i = scores.length; i--) {
   newData.forEach((item) => {
     let attributes = item.attributes;
     attributes.forEach((attribute) => {
-      if(attribute.trait_type == 'rarityScore' && attribute.value == score) {
+      if(attribute.trait_type == 'rarityScore' && attribute.value == (score - mod)) {
         let rankTrait = {
           trait_type: "Rank",
           value: rank,
         }
         item.attributes.push(rankTrait);
+        item.attributes.filter(obj => obj.trait_type == 'rarityScore')[0].value += mod;
         rank--;
         scores.pop();
         fs.writeFileSync(`${basePath}/build_new/json/${item.edition}.json`, JSON.stringify(item, null, 2));
