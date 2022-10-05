@@ -3,7 +3,7 @@ const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 
 const collectionSize = 1000;
-const toCreateNow = 1000;
+const toCreateNow = 100;
 
 const scaleSize = (num) => {
   if (collectionSize === toCreateNow) return num;
@@ -91,6 +91,7 @@ const debugLogs = false;
 const format = {
   width: 512,
   height: 512,
+  dpi: 72,
   smoothing: false,
 };
 

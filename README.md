@@ -42,6 +42,10 @@ This is a fork of Hashlip's art engine. It is currently a *Work in Progress* as 
 
 - [Allow duplicate images to be duplicated](#allow-duplicates)
 
+## Define DPI in format
+
+- [Define DPI in addition to resolution](#define-dpi)
+
 ## Utils
 
 - [cleanMetadata](#cleanmetadata)
@@ -73,7 +77,9 @@ const namedWeight = true;
 This fork gives the option to use define exact counts of traits rather than using weight to randomly determine counts of traits. 
 
 ## Exact weight example
-To use exact weight system, set exactWeight to true in config.js. PLEASE NOTE: exactWeight and namedWeight can not be used together at this time!
+To use exact weight system, set exactWeight to true in config.js. When this option is enabled, the weight any given trait is set to will be the exact number of times that trait appears in the collection. ie: `trait#50.png` will appear 50 times throughout the collection exactly. <br>
+
+**PLEASE NOTE**: exactWeight and namedWeight can not be used together at this time!
 
 ```js
 const exactWeight = true;
@@ -81,7 +87,8 @@ const exactWeight = true;
 
 # Layer variation system
 Use this option to assign a 'variation' to multiple layers. The most common use-case for this option would be ensuring certain traits are the same color or skin pattern. For any trait that has variations, put a placeholder in the normal layer's folder with the desired weight, then put each of it's variations into the layer's '-variant' folder named with the variant name instead of a weight.
-Define your variations in the layerVariations const in config.js.
+Define your variations in the layerVariations const in config.js. <br>
+
 **NOTE**: If a layer has variations, it must contain *all* the variants. For example, the base images in this fork have 4 variants defined (Blue, Green, Purple, and Red), so any layer using layerVariations must include a variant for each of those colors. 
 
 ## Layer variation example
@@ -157,6 +164,17 @@ const scaleSize = (num) => {
 If you want duplicates in your collection, you can set the allowDuplicates flag to true. 
 ```js
 const allowDuplicates = true;
+```
+
+# Define DPI 
+If you need to adjust your DPI, that has been added as an option in config.js under `format`. 
+```js
+const format = {
+  width: 512,
+  height: 512,
+  dpi: 72,
+  smoothing: false,
+};
 ```
 
 # Utils
@@ -240,11 +258,8 @@ includeTraitPercentages will add occurence percentages to all other traits like:
 
 # More features in progress / on the way
 
-## Incompatible layers system
-Mark layers incompatible with others to prevent generation
-## Layer variation system
-Mark layers for variation, allowing things like ensuring all traits are the same color
-## Add option to include rarity in metadata
 ## Bring items to the front
 Mark specific items to be moved the first n of the collection for sequential minting.
 ## Add option to mint exact number of specific traits. 
+## Build robust nested layer functionality to account for incompatibilities/forced combinations
+## Add option to add stat block attributes with random numbers, allowing all variables to be controlled in config.js

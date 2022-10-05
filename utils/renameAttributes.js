@@ -22,19 +22,31 @@ let valueAfter = [ "None", "Testy" ] //Enter values you want to remove here. (ie
 
 data.forEach((item) => {
   let attributes = item.attributes;
+  // console.log(attributes);
   let tempAttributes = [];
   attributes.forEach((attribute) => {
     let traitType = attribute.trait_type;
     let value = attribute.value;
+    let renamedTrait;
     for (let i = 0; i < valueBefore.length; i++) {
-      let newValue = value.replace(valueBefore[i], valueAfter[i]);
-      tempAttributes.push(newValue);
+      if (value.includes(valueBefore[i])) {
+        let newValue = value.replace(valueBefore[i], valueAfter[i]);
+        let updatedTrait = {
+          trait_type: traitType,
+          value: newValue,
+        }
+        tempAttributes.push(updatedTrait);
+      } 
+    }
+    if (renamedTrait !== undefined) {
+      console.log(renamedTrait);
+    } else {
+      console.log(traitType);
     }
   })
-  console.log(tempAttributes);
+  // console.log(`Before: ${attributes}`);
+  // console.log(tempAttributes);
 
-
-  
   // removeValue.forEach((traitValue) => {
   //   let newValue = item.attributes.filter(obj=> obj.value !== traitValue);
   //   item.attributes = newValue;

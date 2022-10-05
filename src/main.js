@@ -145,10 +145,19 @@ const layersSetup = (layersOrder) => {
   return layers;
 };
 
+// const saveImage = (_editionCount) => {
+//   fs.writeFileSync(
+//     `${buildDir}/images/${_editionCount}.png`,
+//     canvas.toBuffer("image/png")
+//   );
+// };
+
 const saveImage = (_editionCount) => {
   fs.writeFileSync(
     `${buildDir}/images/${_editionCount}.png`,
-    canvas.toBuffer("image/png")
+    canvas.toBuffer("image/png", {
+      resolution: format.dpi,
+    }),
   );
 };
 
