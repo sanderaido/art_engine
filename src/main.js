@@ -30,6 +30,8 @@ const {
   layerVariations,
   importOldDna,
   allowDuplicates,
+  enableStats,
+  statBlocks,
 } = require(`${basePath}/src/config.js`);
 const canvas = createCanvas(format.width, format.height);
 const ctx = canvas.getContext("2d");
@@ -738,6 +740,18 @@ const startCreating = async () => {
             attributesList.push({
               trait_type: variantName,
               value: variant,
+            });
+          }
+          //wtf why isn't this working properly? It's got to just be in the wrong place in the loop. 
+          if (enableStats) {
+            statBlocks.forEach((stat) => {
+              let min = stat.minValue;
+              let max = stat.maxValue;
+              let updatedValue = Math.floor(Math.random() * (max - min + 1)) + min;
+              // console.log(stat.attribute.value);
+              stat.attribute.value = updatedValue;
+              // console.log(stat.attribute.value);
+              attributesList.push(stat.attribute);
             });
           }
           if (gif.export) {

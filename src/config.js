@@ -3,7 +3,7 @@ const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 
 const collectionSize = 1000;
-const toCreateNow = 1000;
+const toCreateNow = 10;
 
 const scaleSize = (num) => {
   if (collectionSize === toCreateNow) return num;
@@ -81,6 +81,50 @@ const layerConfigurations = [
       { name: "Mouth" },
       { name: "Eyes" },
     ],
+  },
+];
+
+const enableStats = true;
+const statBlocks = [
+  // These are all examples with different display_types. Please refer to Opensea metadata standards for visual examples 
+  {
+    minValue: 1,
+    maxValue: 50,
+    attribute:
+    {
+      trait_type: "Stamina", 
+      value: 0
+    },
+  },
+  {
+    minValue: 1,
+    maxValue: 999,
+    attribute:
+    {
+      display_type: "number", 
+      trait_type: "Stamina", 
+      value: 0
+    },
+  },
+  {
+    minValue: 1,
+    maxValue: 100,
+    attribute:
+    {
+      display_type: "boost_percentage", 
+      trait_type: "Stamina Increase", 
+      value: 0
+    }, 
+  },
+  {
+    minValue: 25,
+    maxValue: 75,
+    attribute:
+    {
+      display_type: "boost_number", 
+      trait_type: "Stamina Boost", 
+      value: 0
+    }, 
   },
 ];
 
@@ -227,4 +271,6 @@ module.exports = {
   layerVariations,
   importOldDna,
   allowDuplicates,
+  enableStats,
+  statBlocks,
 };
