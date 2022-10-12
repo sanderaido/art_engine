@@ -3,7 +3,7 @@ const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 
 const collectionSize = 1000;
-const toCreateNow = 1000;
+const toCreateNow = 100;
 
 const scaleSize = (num) => {
   if (collectionSize === toCreateNow) return num;
@@ -36,7 +36,7 @@ const solanaMetadata = {
   external_url: "https://linktr.ee/datboi1337",
   creators: [
     {
-      address: "9LfrWG5WY7LsJ4yEjwD8NAKZ4mLSTfLFZQ7B61ZqEzBH",
+      address: "8DsAhDisG5eYjBwedSiakTKwrYCWpQ4tNDRuZyniMXaX",
       share: 100,
     },
   ],
@@ -91,6 +91,7 @@ const debugLogs = false;
 const format = {
   width: 512,
   height: 512,
+  dpi: 72,
   smoothing: false,
 };
 
@@ -179,7 +180,7 @@ const layerVariations = [
       25,
       35,
     ],
-  },
+  }
 ];
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 

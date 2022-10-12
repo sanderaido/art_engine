@@ -42,10 +42,15 @@ This is a fork of Hashlip's art engine. It is currently a *Work in Progress* as 
 
 - [Allow duplicate images to be duplicated](#allow-duplicates)
 
+## Define DPI in format
+
+- [Define DPI in addition to resolution](#define-dpi)
+
 ## Utils
 
 - [cleanMetadata](#cleanmetadata)
-- [removeAttribute](#removeattribute)
+- [removeAttributes](#removeattributes)
+- [renameAttributes](#renameattribute)
 - [generateOldDna](#generateolddna)
 - [recreateAndSortMetadata](#recreateandsortmetadata)
 - [rarityFromMetadata](#rarityfrommetadata)
@@ -73,7 +78,9 @@ const namedWeight = true;
 This fork gives the option to use define exact counts of traits rather than using weight to randomly determine counts of traits. 
 
 ## Exact weight example
-To use exact weight system, set exactWeight to true in config.js. PLEASE NOTE: exactWeight and namedWeight can not be used together at this time!
+To use exact weight system, set exactWeight to true in config.js. When this option is enabled, the weight any given trait is set to will be the exact number of times that trait appears in the collection. ie: `trait#50.png` will appear 50 times throughout the collection exactly. <br>
+
+**PLEASE NOTE**: exactWeight and namedWeight can not be used together at this time! 
 
 ```js
 const exactWeight = true;
@@ -81,7 +88,8 @@ const exactWeight = true;
 
 # Layer variation system
 Use this option to assign a 'variation' to multiple layers. The most common use-case for this option would be ensuring certain traits are the same color or skin pattern. For any trait that has variations, put a placeholder in the normal layer's folder with the desired weight, then put each of it's variations into the layer's '-variant' folder named with the variant name instead of a weight.
-Define your variations in the layerVariations const in config.js.
+Define your variations in the layerVariations const in config.js. <br>
+
 **NOTE**: If a layer has variations, it must contain *all* the variants. For example, the base images in this fork have 4 variants defined (Blue, Green, Purple, and Red), so any layer using layerVariations must include a variant for each of those colors. 
 
 ## Layer variation example
@@ -159,6 +167,17 @@ If you want duplicates in your collection, you can set the allowDuplicates flag 
 const allowDuplicates = true;
 ```
 
+# Define DPI 
+If you need to adjust your DPI, that has been added as an option in config.js under `format`. 
+```js
+const format = {
+  width: 512,
+  height: 512,
+  dpi: 72,
+  smoothing: false,
+};
+```
+
 # Utils
 
 ## cleanMetadata
@@ -171,12 +190,24 @@ let removeDate = true;
 let removeCompiler = false;
 ```
 
-## removeAttribute
-This utility give the ability to remove any attribute either by trait_type, or value. Commonly used to remove 'None', but can be set to remove any attribute. 
+## removeAttributes
+This utility gives the ability to remove any attributes either by trait_type or value. Commonly used to remove 'None', but can be set to remove any attribute. Add each item you'd like removed from the attributes to the `removeValue` and/or `removeTraitType` arrays:
 
 ```js
-let removeValue = "None" //Enter a value you want to remove here. (ie: "None")
-let removeTraitType = "" //Enter a Trait you want to remove here. (ie: "Head")
+let removeValue = [ "None", "Test" ] //Enter values you want to remove here. (ie: "None")
+let removeTraitType = [ "Head" ] //Enter a Traits you want to remove here. (ie: "Head")
+```
+
+
+## renameAttributes
+This utility gives the ability to rename any attributes either by trait_type or value. Simply enter the values and/or trait types that you want to replace into `valueBefore` and/or `traitTypeBefore`, and what you want them replaced with in `valueAfter` and/or `traitTypeAfter`.<br>
+**NOTE**: Arrays must be the same length and be in the correct order for replacement to work properly. In the example, "FishHead" will be replaced with "StandardHead", "Purple" will be replaced with "Lavender", etc.
+
+```js
+let valueBefore = [ "FishHead", "Purple" ] //Enter old values here
+let valueAfter = [ "StandardHead", "Lavender" ] //Enter new values here
+let traitTypeBefore = [ "test", "Color" ] //Enter old trait_types here
+let traitTypeAfter = [ "Hat", "Skin" ] //Enter new trait_trypes here
 ```
 
 ## generateOldDna
@@ -240,11 +271,8 @@ includeTraitPercentages will add occurence percentages to all other traits like:
 
 # More features in progress / on the way
 
-## Incompatible layers system
-Mark layers incompatible with others to prevent generation
-## Layer variation system
-Mark layers for variation, allowing things like ensuring all traits are the same color
-## Add option to include rarity in metadata
 ## Bring items to the front
 Mark specific items to be moved the first n of the collection for sequential minting.
 ## Add option to mint exact number of specific traits. 
+## Build robust nested layer functionality to account for incompatibilities/forced combinations
+## Add option to add stat block attributes with random numbers, allowing all variables to be controlled in config.js
