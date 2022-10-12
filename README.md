@@ -50,7 +50,7 @@ This is a fork of Hashlip's art engine. It is currently a *Work in Progress* as 
 
 - [cleanMetadata](#cleanmetadata)
 - [removeAttributes](#removeattributes)
-- [renameAttributes](#renameattribute)
+- [renameAttributes](#renameattributes)
 - [generateOldDna](#generateolddna)
 - [recreateAndSortMetadata](#recreateandsortmetadata)
 - [rarityFromMetadata](#rarityfrommetadata)
