@@ -19,7 +19,10 @@
     "pixelate": "node utils/pixelate.js",
     "update_info": "node utils/update_info.js",
     "preview_gif": "node utils/preview_gif.js",
-    "generate_metadata": "node utils/generate_metadata.js"
+    "generate_metadata": "node utils/generate_metadata.js",
+    "clean": "node utils/cleanMetadata.js",
+    "remove": "node utils/removeAttribues",
+    "rename": "node utils/renameAttribues"
   },
   "author": "Daniel Eugene Botha (HashLips)",
   "license": "MIT",
