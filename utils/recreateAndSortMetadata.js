@@ -14,34 +14,22 @@ if (!fs.existsSync(newDir)) {
 	});
 }
 
-// console.log(dir);
-
 let files = fs.readdirSync(dir);
 
-// let sortedFiles = filenames.sort()
 const sortFileNames = () => {
   let filenames  = [];
   files.forEach(file => {
     const str = file
     const filename = Number(str.split('.').slice(0, -1).join('.'));
-    // console.log(num[0]);
-
     return filenames.push(filename);
-
   })
-
   filenames.sort(function(a, b) {
     return a - b;
   });
-
   return filenames;
 }
 
 let sortedFileNames = sortFileNames();
-
-// console.log(sortedFileNames.length);
-
-// console.log(sortedFileNames);
 
 let allMetadata = [];
 

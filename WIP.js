@@ -9,6 +9,7 @@ different rarityDelimiter? Like if you define a new variable as $, then when #we
 but when you have $weight, it generated that number exactly?
 -Account for variants that may not have all colors. ie: 5 colors, but trait only has 3 colors.
   Make it an option. "Do you want to skip variants that don't exist or pick again?" - "Pick again" should be default. 
+-Build nested layer structure. 
 ============
 -Create incompatible layers system.
 - Util to 'bring to front'. This will enable people to move X number of tokens to the first # in the

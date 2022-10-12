@@ -5,6 +5,11 @@ const isLocal = typeof process.pkg === 'undefined';
 const basePath = isLocal ? process.cwd() : path.dirname(process.execPath);
 const fs = require('fs');
 
+let valueBefore = [ "FishHead", "Purple" ] //Enter old values here
+let valueAfter = [ "StandardHead", "Lavender" ] //Enter new values here
+let traitTypeBefore = [ "test", "Color" ] //Enter old trait_types here
+let traitTypeAfter = [ "Hat", "Skin" ] //Enter new trait_trypes here
+
 // Read json data
 let rawdata = fs.readFileSync(`${basePath}/build/json/_metadata.json`);
 let data = JSON.parse(rawdata);
@@ -17,47 +22,43 @@ if (!fs.existsSync(dir)) {
 	});
 }
 
-let valueBefore = [ "FishHead", "Test" ] //Enter values you want to remove here. (ie: "None")
-let valueAfter = [ "None", "Testy" ] //Enter values you want to remove here. (ie: "None")
+if (valueBefore.length !== valueAfter.length) {
+  throw new Error(`Arrays must have the same number of items! valueBefore count (${valueBefore.length}) must match valueAfter count (${valueAfter.length})`)
+}
+
+if (traitTypeBefore.length !== traitTypeAfter.length) {
+  throw new Error(`Arrays must have the same number of items! traitTypeBefore count (${traitTypeBefore.length}) must match traitTypeAfter count (${traitTypeAfter.length})`)
+}
 
 data.forEach((item) => {
   let attributes = item.attributes;
-  // console.log(attributes);
-  let tempAttributes = [];
   attributes.forEach((attribute) => {
-    let traitType = attribute.trait_type;
-    let value = attribute.value;
-    let renamedTrait;
+    // Update values
     for (let i = 0; i < valueBefore.length; i++) {
-      if (value.includes(valueBefore[i])) {
-        let newValue = value.replace(valueBefore[i], valueAfter[i]);
-        let updatedTrait = {
-          trait_type: traitType,
-          value: newValue,
-        }
-        tempAttributes.push(updatedTrait);
-      } 
+      if (attribute.value.includes(valueBefore[i])) {
+        let updatedValue = attribute.value.replace(valueBefore[i], valueAfter[i]);
+        attribute.value = updatedValue;
+      }
     }
-    if (renamedTrait !== undefined) {
-      console.log(renamedTrait);
-    } else {
-      console.log(traitType);
+    // Update trait_types
+    for (let i = 0; i < traitTypeBefore.length; i++) {
+      if (attribute.trait_type.includes(traitTypeBefore[i])) {
+        let updatedTraitType = attribute.trait_type.replace(traitTypeBefore[i], traitTypeAfter[i]);
+        attribute.trait_type = updatedTraitType;
+      }
     }
-  })
-  // console.log(`Before: ${attributes}`);
-  // console.log(tempAttributes);
+  });
 
-  // removeValue.forEach((traitValue) => {
-  //   let newValue = item.attributes.filter(obj=> obj.value !== traitValue);
-  //   item.attributes = newValue;
-  // })
-  // removeTraitType.forEach((traitType) => {
-  //   let newValue = item.attributes.filter(obj=> obj.trait_type !== traitType);
-  //   item.attributes = newValue;
-  // })
   fs.writeFileSync(`${basePath}/build_new/json/${item.edition}.json`, JSON.stringify(item, null, 2));
 });
 
 fs.writeFileSync(`${basePath}/build_new/json/_metadata.json`, JSON.stringify(data, null, 2));
 
-// console.log(`Removed all traits with ${removeValue} value(s) and ${removeTraitType} trait_type(s)`);
+for (let i = 0; i < valueBefore.length; i++) {
+  console.log(`Updated ${valueBefore[i]} to ${valueAfter[i]}`);
+}
+for (let i = 0; i < traitTypeBefore.length; i++) {
+  console.log(`Updated ${traitTypeBefore[i]} to ${traitTypeAfter[i]}`);
+}
+
+console.log(`Updated metadata saved in ${basePath}/build_new/json`)

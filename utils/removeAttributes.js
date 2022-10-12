@@ -5,6 +5,9 @@ const isLocal = typeof process.pkg === 'undefined';
 const basePath = isLocal ? process.cwd() : path.dirname(process.execPath);
 const fs = require('fs');
 
+let removeValue = [ "None", "Test" ] //Enter values you want to remove here. (ie: "None")
+let removeTraitType = [ "Head" ] //Enter a Traits you want to remove here. (ie: "Head")
+
 // Read json data
 let rawdata = fs.readFileSync(`${basePath}/build/json/_metadata.json`);
 let data = JSON.parse(rawdata);
@@ -16,9 +19,6 @@ if (!fs.existsSync(dir)) {
 		recursive: true
 	});
 }
-
-let removeValue = [ "None", "Test" ] //Enter values you want to remove here. (ie: "None")
-let removeTraitType = [ "Head" ] //Enter a Traits you want to remove here. (ie: "Head")
 
 data.forEach((item) => {
   removeValue.forEach((traitValue) => {
