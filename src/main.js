@@ -213,6 +213,7 @@ const addMetadata = (_dna, _edition) => {
       },
     };
   }
+  addStats();
   metadataList.push(tempMetadata);
   attributesList = [];
 };
@@ -224,6 +225,22 @@ const addAttributes = (_element) => {
     value: selectedElement.name,
   });
 };
+
+const addStats = () => {
+  if (enableStats) {
+    statBlocks.forEach((stat) => {
+      let min = stat.minValue;
+      let max = stat.maxValue;
+      let updatedValue = Math.floor(Math.random() * (max - min + 1)) + min;
+      let newTrait = stat.attribute
+      // console.log(stat.attribute.value);
+      newTrait.value = updatedValue;
+      // console.log(stat.attribute.value);
+      attributesList.push(newTrait);
+      console.log(attributesList);
+    });
+  }
+}
 
 const loadLayerImg = (_layer) => {
   return new Promise((resolve, reject) => {
@@ -743,17 +760,18 @@ const startCreating = async () => {
             });
           }
           //wtf why isn't this working properly? It's got to just be in the wrong place in the loop. 
-          if (enableStats) {
-            statBlocks.forEach((stat) => {
-              let min = stat.minValue;
-              let max = stat.maxValue;
-              let updatedValue = Math.floor(Math.random() * (max - min + 1)) + min;
-              // console.log(stat.attribute.value);
-              stat.attribute.value = updatedValue;
-              // console.log(stat.attribute.value);
-              attributesList.push(stat.attribute);
-            });
-          }
+          // if (enableStats) {
+          //   statBlocks.forEach((stat) => {
+          //     let min = stat.minValue;
+          //     let max = stat.maxValue;
+          //     let updatedValue = Math.floor(Math.random() * (max - min + 1)) + min;
+          //     let newTrait = stat.attribute
+          //     // console.log(stat.attribute.value);
+          //     newTrait.value = updatedValue;
+          //     // console.log(stat.attribute.value);
+          //     attributesList.push(newTrait);
+          //   });
+          // }
           if (gif.export) {
             hashlipsGiffer.stop();
           }
@@ -785,6 +803,11 @@ const startCreating = async () => {
     }
     layerConfigIndex++;
   }
+  metadataList.forEach((item) => {
+    // console.log(item);
+    // console.log(item.attributes);
+  });
+  
   writeMetaData(JSON.stringify(metadataList, null, 2));
 };
 
