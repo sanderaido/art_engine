@@ -38,6 +38,7 @@ const ctx = canvas.getContext("2d");
 ctx.imageSmoothingEnabled = format.smoothing;
 var metadataList = [];
 var attributesList = [];
+var statList = [];
 var dnaList = new Set();
 const DNA_DELIMITER = "-";
 const HashlipsGiffer = require(`${basePath}/modules/HashlipsGiffer.js`);
@@ -136,7 +137,6 @@ const layersSetup = (layersOrder) => {
       layerObj.options?.["bypassDNA"] !== undefined
         ? layerObj.options?.["bypassDNA"]
         : false,
-    // layerVariations: layerObj['layerVariations'],
     layerVariations: 
       layerObj.options?.['layerVariations'] !== undefined
         ? layerObj.options?.['layerVariations']
@@ -213,7 +213,6 @@ const addMetadata = (_dna, _edition) => {
       },
     };
   }
-  addStats();
   metadataList.push(tempMetadata);
   attributesList = [];
 };
@@ -227,19 +226,14 @@ const addAttributes = (_element) => {
 };
 
 const addStats = () => {
-  if (enableStats) {
     statBlocks.forEach((stat) => {
-      let min = stat.minValue;
-      let max = stat.maxValue;
-      let updatedValue = Math.floor(Math.random() * (max - min + 1)) + min;
-      let newTrait = stat.attribute
-      // console.log(stat.attribute.value);
-      newTrait.value = updatedValue;
-      // console.log(stat.attribute.value);
-      attributesList.push(newTrait);
-      console.log(attributesList);
-    });
-  }
+    let min = stat.minValue;
+    let max = stat.maxValue;
+    let updatedValue = Math.floor(Math.random() * (max - min + 1)) + min;
+    let newTrait = stat.attribute
+    newTrait.value = updatedValue;
+    statList.push(newTrait);
+  });
 }
 
 const loadLayerImg = (_layer) => {
@@ -571,6 +565,31 @@ const writeMetaData = (_data) => {
   fs.writeFileSync(`${buildDir}/json/_metadata.json`, _data);
 };
 
+const sortedMetadata = () => {
+  let files = fs.readdirSync(`${buildDir}/json`);
+  let filenames  = [];
+  let allMetadata = [];
+  files.forEach(file => {
+    const str = file
+    const filename = Number(str.split('.').slice(0, -1).join('.'));
+    return filenames.push(filename);
+  })
+  filenames.sort(function(a, b) {
+    return a - b;
+  });
+
+  for (let i = 0; i < filenames.length; i++) {
+    if (!isNaN(filenames[i])) {
+      let rawFile = fs.readFileSync(`${basePath}/build/json/${filenames[i]}.json`);
+      let data = JSON.parse(rawFile);
+      fs.writeFileSync(`${basePath}/build_new/json/${data.edition}.json`, JSON.stringify(data, null, 2));
+      allMetadata.push(data);
+    } 
+  }
+  fs.writeFileSync(`${buildDir}/json/_metadata.json`, JSON.stringify(allMetadata, null, 2));
+  console.log(`Ordered all items numerically in _metadata.json. Saved in ${basePath}/build/json`);
+}
+
 const saveMetaDataSingleFile = (_editionCount) => {
   let metadata = metadataList.find((meta) => meta.edition == _editionCount);
   debugLogs
@@ -759,19 +778,13 @@ const startCreating = async () => {
               value: variant,
             });
           }
-          //wtf why isn't this working properly? It's got to just be in the wrong place in the loop. 
-          // if (enableStats) {
-          //   statBlocks.forEach((stat) => {
-          //     let min = stat.minValue;
-          //     let max = stat.maxValue;
-          //     let updatedValue = Math.floor(Math.random() * (max - min + 1)) + min;
-          //     let newTrait = stat.attribute
-          //     // console.log(stat.attribute.value);
-          //     newTrait.value = updatedValue;
-          //     // console.log(stat.attribute.value);
-          //     attributesList.push(newTrait);
-          //   });
-          // }
+          if (enableStats) {
+            addStats();
+            statList.forEach((stat) => {
+              attributesList.push(stat);
+            });
+            statList = [];
+          }
           if (gif.export) {
             hashlipsGiffer.stop();
           }
@@ -803,12 +816,8 @@ const startCreating = async () => {
     }
     layerConfigIndex++;
   }
-  metadataList.forEach((item) => {
-    // console.log(item);
-    // console.log(item.attributes);
-  });
-  
-  writeMetaData(JSON.stringify(metadataList, null, 2));
+  // writeMetaData(JSON.stringify(metadataList, null, 2));
+  sortedMetadata();
 };
 
 module.exports = { startCreating, buildSetup, getElements };

@@ -138,7 +138,18 @@ data.forEach((item) => {
   let attributes = item.attributes;
   attributes.forEach((attribute) => {
     let traitType = attribute.trait_type;
-    let value = attribute.value.split(' (')[0];
+    let value = '';
+    if (isNaN(attribute.value)) {
+      if (attribute.value.includes(' (')) {
+        value = attribute.value.split(' (')[0];
+      } else {
+        value = attribute.value;
+      }
+    } else {
+      value = attribute.value.toString();
+    }
+    console.log(value);
+    // let value = attribute.value.split(' (')[0];
     for (let i = 0; i < layers[traitType].length; i++) {
       if(layers[traitType][i].trait == value) {
         rarityScore -= layers[traitType][i].count;
