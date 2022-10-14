@@ -28,11 +28,11 @@ This is a fork of Hashlip's art engine. It is currently a *Work in Progress* as 
 - [Assign layerVariations to layers to ensure they match other layers with that variation](#layer-variation-system)
   - [layerVariations example](#layer-variation-example)
 
-## Stat blocks
+## Add stat blocks
 - [Assign randomized stats within defined range to each NFT!](#stat-blocks)
   - [Stat blocks examples](#stat-block-examples)
 
-## Extra attributes
+## Add extra attributes
 - [Add extra attributes to every NFT](#extra-attributes)
   - [Extra attributes example](#extra-attributes-example)
 
