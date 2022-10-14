@@ -1,0 +1,58 @@
+{
+  "name": "Your Collection #6",
+  "description": "Remember to replace this description",
+  "image": "ipfs://TESTING/6.png",
+  "dna": "d2201a00fc549bbdbd4b5c8cb94c99cca95fcf58",
+  "edition": 6,
+  "date": 1665708829859,
+  "attributes": [
+    {
+      "trait_type": "Body",
+      "value": "ScalesRounded"
+    },
+    {
+      "trait_type": "Head",
+      "value": "FishHead"
+    },
+    {
+      "trait_type": "Back",
+      "value": "SharkFin"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "FinLegs"
+    },
+    {
+      "trait_type": "Arms",
+      "value": "BetaArms"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "AnglerMouth"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "BaseEyes"
+    },
+    {
+      "trait_type": "Stamina",
+      "value": 17
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Stamina",
+      "value": 673
+    },
+    {
+      "display_type": "boost_percentage",
+      "trait_type": "Stamina Increase",
+      "value": 70
+    },
+    {
+      "display_type": "boost_number",
+      "trait_type": "Stamina Boost",
+      "value": 71
+    }
+  ],
+  "compiler": "Datboi1337 Art Engine (Hashlips fork)"
+}
