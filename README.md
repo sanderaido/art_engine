@@ -334,4 +334,3 @@ includeTraitPercentages will add occurence percentages to all other traits like:
 Mark specific items to be moved the first n of the collection for sequential minting.
 ## Add option to mint exact number of specific traits. 
 ## Build robust nested layer functionality to account for incompatibilities/forced combinations
-## Add option to add stat block attributes with random numbers, allowing all variables to be controlled in config.js
