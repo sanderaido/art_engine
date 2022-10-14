@@ -49,8 +49,10 @@ build/Release
 
 # Dependency directories
 
-build/
-build_new/
+build/images/
+build/json/
+build_new/images/
+build_new/json/
 dist/
 node_modules/
 jspm_packages/

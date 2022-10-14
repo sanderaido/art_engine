@@ -10,10 +10,10 @@ const { rarity_config } = require(`${basePath}/src/config.js`);
 /* **********************
 ******** Options ********
 ********************** */
-const includeScore = false;
+const includeScore = true;
 const includeRank = true;
 const includeRarity = true;
-const includeTraitPercentages = false;
+const includeTraitPercentages = true;
 
 
 // Read json data
@@ -112,15 +112,24 @@ if(includeTraitPercentages) {
     let attributes = item.attributes;
     let tempAttributes = [];
     attributes.forEach((attribute) => {
+      let displayType = attribute.display_type;
+      console.log(displayType);
       let traitType = attribute.trait_type;
       let value = attribute.value;
       if (traitType !== 'rarityScore' && traitType !== 'Rank' && traitType !== 'Rarity') {
         for (let i = 0; i < layers[traitType].length; i++) {
           if(layers[traitType][i].trait == value) {
-            let updatedTrait = {
+            let updatedTrait = displayType == undefined ? 
+            {
               trait_type: traitType,
               value: attribute.value += ` (${layers[traitType][i].occurrence})`,
             }
+            :
+            {
+              display_type: displayType,
+              trait_type: traitType,
+              value: attribute.value,
+            } 
             tempAttributes.push(updatedTrait);
           }    
         }
@@ -148,7 +157,7 @@ data.forEach((item) => {
     } else {
       value = attribute.value.toString();
     }
-    console.log(value);
+    // console.log(value);
     // let value = attribute.value.split(' (')[0];
     for (let i = 0; i < layers[traitType].length; i++) {
       if(layers[traitType][i].trait == value) {

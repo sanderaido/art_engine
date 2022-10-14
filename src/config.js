@@ -84,7 +84,7 @@ const layerConfigurations = [
   },
 ];
 
-const enableStats = true;
+const enableStats = false;
 const statBlocks = [
   // These are all examples with different display_types. Please refer to Opensea metadata standards for visual examples 
   {
@@ -171,6 +171,8 @@ const background = {
 };
 
 const extraMetadata = {};
+
+const extraAttributes = [];
 
 const rarityDelimiter = "#";
 
@@ -273,4 +275,5 @@ module.exports = {
   allowDuplicates,
   enableStats,
   statBlocks,
+  extraAttributes,
 };
