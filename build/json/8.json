@@ -2,13 +2,13 @@
   "name": "Your Collection #8",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/8.png",
-  "dna": "8068348dd9104fda2b706e40c85a59df5d382d70",
+  "dna": "8b4d1c51b2593e0fa5e25f28f383ea51993fdc8a",
   "edition": 8,
-  "date": 1665708830006,
+  "date": 1665841150139,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesTruncate"
+      "value": "ScalesForked"
     },
     {
       "trait_type": "Head",
@@ -16,42 +16,23 @@
     },
     {
       "trait_type": "Back",
-      "value": "SharkFin"
+      "value": "DorsalFins"
     },
     {
       "trait_type": "Legs",
-      "value": "FinLegs"
+      "value": "BetaLegs"
     },
     {
       "trait_type": "Arms",
-      "value": "FidlerClaws"
+      "value": "FinArms"
     },
     {
       "trait_type": "Mouth",
-      "value": "AnglerMouth"
+      "value": "BaseMouth"
     },
     {
       "trait_type": "Eyes",
-      "value": "BaseEyes"
-    },
-    {
-      "trait_type": "Stamina",
-      "value": 32
-    },
-    {
-      "display_type": "number",
-      "trait_type": "Stamina",
-      "value": 492
-    },
-    {
-      "display_type": "boost_percentage",
-      "trait_type": "Stamina Increase",
-      "value": 28
-    },
-    {
-      "display_type": "boost_number",
-      "trait_type": "Stamina Boost",
-      "value": 35
+      "value": "SharkEyes"
     }
   ],
   "compiler": "Datboi1337 Art Engine (Hashlips fork)"

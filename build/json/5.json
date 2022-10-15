@@ -2,13 +2,13 @@
   "name": "Your Collection #5",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/5.png",
-  "dna": "a7837b1a38c652745abec5c4a2135f663b390777",
+  "dna": "3146c44937e78f89bd50b3a2829f56bcd3f52e04",
   "edition": 5,
-  "date": 1665708829783,
+  "date": 1665841149902,
   "attributes": [
     {
       "trait_type": "Body",
-      "value": "ScalesLunates"
+      "value": "SmoothForked"
     },
     {
       "trait_type": "Head",
@@ -16,7 +16,7 @@
     },
     {
       "trait_type": "Back",
-      "value": "BetaFins"
+      "value": "Blowhole"
     },
     {
       "trait_type": "Legs",
@@ -24,34 +24,15 @@
     },
     {
       "trait_type": "Arms",
-      "value": "BetaArms"
+      "value": "TentacleArms"
     },
     {
       "trait_type": "Mouth",
-      "value": "TurtleBeak"
+      "value": "AnglerMouth"
     },
     {
       "trait_type": "Eyes",
       "value": "AnglerEyes"
-    },
-    {
-      "trait_type": "Stamina",
-      "value": 37
-    },
-    {
-      "display_type": "number",
-      "trait_type": "Stamina",
-      "value": 815
-    },
-    {
-      "display_type": "boost_percentage",
-      "trait_type": "Stamina Increase",
-      "value": 86
-    },
-    {
-      "display_type": "boost_number",
-      "trait_type": "Stamina Boost",
-      "value": 62
     }
   ],
   "compiler": "Datboi1337 Art Engine (Hashlips fork)"

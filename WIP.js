@@ -14,7 +14,6 @@ but when you have $weight, it generated that number exactly?
 -Create incompatible layers system.
 - Util to 'bring to front'. This will enable people to move X number of tokens to the first # in the
 collection so they can team Mint or whatever without resorting to minting with tokenId.
-- option to add numerical trait/attribute. Like a statblock
 - Account for traits across multiple layers with the same name in exact weight system. Unique name was expected, 
 but traits like 'None' will have their weights counted across multiple layers. Either exclude duplicate trait
 names, or require a delimeter like & and use 'attributeCleanName'.
@@ -35,4 +34,5 @@ set to 1of1 name or for just a single '1of1' trait. Create separate util to crea
 -work in variation functionality
 -work in rarity calculations
 -option to include rarity in metadata
+- option to add numerical trait/attribute. Like a statblock
 */

@@ -2,9 +2,9 @@
   "name": "Your Collection #3",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/3.png",
-  "dna": "f39dba29e86db848604f6602e45a83f802674a57",
+  "dna": "f2b637f7230e0ad8b953f5dcbd0a7229b225f5bf",
   "edition": 3,
-  "date": 1665708829634,
+  "date": 1665841149748,
   "attributes": [
     {
       "trait_type": "test",
@@ -12,7 +12,7 @@
     },
     {
       "trait_type": "Back",
-      "value": "SharkFin"
+      "value": "Blowhole"
     },
     {
       "trait_type": "Legs",
@@ -20,38 +20,19 @@
     },
     {
       "trait_type": "Arms",
-      "value": "LureArms"
+      "value": "TentacleArms"
     },
     {
       "trait_type": "Mouth",
-      "value": "AnglerMouth"
+      "value": "TurtleBeak"
     },
     {
       "trait_type": "Eyes",
-      "value": "LobsterEye"
+      "value": "AnglerEyes"
     },
     {
       "trait_type": "Color",
-      "value": "Red"
-    },
-    {
-      "trait_type": "Stamina",
-      "value": 37
-    },
-    {
-      "display_type": "number",
-      "trait_type": "Stamina",
-      "value": 113
-    },
-    {
-      "display_type": "boost_percentage",
-      "trait_type": "Stamina Increase",
-      "value": 4
-    },
-    {
-      "display_type": "boost_number",
-      "trait_type": "Stamina Boost",
-      "value": 38
+      "value": "Purple"
     }
   ],
   "compiler": "Datboi1337 Art Engine (Hashlips fork)"

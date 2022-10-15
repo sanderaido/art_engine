@@ -3,9 +3,9 @@
     "name": "Your Collection #1",
     "description": "Remember to replace this description",
     "image": "ipfs://TESTING/1.png",
-    "dna": "9c83a55c8cb2559fe665831e8d2822a3f1018c8f",
+    "dna": "4c1ecc0d4adc8cbdd98e987aeb7c21f746d00042",
     "edition": 1,
-    "date": 1665708829401,
+    "date": 1665841149485,
     "attributes": [
       {
         "trait_type": "test",
@@ -13,7 +13,7 @@
       },
       {
         "trait_type": "Back",
-        "value": "BetaFins"
+        "value": "Blowhole"
       },
       {
         "trait_type": "Legs",
@@ -21,38 +21,19 @@
       },
       {
         "trait_type": "Arms",
-        "value": "BetaArms"
+        "value": "NemoFins"
       },
       {
         "trait_type": "Mouth",
-        "value": "SwordfishMouth"
+        "value": "CatfishMouth"
       },
       {
         "trait_type": "Eyes",
-        "value": "AnglerEyes"
+        "value": "SharkEyes"
       },
       {
         "trait_type": "Color",
         "value": "Red"
-      },
-      {
-        "trait_type": "Stamina",
-        "value": 39
-      },
-      {
-        "display_type": "number",
-        "trait_type": "Stamina",
-        "value": 456
-      },
-      {
-        "display_type": "boost_percentage",
-        "trait_type": "Stamina Increase",
-        "value": 42
-      },
-      {
-        "display_type": "boost_number",
-        "trait_type": "Stamina Boost",
-        "value": 48
       }
     ],
     "compiler": "Datboi1337 Art Engine (Hashlips fork)"
@@ -61,9 +42,9 @@
     "name": "Your Collection #2",
     "description": "Remember to replace this description",
     "image": "ipfs://TESTING/2.png",
-    "dna": "d8c6eaf0736d2241c529745420dc5ec835c5d9a2",
+    "dna": "423b71b1d2fb5ded01e4eb9855a980618b7ef27a",
     "edition": 2,
-    "date": 1665708829518,
+    "date": 1665841149626,
     "attributes": [
       {
         "trait_type": "test",
@@ -71,15 +52,54 @@
       },
       {
         "trait_type": "Back",
-        "value": "DolphinFin"
+        "value": "Blowhole"
       },
       {
         "trait_type": "Legs",
-        "value": "FinLegs"
+        "value": "TentacleLegs"
       },
       {
         "trait_type": "Arms",
         "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      },
+      {
+        "trait_type": "Color",
+        "value": "Purple"
+      }
+    ],
+    "compiler": "Datboi1337 Art Engine (Hashlips fork)"
+  },
+  {
+    "name": "Your Collection #3",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/3.png",
+    "dna": "f2b637f7230e0ad8b953f5dcbd0a7229b225f5bf",
+    "edition": 3,
+    "date": 1665841149748,
+    "attributes": [
+      {
+        "trait_type": "test",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "TentacleArms"
       },
       {
         "trait_type": "Mouth",
@@ -91,84 +111,7 @@
       },
       {
         "trait_type": "Color",
-        "value": "Blue"
-      },
-      {
-        "trait_type": "Stamina",
-        "value": 26
-      },
-      {
-        "display_type": "number",
-        "trait_type": "Stamina",
-        "value": 921
-      },
-      {
-        "display_type": "boost_percentage",
-        "trait_type": "Stamina Increase",
-        "value": 23
-      },
-      {
-        "display_type": "boost_number",
-        "trait_type": "Stamina Boost",
-        "value": 74
-      }
-    ],
-    "compiler": "Datboi1337 Art Engine (Hashlips fork)"
-  },
-  {
-    "name": "Your Collection #3",
-    "description": "Remember to replace this description",
-    "image": "ipfs://TESTING/3.png",
-    "dna": "f39dba29e86db848604f6602e45a83f802674a57",
-    "edition": 3,
-    "date": 1665708829634,
-    "attributes": [
-      {
-        "trait_type": "test",
-        "value": "FishHead"
-      },
-      {
-        "trait_type": "Back",
-        "value": "SharkFin"
-      },
-      {
-        "trait_type": "Legs",
-        "value": "BetaLegs"
-      },
-      {
-        "trait_type": "Arms",
-        "value": "LureArms"
-      },
-      {
-        "trait_type": "Mouth",
-        "value": "AnglerMouth"
-      },
-      {
-        "trait_type": "Eyes",
-        "value": "LobsterEye"
-      },
-      {
-        "trait_type": "Color",
-        "value": "Red"
-      },
-      {
-        "trait_type": "Stamina",
-        "value": 37
-      },
-      {
-        "display_type": "number",
-        "trait_type": "Stamina",
-        "value": 113
-      },
-      {
-        "display_type": "boost_percentage",
-        "trait_type": "Stamina Increase",
-        "value": 4
-      },
-      {
-        "display_type": "boost_number",
-        "trait_type": "Stamina Boost",
-        "value": 38
+        "value": "Purple"
       }
     ],
     "compiler": "Datboi1337 Art Engine (Hashlips fork)"
@@ -177,13 +120,13 @@
     "name": "Your Collection #4",
     "description": "Remember to replace this description",
     "image": "ipfs://TESTING/4.png",
-    "dna": "bf04e31a2c593d9b9ceac6a2a39ff8322f1e5bc0",
+    "dna": "abffff13051ad912e345c276fe18bf4fbb64b79f",
     "edition": 4,
-    "date": 1665708829707,
+    "date": 1665841149824,
     "attributes": [
       {
         "trait_type": "Body",
-        "value": "ScalesLunates"
+        "value": "ScalesRounded"
       },
       {
         "trait_type": "Head",
@@ -191,42 +134,23 @@
       },
       {
         "trait_type": "Back",
-        "value": "DorsalFins"
+        "value": "DolphinFin"
       },
       {
         "trait_type": "Legs",
-        "value": "BetaLegs"
+        "value": "TentacleLegs"
       },
       {
         "trait_type": "Arms",
-        "value": "NemoFins"
+        "value": "BetaArms"
       },
       {
         "trait_type": "Mouth",
-        "value": "AnglerMouth"
+        "value": "BaseMouth"
       },
       {
         "trait_type": "Eyes",
-        "value": "BaseEyes"
-      },
-      {
-        "trait_type": "Stamina",
-        "value": 41
-      },
-      {
-        "display_type": "number",
-        "trait_type": "Stamina",
-        "value": 829
-      },
-      {
-        "display_type": "boost_percentage",
-        "trait_type": "Stamina Increase",
-        "value": 6
-      },
-      {
-        "display_type": "boost_number",
-        "trait_type": "Stamina Boost",
-        "value": 75
+        "value": "AnglerEyes"
       }
     ],
     "compiler": "Datboi1337 Art Engine (Hashlips fork)"
@@ -235,13 +159,91 @@
     "name": "Your Collection #5",
     "description": "Remember to replace this description",
     "image": "ipfs://TESTING/5.png",
-    "dna": "a7837b1a38c652745abec5c4a2135f663b390777",
+    "dna": "3146c44937e78f89bd50b3a2829f56bcd3f52e04",
     "edition": 5,
-    "date": 1665708829783,
+    "date": 1665841149902,
     "attributes": [
       {
         "trait_type": "Body",
-        "value": "ScalesLunates"
+        "value": "SmoothForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "BetaLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "TentacleArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "Datboi1337 Art Engine (Hashlips fork)"
+  },
+  {
+    "name": "Your Collection #6",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/6.png",
+    "dna": "ee8d9d36df0faaf3e6b5f4e77cc185346b8200f7",
+    "edition": 6,
+    "date": 1665841149990,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesPointed"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "Blowhole"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LobsterLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "FinArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "AnglerEyes"
+      }
+    ],
+    "compiler": "Datboi1337 Art Engine (Hashlips fork)"
+  },
+  {
+    "name": "Your Collection #7",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/7.png",
+    "dna": "3bf220456cd7fcf33cca7438adf7df749925b5ac",
+    "edition": 7,
+    "date": 1665841150062,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesRounded"
       },
       {
         "trait_type": "Head",
@@ -253,123 +255,7 @@
       },
       {
         "trait_type": "Legs",
-        "value": "BetaLegs"
-      },
-      {
-        "trait_type": "Arms",
-        "value": "BetaArms"
-      },
-      {
-        "trait_type": "Mouth",
-        "value": "TurtleBeak"
-      },
-      {
-        "trait_type": "Eyes",
-        "value": "AnglerEyes"
-      },
-      {
-        "trait_type": "Stamina",
-        "value": 37
-      },
-      {
-        "display_type": "number",
-        "trait_type": "Stamina",
-        "value": 815
-      },
-      {
-        "display_type": "boost_percentage",
-        "trait_type": "Stamina Increase",
-        "value": 86
-      },
-      {
-        "display_type": "boost_number",
-        "trait_type": "Stamina Boost",
-        "value": 62
-      }
-    ],
-    "compiler": "Datboi1337 Art Engine (Hashlips fork)"
-  },
-  {
-    "name": "Your Collection #6",
-    "description": "Remember to replace this description",
-    "image": "ipfs://TESTING/6.png",
-    "dna": "d2201a00fc549bbdbd4b5c8cb94c99cca95fcf58",
-    "edition": 6,
-    "date": 1665708829859,
-    "attributes": [
-      {
-        "trait_type": "Body",
-        "value": "ScalesRounded"
-      },
-      {
-        "trait_type": "Head",
-        "value": "FishHead"
-      },
-      {
-        "trait_type": "Back",
-        "value": "SharkFin"
-      },
-      {
-        "trait_type": "Legs",
         "value": "FinLegs"
-      },
-      {
-        "trait_type": "Arms",
-        "value": "BetaArms"
-      },
-      {
-        "trait_type": "Mouth",
-        "value": "AnglerMouth"
-      },
-      {
-        "trait_type": "Eyes",
-        "value": "BaseEyes"
-      },
-      {
-        "trait_type": "Stamina",
-        "value": 17
-      },
-      {
-        "display_type": "number",
-        "trait_type": "Stamina",
-        "value": 673
-      },
-      {
-        "display_type": "boost_percentage",
-        "trait_type": "Stamina Increase",
-        "value": 70
-      },
-      {
-        "display_type": "boost_number",
-        "trait_type": "Stamina Boost",
-        "value": 71
-      }
-    ],
-    "compiler": "Datboi1337 Art Engine (Hashlips fork)"
-  },
-  {
-    "name": "Your Collection #7",
-    "description": "Remember to replace this description",
-    "image": "ipfs://TESTING/7.png",
-    "dna": "681c0d4cb92dc3fb156e57e6953527395666098b",
-    "edition": 7,
-    "date": 1665708829934,
-    "attributes": [
-      {
-        "trait_type": "Body",
-        "value": "ScalesRounded"
-      },
-      {
-        "trait_type": "Head",
-        "value": "FishHead"
-      },
-      {
-        "trait_type": "Back",
-        "value": "DorsalFins"
-      },
-      {
-        "trait_type": "Legs",
-        "value": "LureLegs"
       },
       {
         "trait_type": "Arms",
@@ -381,26 +267,7 @@
       },
       {
         "trait_type": "Eyes",
-        "value": "AnglerEyes"
-      },
-      {
-        "trait_type": "Stamina",
-        "value": 34
-      },
-      {
-        "display_type": "number",
-        "trait_type": "Stamina",
-        "value": 957
-      },
-      {
-        "display_type": "boost_percentage",
-        "trait_type": "Stamina Increase",
-        "value": 15
-      },
-      {
-        "display_type": "boost_number",
-        "trait_type": "Stamina Boost",
-        "value": 70
+        "value": "BaseEyes"
       }
     ],
     "compiler": "Datboi1337 Art Engine (Hashlips fork)"
@@ -409,13 +276,13 @@
     "name": "Your Collection #8",
     "description": "Remember to replace this description",
     "image": "ipfs://TESTING/8.png",
-    "dna": "8068348dd9104fda2b706e40c85a59df5d382d70",
+    "dna": "8b4d1c51b2593e0fa5e25f28f383ea51993fdc8a",
     "edition": 8,
-    "date": 1665708830006,
+    "date": 1665841150139,
     "attributes": [
       {
         "trait_type": "Body",
-        "value": "ScalesTruncate"
+        "value": "ScalesForked"
       },
       {
         "trait_type": "Head",
@@ -423,123 +290,7 @@
       },
       {
         "trait_type": "Back",
-        "value": "SharkFin"
-      },
-      {
-        "trait_type": "Legs",
-        "value": "FinLegs"
-      },
-      {
-        "trait_type": "Arms",
-        "value": "FidlerClaws"
-      },
-      {
-        "trait_type": "Mouth",
-        "value": "AnglerMouth"
-      },
-      {
-        "trait_type": "Eyes",
-        "value": "BaseEyes"
-      },
-      {
-        "trait_type": "Stamina",
-        "value": 32
-      },
-      {
-        "display_type": "number",
-        "trait_type": "Stamina",
-        "value": 492
-      },
-      {
-        "display_type": "boost_percentage",
-        "trait_type": "Stamina Increase",
-        "value": 28
-      },
-      {
-        "display_type": "boost_number",
-        "trait_type": "Stamina Boost",
-        "value": 35
-      }
-    ],
-    "compiler": "Datboi1337 Art Engine (Hashlips fork)"
-  },
-  {
-    "name": "Your Collection #9",
-    "description": "Remember to replace this description",
-    "image": "ipfs://TESTING/9.png",
-    "dna": "f824091182fdc9359fba2c20ddf9a017e5aaa8b3",
-    "edition": 9,
-    "date": 1665708830084,
-    "attributes": [
-      {
-        "trait_type": "Body",
-        "value": "ScalesLunate"
-      },
-      {
-        "trait_type": "Head",
-        "value": "FishHead"
-      },
-      {
-        "trait_type": "Back",
-        "value": "SharkFin"
-      },
-      {
-        "trait_type": "Legs",
-        "value": "LureLegs"
-      },
-      {
-        "trait_type": "Arms",
-        "value": "TentacleArms"
-      },
-      {
-        "trait_type": "Mouth",
-        "value": "BaseMouth"
-      },
-      {
-        "trait_type": "Eyes",
-        "value": "SharkEyes"
-      },
-      {
-        "trait_type": "Stamina",
-        "value": 20
-      },
-      {
-        "display_type": "number",
-        "trait_type": "Stamina",
-        "value": 407
-      },
-      {
-        "display_type": "boost_percentage",
-        "trait_type": "Stamina Increase",
-        "value": 70
-      },
-      {
-        "display_type": "boost_number",
-        "trait_type": "Stamina Boost",
-        "value": 50
-      }
-    ],
-    "compiler": "Datboi1337 Art Engine (Hashlips fork)"
-  },
-  {
-    "name": "Your Collection #10",
-    "description": "Remember to replace this description",
-    "image": "ipfs://TESTING/10.png",
-    "dna": "08a1889e38e264d4b07b0428b4ac1fccf50812ae",
-    "edition": 10,
-    "date": 1665708830154,
-    "attributes": [
-      {
-        "trait_type": "Body",
-        "value": "ScalesLunates"
-      },
-      {
-        "trait_type": "Head",
-        "value": "FishHead"
-      },
-      {
-        "trait_type": "Back",
-        "value": "DolphinFin"
+        "value": "DorsalFins"
       },
       {
         "trait_type": "Legs",
@@ -551,30 +302,89 @@
       },
       {
         "trait_type": "Mouth",
-        "value": "SwordfishMouth"
+        "value": "BaseMouth"
       },
       {
         "trait_type": "Eyes",
-        "value": "BaseEyes"
+        "value": "SharkEyes"
+      }
+    ],
+    "compiler": "Datboi1337 Art Engine (Hashlips fork)"
+  },
+  {
+    "name": "Your Collection #9",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/9.png",
+    "dna": "a175b3afd8109703a5991477d783754876f43350",
+    "edition": 9,
+    "date": 1665841150221,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesPointed"
       },
       {
-        "trait_type": "Stamina",
-        "value": 18
+        "trait_type": "Head",
+        "value": "FishHead"
       },
       {
-        "display_type": "number",
-        "trait_type": "Stamina",
-        "value": 989
+        "trait_type": "Back",
+        "value": "Blowhole"
       },
       {
-        "display_type": "boost_percentage",
-        "trait_type": "Stamina Increase",
-        "value": 65
+        "trait_type": "Legs",
+        "value": "BetaLegs"
       },
       {
-        "display_type": "boost_number",
-        "trait_type": "Stamina Boost",
-        "value": 33
+        "trait_type": "Arms",
+        "value": "NemoFins"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "BaseMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "EyeScar"
+      }
+    ],
+    "compiler": "Datboi1337 Art Engine (Hashlips fork)"
+  },
+  {
+    "name": "Your Collection #10",
+    "description": "Remember to replace this description",
+    "image": "ipfs://TESTING/10.png",
+    "dna": "1cc76f87085c60b12a7b77369099a62f1d2e9dd5",
+    "edition": 10,
+    "date": 1665841150297,
+    "attributes": [
+      {
+        "trait_type": "Body",
+        "value": "ScalesForked"
+      },
+      {
+        "trait_type": "Head",
+        "value": "FishHead"
+      },
+      {
+        "trait_type": "Back",
+        "value": "BetaFins"
+      },
+      {
+        "trait_type": "Legs",
+        "value": "LureLegs"
+      },
+      {
+        "trait_type": "Arms",
+        "value": "BetaArms"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "AnglerMouth"
+      },
+      {
+        "trait_type": "Eyes",
+        "value": "EyeScar"
       }
     ],
     "compiler": "Datboi1337 Art Engine (Hashlips fork)"

@@ -583,7 +583,7 @@ const sortedMetadata = () => {
     if (!isNaN(filenames[i])) {
       let rawFile = fs.readFileSync(`${basePath}/build/json/${filenames[i]}.json`);
       let data = JSON.parse(rawFile);
-      fs.writeFileSync(`${basePath}/build_new/json/${data.edition}.json`, JSON.stringify(data, null, 2));
+      fs.writeFileSync(`${basePath}/build/json/${data.edition}.json`, JSON.stringify(data, null, 2));
       allMetadata.push(data);
     } 
   }

@@ -2,9 +2,9 @@
   "name": "Your Collection #2",
   "description": "Remember to replace this description",
   "image": "ipfs://TESTING/2.png",
-  "dna": "d8c6eaf0736d2241c529745420dc5ec835c5d9a2",
+  "dna": "423b71b1d2fb5ded01e4eb9855a980618b7ef27a",
   "edition": 2,
-  "date": 1665708829518,
+  "date": 1665841149626,
   "attributes": [
     {
       "trait_type": "test",
@@ -12,11 +12,11 @@
     },
     {
       "trait_type": "Back",
-      "value": "DolphinFin"
+      "value": "Blowhole"
     },
     {
       "trait_type": "Legs",
-      "value": "FinLegs"
+      "value": "TentacleLegs"
     },
     {
       "trait_type": "Arms",
@@ -24,7 +24,7 @@
     },
     {
       "trait_type": "Mouth",
-      "value": "TurtleBeak"
+      "value": "AnglerMouth"
     },
     {
       "trait_type": "Eyes",
@@ -32,26 +32,7 @@
     },
     {
       "trait_type": "Color",
-      "value": "Blue"
-    },
-    {
-      "trait_type": "Stamina",
-      "value": 26
-    },
-    {
-      "display_type": "number",
-      "trait_type": "Stamina",
-      "value": 921
-    },
-    {
-      "display_type": "boost_percentage",
-      "trait_type": "Stamina Increase",
-      "value": 23
-    },
-    {
-      "display_type": "boost_number",
-      "trait_type": "Stamina Boost",
-      "value": 74
+      "value": "Purple"
     }
   ],
   "compiler": "Datboi1337 Art Engine (Hashlips fork)"
