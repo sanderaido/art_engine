@@ -3,4 +3,4 @@
 npm run generate
 
 echo "DONE!"
-$SHELL
+exec $SHELL
