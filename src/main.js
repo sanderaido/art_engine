@@ -520,6 +520,15 @@ const createDnaExact = (_layers, _remainingInLayersOrder, _currentEdition, _vari
 const createDna = (_layers, _variant) => {
   let randNum = [];
   _layers.forEach((layer) => {
+
+    if (layer.name === "logos") {
+      lastTakenLogoNr++;
+      return randNum.push(
+          `${layer.elements[lastTakenLogoNr].id}:${layer.elements[lastTakenLogoNr].filename}${
+              layer.bypassDNA ? "?bypassDNA=true" : ""
+          }`
+      );
+    }
     var totalWeight = 0;
     layer.elements.forEach((element) => {
       totalWeight += element.weight;

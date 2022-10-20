@@ -20,7 +20,7 @@ const namedWeight = false;
 * Note that your weights must add up to the total number
 * you want of that trait.
 */
-const exactWeight = true;
+const exactWeight = false;
 
 
 const network = NETWORK.eth;
