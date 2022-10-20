@@ -463,11 +463,20 @@ const createDnaNames = (_layers, _variant) => {
   return randNum.join(DNA_DELIMITER);
 };
 
-
+let lastTakenLogoNr = -1;
 const createDnaExact = (_layers, _remainingInLayersOrder, _currentEdition, _variant) => {
   let randNum = [];
   let layerSizes = allLayerSizes();
   _layers.forEach((layer) => {
+    if (layer.name === "logos") {
+      lastTakenLogoNr++;
+      return randNum.push(
+          `${layer.elements[lastTakenLogoNr].id}:${layer.elements[lastTakenLogoNr].filename}${
+              layer.bypassDNA ? "?bypassDNA=true" : ""
+          }`
+      );
+    }
+
     var totalWeight = 0;
     let expected = layerSizes[layer.name] - _currentEdition;
     let remaining = toCreateNow - _currentEdition

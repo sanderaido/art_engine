@@ -2,8 +2,8 @@ const basePath = process.cwd();
 const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 
-const collectionSize = 1000;
-const toCreateNow = 1000;
+const collectionSize = 100;
+const toCreateNow = 100;
 
 const scaleSize = (num) => {
   if (collectionSize === toCreateNow) return num;
@@ -14,13 +14,13 @@ const scaleSize = (num) => {
 // Note: only one of these options can be marked true at once. 
 
 // Set this to true if you want to use named rarity instead of numbers. 
-const namedWeight = true;
+const namedWeight = false;
 /* 
 * Set this to true if you want to use EXACT weights. 
 * Note that your weights must add up to the total number
 * you want of that trait.
 */
-const exactWeight = false;
+const exactWeight = true;
 
 
 const network = NETWORK.eth;
@@ -45,41 +45,12 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: scaleSize(300),
-    layersOrder: [
-      // { name: "SkeletalBody" },
-      { name: "Head", options: {layerVariations: 'Color', displayName: 'test',} },
-      { name: "Back" },
-      { name: "Legs" },
-      { name: "Arms", options: {layerVariations: 'Color'} },
-      { name: "Mouth" },
-      { name: "Eyes" },
-    ],
-  },
-  {
-    growEditionSizeTo: scaleSize(500),
-    layersOrder: [
-      { name: "Body" },
-      { name: "Head"},
-      { name: "Back" },
-      { name: "Legs" },
-      { name: "Arms" },
-      { name: "Mouth" },
-      { name: "Eyes" },
-    ],
-  },
-  {
-
     growEditionSizeTo: scaleSize(collectionSize),
-
     layersOrder: [
-      { name: "Body" },
-      { name: "Head" },
-      { name: "Back" },
-      { name: "Legs" },
-      { name: "Arms" },
-      { name: "Mouth" },
-      { name: "Eyes" },
+      { name: "background" },
+      { name: "doodles" },
+      { name: "logos" },
+      { name: "titles" },
     ],
   },
 ];
@@ -133,8 +104,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 1080,
+  height: 1920,
   dpi: 72,
   smoothing: false,
 };
