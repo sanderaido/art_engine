@@ -4,6 +4,7 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 
 const collectionSize = 100;
 const toCreateNow = 100;
+const randomSeed = 123; // between 100-1000 seems a good range
 
 const scaleSize = (num) => {
   if (collectionSize === toCreateNow) return num;
@@ -239,6 +240,7 @@ module.exports = {
   rarity_config,
   toCreateNow,
   collectionSize,
+  randomSeed,
   namedWeight,
   exactWeight,
   layerVariations,

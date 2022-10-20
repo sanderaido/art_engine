@@ -25,6 +25,7 @@ const {
   rarity_config,
   toCreateNow,
   collectionSize,
+  randomSeed,
   namedWeight,
   exactWeight,
   layerVariations,
@@ -363,6 +364,12 @@ const isDnaUnique = (_DnaList = new Set(), _dna = "") => {
   return !_DnaList.has(_filteredDNA);
 };
 
+let currentRandomSeed = randomSeed
+function seededRandom() {
+  const x = Math.sin(currentRandomSeed++) * 10000;
+  return x - Math.floor(x);
+}
+
 const createDnaNames = (_layers, _variant) => {
   let randNum = [];
   _layers.forEach((layer) => {
@@ -440,7 +447,7 @@ const createDnaNames = (_layers, _variant) => {
     rarityCount.Legendary += mythicDiff;
     rarityCount.Mythic -= mythicDiff;
     // Proceed with random generation: number between 0 - totalWeight
-    let random = Math.floor(Math.random() * totalWeight);
+    let random = Math.floor(seededRandom() * totalWeight);
     for (var i = 0; i < layer.elements.length; i++) {
       let newWeight = layer.elements[i].weight;
       // subtract the current weight from the random weight until we reach a sub zero value.
@@ -492,7 +499,7 @@ const createDnaExact = (_layers, _remainingInLayersOrder, _currentEdition, _vari
 
     // number between 0 - totalWeight
     // We keep the random function here to ensure we don't generate all the same layers back to back.
-    let random = Math.floor(Math.random() * totalWeight);
+    let random = Math.floor(seededRandom() * totalWeight);
     for (var i = 0; i < layer.elements.length; i++) {
       // subtract the current weight from the random weight until we reach a sub zero value.
       let lookup = allTraitsCount[layer.elements[i].name];
@@ -534,7 +541,7 @@ const createDna = (_layers, _variant) => {
       totalWeight += element.weight;
     });
     // number between 0 - totalWeight
-    let random = Math.floor(Math.random() * totalWeight);
+    let random = Math.floor(seededRandom() * totalWeight);
     for (var i = 0; i < layer.elements.length; i++) {
       // subtract the current weight from the random weight until we reach a sub zero value.
       random -= layer.elements[i].weight;
